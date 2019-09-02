@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ArrayFindCommonEle",
+            "request": "launch",
+            "mainClass": "leetcode.ArrayFindCommonEle",
+            "projectName": "leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BFSDFSPermutationsII",
+            "request": "launch",
+            "mainClass": "leetcode.BFSDFSPermutationsII",
+            "projectName": "leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solution",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "leetcode.Solution",
+            "args": "",
+            "projectName": "leetcode"
+        }
+    ]
+}
