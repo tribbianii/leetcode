@@ -1,32 +1,22 @@
 package leetcode;
 
 public class ArrayMoveZerosKeepOrder {
+
     public int[] Move(int[] input) {
-        int left = 0;
-        int right = input.length-1;
-        int num = 0;
-        while (left < right) {
-            left = input[left] != 0 ? left + 1 : left;
-            right = input[right] == 0 ? right - 1 : right;
-            if(input[left] == 0 && input[right] != 0) {
-                Swap(input, left, right);
-                right --;
-                left ++;
-                num ++;
+        int slow = 0;
+        int fast = 0;
+        while (fast < input.length) {
+            if (input[fast] != 0) {
+                input[slow++] = input[fast++];
+            }
+            else {
+                fast++;
             }
         }
-        left = left - num -1;
-        while (left < right) {
-            Swap(input, left, right);
-            left ++;
-            right --;
+        while (slow <= fast) {
+            input[slow] = 0;
+            slow++;
         }
-        return input;
-    }
-    private int[] Swap(int[] input, int left, int right) {
-        int temp = input[right];
-        input[right] = input[left];
-        input[left] = temp;
         return input;
     }
 }
