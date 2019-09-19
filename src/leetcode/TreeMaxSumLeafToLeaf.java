@@ -7,6 +7,9 @@ class TreeMaxSumLeafToLeaf {
         int val;
     }
     public int go (TreeNode root) {
+        if (root == null || (root.left ==null && root.right == null)) {
+            return root == null ? 0 : root.val;
+        }
         Max max = new Max();
         max.val = Integer.MIN_VALUE;
         maxSumPath(root, max);
