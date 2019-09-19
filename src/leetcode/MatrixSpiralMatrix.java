@@ -24,7 +24,7 @@ public class MatrixSpiralMatrix {
             left++;
             right--;
         }
-        //job may not get done after while loop due to matrix ratio
+        //odd length case
         if (top==bottom){
             for (int i=left;i<=right;i++) { res.add(matrix[top][i]); }
         }

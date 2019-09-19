@@ -1,4 +1,7 @@
 package leetcode;
+
+import java.util.Arrays;
+
 import leetcode.Tree.TreeNode;;
 
 class Solution{
@@ -18,7 +21,27 @@ class Solution{
 		a.left = b;
 		a.right = c;
 		TreeMaxNumDistinctVal example = new TreeMaxNumDistinctVal();
-		System.out.println(example.findMax(a));
+
+		int[] arr1 = new int[]{100,200,300};
+		int[] arr2 = new int[]{200,400};
+		BFSDFSNearestSumCombin test = new BFSDFSNearestSumCombin();
+
+		
+        TreeNode root = new TreeNode(-15); 
+        root.left = new TreeNode(5); 
+        root.right = new TreeNode(6); 
+        root.left.left = new TreeNode(-8); 
+        root.left.right = new TreeNode(1); 
+        root.left.left.left = new TreeNode(2); 
+        root.left.left.right = new TreeNode(6); 
+        root.right.left = new TreeNode(3); 
+        root.right.right = new TreeNode(9); 
+        root.right.right.right = new TreeNode(0); 
+        root.right.right.right.left = new TreeNode(4); 
+        root.right.right.right.right = new TreeNode(-1); 
+		root.right.right.right.right.left = new TreeNode(10); 
+		TreeMaxSumLeafToLeaf exa = new TreeMaxSumLeafToLeaf();
+		System.out.println(exa.go(root));
 	}
 
 }
