@@ -1,6 +1,20 @@
 package leetcode;
 
 public class DPEditDistance{
+    //recursion solution
+    public int editDistance (String one, String two) {
+        if (one.length() * two.length() == 0) {
+            return one.length() == 0 ? two.length() : one.length();
+        }
+        if (one.charAt(0) == two.charAt(0)) {
+            return editDistance(one.substring(1), two.substring(1));
+        }
+        int replace = 1 + editDistance(one.substring(1), two.substring(1));
+        int delete = 1 + editDistance(one.substring(1), two);
+        int insert = 1 + editDistance(one, two.substring(1));
+        return Math.min(replace, Math.min(delete, insert));
+    }
+    //DP solution
     public int minDistance(String word1, String word2) {
         if (word1==null||word2==null){
             return 0;
