@@ -26,6 +26,10 @@ class Solution{
 		int[] arr2 = new int[]{200,400};
 		BFSDFSNearestSumCombin test = new BFSDFSNearestSumCombin();
 
+		ArraySubArraySumEqualsK wetry = new ArraySubArraySumEqualsK();
+		int[] arr = new int[]{1,2,3,4,-4,-3,-2,1};
+		wetry.subArrSum(arr, 0).forEach(array -> System.out.println(Arrays.toString(array)));
+
 		
         TreeNode root = new TreeNode(-15); 
         root.left = new TreeNode(5); 
@@ -41,7 +45,7 @@ class Solution{
         root.right.right.right.right = new TreeNode(-1); 
 		root.right.right.right.right.left = new TreeNode(10); 
 		TreeMaxSumLeafToLeaf exa = new TreeMaxSumLeafToLeaf();
-		System.out.println(exa.go(root));
+		//System.out.println(exa.go(root));
 	}
 
 }
