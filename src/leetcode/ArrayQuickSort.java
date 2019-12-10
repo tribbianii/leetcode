@@ -2,38 +2,30 @@ package leetcode;
 
 public class ArrayQuickSort{
     public int[] QuickSort(int[] arr){
-        SortinRange(arr, 0, arr.length-1);
+        Sort(arr, 0, arr.length-1);
         return arr;
     }
-    /* 
-    The main function that implements QuickSort() 
-    arr[] --> Array to be sorted, 
-    low  --> Starting index, 
-    high  --> Ending index 
-    */
-    public void SortinRange(int[] arr, int low, int high){ 
+    public void Sort(int[] arr, int low, int high){ 
         if (low < high){
-            int pi = partition(arr, low, high); 
-            //do recursion
-            SortinRange(arr, low, pi-1); 
-            SortinRange(arr, pi+1, high); 
+            int mid = partition(arr, low, high); 
+            Sort(arr, low, mid - 1); 
+            Sort(arr, mid + 1, high); 
         } 
     }
-    //pick arr[high] as pivot
-    //afterwards pivot's index probably change 
-    //all elements less than pivot move to left of pivot
-    //all elements greater than pivot move to right pf pivot
-    //return pivot index
     private int partition(int[] arr, int low, int high){ 
         int pivot = arr[high];
-        int i = low; 
-        for (int j=low; j<=high; j++) { 
-            if (arr[j] <= pivot){ 
-                swap(arr,i,j);
-                i++;
-            } 
+        int i = low;
+        int j = high - 1;
+        while (i <= j) {
+            if (arr[i] >= pivot && arr[j] < pivot) {
+                swap (arr, i++, j--);
+                continue;
+            }
+            i = arr[i] < pivot ? i + 1: i;
+            j = arr[j] >= pivot ? j - 1: j;
         }
-        return i-1; 
+        swap(arr, i, high);
+        return i; 
     } 
     private void swap(int[] nums, int i, int j){
         int temp = nums[i];

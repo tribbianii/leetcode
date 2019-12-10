@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ArrayQuickSort",
+            "request": "launch",
+            "mainClass": "leetcode.ArrayQuickSort",
+            "projectName": "leetcode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ArrayFindCommonEle",
             "request": "launch",
             "mainClass": "leetcode.ArrayFindCommonEle",
