@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.HashMap;
 import java.util.Map;
-
+//refer to more general problem -> graphDeepCopy
 public class LinkedListDeepCopyWithRandomNode {
     public ListNode deepCopy (ListNode root) {
         if (root == null) {
@@ -23,7 +23,7 @@ public class LinkedListDeepCopyWithRandomNode {
                 if (!map.containsKey(root.random)) {
                     map.put(root.random, new ListNode(root.random.val));
                 }
-                curr.random = map.get(curr.random);
+                curr.random = map.get(root.random);
             }
             root = root.next;
             curr = curr.next;
