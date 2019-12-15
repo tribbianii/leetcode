@@ -35,9 +35,9 @@ public class GraphDeepCopy {
         while (!nodes.isEmpty()) {
             GraphNode node = nodes.poll();
             GraphNode curr = visited.get(node);
-            for (GraphNode neighbor : node.neighbors) {
-                nodes.offer(neighbor);
+            for (GraphNode neighbor : node.neighbors) { 
                 if (!visited.containsKey(neighbor)) {
+                    nodes.offer(neighbor);
                     visited.put(neighbor, new GraphNode(neighbor.val));
                 }
                 curr.neighbors.add(visited.get(neighbor));
