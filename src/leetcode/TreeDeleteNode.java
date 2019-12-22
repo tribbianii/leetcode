@@ -22,6 +22,8 @@ class TreeDeleteNode {
             if (root.left == null || root.right == null) {
                 return root.left == null ? root.right : root.left;
             }
+            //replace the root with the smalest one in root's right child nodes
+            //OR the largest one in root's left child nodes
             int newRoot = findSmallest (root.right);
             root.val = newRoot;
             root.right = delete (root.right, newRoot);
