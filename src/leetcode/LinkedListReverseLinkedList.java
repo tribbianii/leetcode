@@ -23,11 +23,10 @@ public class LinkedListReverseLinkedList{
         if (head==null || head.next==null){
             return head;
         }
-        ListNode curr = head;
-        ListNode tail = reverselist(head.next);
-        curr.next.next = head;
-        curr.next = null;
-        return tail;
+        ListNode newhead = reverselist(head.next);
+        head.next.next = head;
+        head.next = null;
+        return newhead;
     }
     //---------------------------------------------
     //(from)          |
