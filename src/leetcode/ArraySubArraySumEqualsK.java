@@ -7,17 +7,23 @@ import java.util.Map;
 
 public class ArraySubArraySumEqualsK {
     public int subarraySum(int[] nums, int k){
-        int counts = 0;
-        int[] sum = new int[nums.length];
-        Map<Integer,Integer> map = new HashMap<>();
-        map.put(0,1);
-        for (int n=0;n<nums.length;n++){
-            sum[n] = n==0?nums[0]:sum[n-1]+nums[n];
-            if (map.containsKey(sum[n]-k)){
-                counts += map.get(sum[n]-k);
-            }
-            map.put(sum[n], map.getOrDefault(sum[n], 0)+1);
+        if (nums == null || nums.length == 0) {
+            return 0;
         }
+        int counts = nums[0] == k ? 1 : 0;
+        
+        Map<Integer,Integer> map = new HashMap<>();
+        map.put(0, 1);
+        map.put(nums[0], map.getOrDefault(nums[0], 0) + 1);
+        
+        for (int n = 1;n < nums.length;n ++){
+            nums[n] = nums[n - 1] + nums[n];
+            if (map.containsKey(nums[n] - k)){
+                counts += map.get(nums[n] - k);
+            }
+            map.put(nums[n], map.getOrDefault(nums[n], 0) + 1);
+        }
+        
         return counts;
     }
 
