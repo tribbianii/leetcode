@@ -2,6 +2,7 @@ package leetcode;
 
 //no duplcates in array
 public class BinarySearchSearchInRotatedSortedArray{
+    //my method
     public int search(int[] nums, int target) {
         if (nums==null||nums.length==0){
             return -1;
@@ -35,39 +36,35 @@ public class BinarySearchSearchInRotatedSortedArray{
         }
         return nums[start]==target?start:-1;
     }
-    //my method
-    public int Search(int[] nums, int target){
-        if (nums==null||nums.length==0){
+    //first determine the [mid] in left part or right part
+    public int Search(int[] nums, int target) {
+        if (nums == null || nums.length == 0) {
             return -1;
         }
-        int start = 0;
-        int len = nums.length;
-        int end = len-1;
-        while (start!=end){
-            int pos = start+(end-start)/2;
-            if (nums[pos]==target){
-                return pos;
+        int left = 0;
+        int right = nums.length - 1;
+        while (left <= right) { 
+            int mid = left + (right - left) / 2;
+            if (nums[mid] == target){
+                return mid;
             }
-            if (nums[pos]>=nums[start]){
-                if (nums[pos]>target && nums[start]<=target){
-                    end = pos;
+            if (nums[mid] >= nums[left]) {
+                if (nums[mid] > target && nums[left] <= target) {
+                    right = mid - 1;
                 }
                 else {
-                    start = pos+1;
+                    left = mid + 1;
                 }
-                continue;
             }
-            if (nums[pos]<nums[start]){
-                if (nums[pos]<target && nums[end]>=target){
-                    start = pos+1;
+            else if (nums[mid] <= nums[right]) {
+                if (nums[mid] < target && nums[right] >= target) {
+                    left = mid + 1;
                 }
                 else {
-                    end = pos;
+                    right = mid - 1;
                 }
-                continue;
             }
         }
-        return nums[start]==target?start:-1;
+        return -1;
     }
-    //another method
 }

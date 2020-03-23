@@ -14,26 +14,16 @@ public class BinarySearchFirstBadVersion{
     //API implemented above
 
     public int firstBadVersion(int n) {
-        if (n<=1){
-            return 1;
+        int left = 1;
+        int right = n;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (isBadVersion(mid)) {
+                right = mid;
+                continue;
+            }
+            left = mid + 1;
         }
-        else{
-            return check(1,n);
-        }
-    }
-    public int check(int start, int end){
-        if (start==end){
-            return start;
-        }
-        int target = start+(end-start)/2;
-        if (!isBadVersion(target)){
-            return check(target+1,end);
-            //because x/2 operation will return integer value equal or less than float(x/2
-            //when end-start=1, pos will stay at start due to /2 operation
-            //so start should move forward one
-        }
-        else {
-            return check(start,target);
-        }
+        return left;
     }
 }
