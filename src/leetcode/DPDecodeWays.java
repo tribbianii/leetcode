@@ -1,37 +1,26 @@
 package leetcode;
 
 public class DPDecodeWays{
-    public int numDecodings(String s){
-        if(s.length()==0||s==null){
+    public int numDecodings(String s) {
+        if (s == null || s.length() == 0 || s.charAt(0) == '0') {
             return 0;
         }
-        if(s.charAt(0)-'0'==0){
-            return 0;
-        }
-        if (s.length()==1&&s.charAt(0)-'0'!=0){
-            return 1;
-        }
-        int[] res = new int[s.length()+1];
+        int[] res = new int[s.length() + 1];
         res[0] = 1;
         res[1] = 1;
-        //set res[0] = 1 to ensure res[2] = res[1] + res[0]
-        //eg.input:'12' / output:2 ('A'+'B','L')
-        for (int i=2;i<=s.length();i++){
-            if(s.charAt(i-1)-'0'==0){
-                if (s.charAt(i-2)-'0'>2||s.charAt(i-2)-'0'==0){
-                    continue;
-                }
-                else{
-                    res[i] = res[i-2];
-                }
+        for (int i = 1; i < s.length(); i ++) {
+            int val = (s.charAt(i - 1) - '0') * 10 + (s.charAt(i) - '0');
+            if (val == 10 || val == 20) {
+                res[i + 1] = res[i - 1];
             }
-            else{
-                if (s.charAt(i-2)-'0'==0||Integer.valueOf(s.substring(i-2,i))>26){
-                    res[i] = res[i-1];
-                }
-                else{
-                    res[i] = res[i-1]+res[i-2];
-                }
+            else if (val % 10 == 0) {
+                return 0;
+            }
+            else if ((val > 0 && val < 10) || val > 26) {
+                res[i + 1] = res[i];
+            }
+            else {
+                res[i + 1] = res[i - 1] + res[i];
             }
         }
         return res[s.length()];

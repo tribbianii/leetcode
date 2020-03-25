@@ -3,7 +3,7 @@ package leetcode;
 import java.util.Arrays;
 import java.util.HashSet;
 
-public class BinarySearchIntersectionOfTwoArrays{
+public class ArrayIntersectionOfTwoArrays{
     public int[] intersection(int[] nums1, int[] nums2) {
         HashSet<Integer> set1 = new HashSet<Integer>();
         for (Integer n : nums1) {
