@@ -15,15 +15,14 @@ public class DPWordBreak {
         for (String word : wordDict){
             set.add(word);
         }
-        boolean[] breakable = new boolean[s.length()+1];
+        boolean[] breakable = new boolean[s.length() + 1];
         breakable[0] = true;
-        for (int i=1;i<=s.length();i++){
-            for (int j=i;j>0;j--){
-                String sub = s.substring(i-j,i);
-                //substring contains charat[i-j] but not charat[i]
+        for (int i = 1; i <= s.length(); i++){
+            for (int j = 0; j < i; j++){
+                String sub = s.substring(j, i);
                 if (set.contains(sub)){
-                    if (breakable[i-j]==true){
-                        breakable[i]=true;
+                    if (breakable[j] == true){
+                        breakable[i] = true;
                         break;
                     }
                 }
