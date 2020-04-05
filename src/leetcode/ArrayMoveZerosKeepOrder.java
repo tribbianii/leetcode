@@ -2,21 +2,17 @@ package leetcode;
 
 public class ArrayMoveZerosKeepOrder {
 
-    public int[] Move(int[] input) {
-        int slow = 0;
-        int fast = 0;
-        while (fast < input.length) {
-            if (input[fast] != 0) {
-                input[slow++] = input[fast++];
-            }
-            else {
-                fast++;
+    public void moveZeroes(int[] nums) {
+        int lastNonZeroFoundAt = 0;
+        for (int cur = 0; cur < nums.length; cur++) {
+            if (nums[cur] != 0) {
+                swap(nums, lastNonZeroFoundAt++, cur);
             }
         }
-        while (slow <= fast) {
-            input[slow] = 0;
-            slow++;
-        }
-        return input;
+    }
+    public void swap(int[] nums, int left, int right) {
+        int temp = nums[left];
+        nums[left] = nums[right];
+        nums[right] = temp;
     }
 }
