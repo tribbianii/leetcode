@@ -51,7 +51,6 @@ class Solution{
 		int[] inorder = new int[]{4,1,10,5,9,6,7};
 		TreeConstructTreeFromLevelAndInOrder exam = new TreeConstructTreeFromLevelAndInOrder();
 		System.out.println(exam.reconstruct(inorder, level).val);
-		System.out.println((-18)%0);
 	}
 
 }
