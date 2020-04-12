@@ -74,7 +74,7 @@ public class BinarySearchCountOfSmallNumberdAfterSelf {
 
 // Author: Huahua
 // Running time: 10 ms
-class Solution {
+class HuahuaSolution {
     class Node {
       int val;
       int count;
