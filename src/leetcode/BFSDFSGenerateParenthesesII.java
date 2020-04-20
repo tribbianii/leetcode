@@ -1,19 +1,20 @@
 package leetcode;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
+import java.util.Deque;
 
 public class BFSDFSGenerateParenthesesII {
     //Get all valid permutations of l pairs of (), m pairs of <> and n pairs of {}
     public List<String> validParentheses(int l, int m, int n) {
         ArrayList<String> res = new ArrayList<String>();
-        Stack<Character> stack = new Stack<>();
+        Deque<Character> stack = new ArrayDeque<>();
         dfs(res, stack, "", 2 * (l + m + n), l, l, m, m, n, n);
         return res;
     }
 
-    private void dfs(ArrayList<String> res, Stack<Character> stack, String str, int len, int l_l, int l_r, int m_l,
+    private void dfs(ArrayList<String> res, Deque<Character> stack, String str, int len, int l_l, int l_r, int m_l,
             int m_r, int n_l, int n_r) {
         if (str.length() == len) {
             res.add(str);

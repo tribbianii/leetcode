@@ -1,5 +1,6 @@
 package leetcode;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
@@ -12,7 +13,7 @@ public class TreeBinaryTreeLevelOrderTraversal {
 	public List<List<Integer>> BinaryTreeLevelOrderTraversal(TreeNode root) {
 		
 		List<List<Integer>> res = new LinkedList<List<Integer>>();
-		Deque<TreeNode> Level = new LinkedList<>();
+		Deque<TreeNode> Level = new ArrayDeque<>();
 		//queue is first-in-first-out, can be replaced with stack with right->left traversal
 		if (root==null) {
 			return res;

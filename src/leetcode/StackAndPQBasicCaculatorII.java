@@ -1,10 +1,11 @@
 package leetcode;
 
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class StackAndPQBasicCaculatorII {
     public int calculate(String s) {
-        Stack<Integer> stack = new Stack<>();
+        Deque<Integer> stack = new ArrayDeque<>();
         int number = 0;
         int result = 0;
         char sign = '+';

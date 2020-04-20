@@ -1,14 +1,15 @@
 package leetcode;
 
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 import leetcode.Tree.TreeNode;
 
 class DesignBSTIterator {
-    Stack<TreeNode> stack;
+    Deque<TreeNode> stack;
     
     public DesignBSTIterator(TreeNode root) {
-        this.stack = new Stack<TreeNode>();
+        this.stack = new ArrayDeque<TreeNode>();
         pushLeftMost(root);
     }
     

@@ -1,6 +1,7 @@
 package leetcode;
 
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class StackAndPQValidParenthesisString {
     class Node {
@@ -12,8 +13,8 @@ public class StackAndPQValidParenthesisString {
         } 
     }
     public boolean checkValidString(String s) {
-        Stack<Node> s_1 = new Stack<>();
-        Stack<Node> s_2 = new Stack<>();
+        Deque<Node> s_1 = new ArrayDeque<>();
+        Deque<Node> s_2 = new ArrayDeque<>();
         for (int i = 0; i < s.length(); i ++) {
             char c = s.charAt(i);
             if (c == '*') {

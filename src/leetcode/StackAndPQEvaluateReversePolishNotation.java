@@ -1,6 +1,7 @@
 package leetcode;
 
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class StackAndPQEvaluateReversePolishNotation {
     public int evalRPN(String[] tokens) {
@@ -8,7 +9,7 @@ public class StackAndPQEvaluateReversePolishNotation {
             return 0;
         } 
         int left, right;
-        Stack<Integer> stack = new Stack<Integer>();
+        Deque<Integer> stack = new ArrayDeque<Integer>();
         for(String s : tokens){
             if(s.equals("+")){
                 stack.add(stack.pop() + stack.pop());

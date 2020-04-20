@@ -1,10 +1,11 @@
 package leetcode;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.Stack;
+import java.util.Deque;
 
 class DFSRemoveInvalidParentheses {
     public List<String> removeInvalidParentheses(String s) {
@@ -82,7 +83,7 @@ class DFSRemoveInvalidParentheses {
     }
     public int[] check(String s) {
         int[] extra = new int[2];
-        Stack<Character> stack = new Stack<>();
+        Deque<Character> stack = new ArrayDeque<>();
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == ')') {
                 if (!stack.isEmpty() && stack.peek() == '(') {

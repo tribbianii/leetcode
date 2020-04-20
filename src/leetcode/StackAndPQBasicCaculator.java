@@ -1,10 +1,11 @@
 package leetcode;
 
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class StackAndPQBasicCaculator{
     public int calculate(String s) {
-        Stack<Integer> stack = new Stack<Integer>();
+        Deque<Integer> stack = new ArrayDeque<Integer>();
         int result = 0;
         int sign = 1;
         for(int i = 0; i < s.length(); i++){
@@ -35,7 +36,7 @@ public class StackAndPQBasicCaculator{
     }
     //another solution
     public int Calculate(String s) {
-        Stack<Integer> stack = new Stack<Integer>();
+        Deque<Integer> stack = new ArrayDeque<Integer>();
         int result = 0;
         int number = 0;
         int sign = 1;

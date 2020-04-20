@@ -1,10 +1,10 @@
 package leetcode;
 
-import java.util.Stack;
+import java.util.Deque;
 
 public class StackAndPQMinStack {
-    Stack<Integer> stack_1;
-    Stack<Integer> stack_2;
+    Deque<Integer> stack_1;
+    Deque<Integer> stack_2;
     
     public void push(int x) {
         stack_1.push(x);

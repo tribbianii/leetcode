@@ -1,10 +1,11 @@
 package leetcode;
 
-import java.util.Stack;
-//NOTE:the element has index of 0 will be the last to pop in Stack
+import java.util.ArrayDeque;
+import java.util.Deque;
+//NOTE:the element has index of 0 will be the last to pop in Deque
 
 public class StackAndPQImplementQueueUsingStack {
-    Stack<Integer> stack = new Stack<Integer>();
+    Deque<Integer> stack = new ArrayDeque<Integer>();
     
     /** Push element x to the back of queue. */
     public void push(int x) {
@@ -13,14 +14,14 @@ public class StackAndPQImplementQueueUsingStack {
     
     /** Removes the element from in front of queue and returns that element. */
     public int pop() {
-        int x = stack.elementAt(0);
-        stack.remove(stack.elementAt(0));
+        int x = stack.peek();
+        stack.remove(stack.peek());
         return x;
     }
     
     /** Get the front element. */
     public int peek() {
-        return stack.elementAt(0);
+        return stack.peek();
     }
     
     /** Returns whether the queue is empty. */

@@ -1,13 +1,14 @@
 package leetcode;
 
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class StackAndPQSimplifyPath {
     public String simplifyPath(String path) {
         if (path.length()<=1){
             return path;
         }
-        Stack<String> stack = new Stack<>();
+        Deque<String> stack = new ArrayDeque<>();
         String [] strings = path.split("/");
         //array strings contains "", should not be considered
         for (String str:strings){
@@ -33,7 +34,7 @@ public class StackAndPQSimplifyPath {
     }
     //simplified method
     public String SimplifyPath(String path) {
-        Stack<String> stack = new Stack<String>();
+        Deque<String> stack = new ArrayDeque<String>();
         for (String s : path.split("/")) {
             if (s.equals("..") && !stack.isEmpty()){
                 stack.pop();

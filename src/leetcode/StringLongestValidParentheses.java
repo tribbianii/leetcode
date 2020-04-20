@@ -1,11 +1,12 @@
 package leetcode;
 
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 class StringLongestValidParentheses {
     public int longestValidParentheses(String s) {
         int maxans = 0;
-        Stack<Integer> stack = new Stack<>();
+        Deque<Integer> stack = new ArrayDeque<>();
         stack.push(-1);
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '(') {
@@ -23,7 +24,7 @@ class StringLongestValidParentheses {
     }
     //my slow method
     public int LongestValidParentheses(String s) {
-        Stack<Integer> stack = new Stack<Integer>();
+        Deque<Integer> stack = new ArrayDeque<Integer>();
         for (int i = 0; i < s.length(); i ++) {
             if (!stack.isEmpty() && s.charAt(stack.peek()) == '(' && s.charAt(i) == ')') {
                 stack.pop();

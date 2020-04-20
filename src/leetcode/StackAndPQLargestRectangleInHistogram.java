@@ -1,12 +1,13 @@
 package leetcode;
 
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class StackAndPQLargestRectangleInHistogram {
     public int largestRectangleArea(int[] heights) {
         int len = heights.length;
         int maxArea = 0;
-        Stack<Integer> stack = new Stack<>();
+        Deque<Integer> stack = new ArrayDeque<>();
         for (int i=0;i<=len;i++) {
             int h = (i==len ? 0 : heights[i]);
             //append 0 to array to calculate the last height

@@ -1,5 +1,6 @@
 package leetcode;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
@@ -24,7 +25,7 @@ public class TreeBinaryTreePreorderTraversal {
 	//method1 only use list, fastest
 	public List<Integer> preorderTraversal(TreeNode root) {
 		List<Integer> result = new ArrayList<>();
-		Deque<TreeNode> stack = new LinkedList<>();
+		Deque<TreeNode> stack = new ArrayDeque<>();
 		while(!stack.isEmpty() || root!= null) {
 			if(root!= null) {
 				stack.offer(root);

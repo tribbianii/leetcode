@@ -1,5 +1,6 @@
 package leetcode;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
@@ -10,7 +11,7 @@ import leetcode.Tree.TreeNode;
 public class TreeBinaryTreeInOrderTraversal {
 	public List<Integer> inorderTraversal(TreeNode root) {
 		List<Integer> result = new ArrayList<>();
-		Deque<TreeNode> stack = new LinkedList<>();
+		Deque<TreeNode> stack = new ArrayDeque<>();
 		while(!stack.isEmpty() ||root!= null) {
 			if(root!= null) {
 				stack.offer(root);

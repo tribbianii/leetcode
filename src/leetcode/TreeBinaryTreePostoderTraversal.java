@@ -1,5 +1,6 @@
 package leetcode;
 
+import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
@@ -24,7 +25,7 @@ public class TreeBinaryTreePostoderTraversal {
 	//method1 output node value after traverse children nodes
 	public List<Integer> binaryTreePostorderTraversal(TreeNode root) {
 		LinkedList<Integer> result = new LinkedList<>();
-		Deque<TreeNode> stack = new LinkedList<>();
+		Deque<TreeNode> stack = new ArrayDeque<>();
 		while(!stack.isEmpty()||root!=null) {
 			if(root!= null) {
 				stack.offer(root);
