@@ -19,10 +19,10 @@ public class TreeDeleteNodeBST{
             root.left = deleteNode(root.left, target);
             return root;
         }
-        else if (root.left==null || root.right==null){
-            return root.left==null?root.right:root.left;
+        else if (root.left == null || root.right == null){
+            return root.left == null ? root.right : root.left;
         }
-        else if (root.right.left==null){
+        else if (root.right.left == null){
             root.right.left = root.left;
             return root.right;
         }
@@ -33,10 +33,10 @@ public class TreeDeleteNodeBST{
             return replace;
         }
     }
-    private TreeNode extractSmallest(TreeNode root){
+    private TreeNode extractSmallest(TreeNode root) {
         TreeNode prev = root;
         TreeNode curr = root.left;
-        while (curr.left!=null){
+        while (curr.left != null){
             prev = curr;
             curr = curr.left;
         }

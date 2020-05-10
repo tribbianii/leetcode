@@ -38,5 +38,38 @@ public class TreeBinaryTreePostoderTraversal {
 		}
 		return result;
 	}
-	//iteration method 
+	//post-order real-time print
+	//maintain a prev node to determine which node we came from to curr
+	public void postOrder(TreeNode root) {
+		if (root == null) {
+			return;
+		}
+		Deque<TreeNode> stack = new ArrayDeque<>();
+		TreeNode prev = null;
+		stack.offerFirst(root);
+		while (!stack.isEmpty()) {
+			TreeNode curr = stack.peekFirst();
+			if (prev == null || curr == prev.left || curr == prev.right) {
+				if (curr.left != null) {
+					stack.offerFirst(curr.left);
+				} else if (curr.right != null) {
+					stack.offerFirst(curr.right);
+				} else {
+					System.out.println(curr.val);
+					stack.pollFirst();
+				}
+			} else if (prev == curr.left) {
+				if (curr.right != null) {
+					stack.offerFirst(curr.right);
+				} else {
+					System.out.println(curr.val);
+					stack.pollFirst();
+				}
+			} else {
+				System.out.println(curr.val);
+				stack.pollFirst();
+			}
+			prev = curr;
+		}
+	}
 }

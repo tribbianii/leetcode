@@ -26,17 +26,34 @@ public class TreeBinaryTreePreorderTraversal {
 	public List<Integer> preorderTraversal(TreeNode root) {
 		List<Integer> result = new ArrayList<>();
 		Deque<TreeNode> stack = new ArrayDeque<>();
-		while(!stack.isEmpty() || root!= null) {
-			if(root!= null) {
+		while(!stack.isEmpty() || root != null) {
+			if(root != null) {
 				stack.offer(root);
 				result.add(root.val);
-				root= root.left;
+				root = root.left;
 			} else {
 				TreeNode node = stack.pollLast();
 				root= node.right;   
+			} 
+		}
+		return result;
+	}
+	//iteration method 1
+	public List<Integer> preOrder(TreeNode root) {
+		List<Integer> result = new ArrayList<>();
+		Deque<TreeNode> stack = new ArrayDeque<>();
+		stack.offerFirst(root);
+		while(!stack.isEmpty()) {
+			TreeNode node = stack.pollFirst();
+			result.add(root.val);
+			if (node.left != null) {
+				stack.offerFirst(node.left);
+			}
+			if (node.right != null) {
+				stack.offerFirst(node.right);
 			}
 		}
 		return result;
 	}
-	//iteration method
+	//iteration method 2
 }

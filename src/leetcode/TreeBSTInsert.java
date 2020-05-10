@@ -34,9 +34,9 @@ public class TreeBSTInsert {
         }
         return root;
     }
-    //recusive solution 1 with redundant operations
+    //recusive solution 1
     public TreeNode INsert(TreeNode root, int target){
-        if (root==null){
+        if (root == null){
             return new TreeNode(target);
         }
         else if (root.val < target){
@@ -45,6 +45,7 @@ public class TreeBSTInsert {
         else if (root.val > target){
             root.left = INsert(root.left, target);
         }
+        //contains root.val == target case
         return root;
     }
     //recusive solution 2
@@ -91,6 +92,29 @@ public class TreeBSTInsert {
             else {
                 root.left = insertnode(root.left, target);
             }
+        }
+        return root;
+    }
+    //following is FALSE
+    //cannot insert TreeNode in middle of BST like LinkedList
+    //ALL values of leftSubTree < root.val, ALL values of rightSubTree > root.val
+    public TreeNode insertNode(TreeNode root, int target) {
+        if (root == null) {
+            return new TreeNode(target);
+        }
+        TreeNode node = new TreeNode(target);
+        if (root.val < target) {
+            if (root.right != null && root.right.val < target) {
+                node.right = root.right;
+                root.right = node;
+            } else {
+                root.right = insertNode(root.right, target);
+            }
+        } else if (root.left != null && root.left.val > target) {
+            node.left = root.left;
+            root.left = node;
+        } else {
+            root.left = insertNode(root.left, target);
         }
         return root;
     }
