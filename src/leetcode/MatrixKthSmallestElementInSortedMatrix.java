@@ -15,10 +15,14 @@ public class MatrixKthSmallestElementInSortedMatrix{
         }
     }
     public int kthSmallest(int[][] matrix, int k) {
-        if (matrix==null||matrix.length==0){
+        if (matrix == null||matrix.length == 0){
             return 0;
         }
-        int n = matrix.length;
+        int x_boundary = matrix.length;
+        int y_boundary = matrix[0].length;
+        boolean[][] visited = new boolean[matrix.length][matrix[0].length];
+        //instantiate a priorityqueue of cell(in this case, minHeap)
+        //cell with smallest value gets poll first
         PriorityQueue<cell> pq = new PriorityQueue<cell>(new Comparator<cell>(){
             @Override
             public int compare(cell a, cell b){
@@ -28,52 +32,24 @@ public class MatrixKthSmallestElementInSortedMatrix{
                 return a.val > b.val ? 1 : -1;
             } 
         });
-        for (int i=0;i<n;i++){
-            pq.add(new cell(i,0,matrix[i][0]));
-        }
-        for (int m=0;m<k-1;m++){
-            cell curr  = pq.poll();
-            int i = curr.x;
-            int j = curr.y;
-            if (j==n-1){
-                continue;
+        pq.add(new cell(0, 0, matrix[0][0]));
+        visited[0][0] = true;
+        cell node = null;
+        int elements_polled = 0;
+        while (elements_polled < k) {
+            node = pq.poll();
+            elements_polled ++;
+            int x = node.x;
+            int y = node.y;
+            if (x + 1 < x_boundary && y < y_boundary && !visited[x + 1][y]) {
+                pq.add(new cell(x + 1, y, matrix[x + 1][y]));
+                visited[x + 1][y] = true;
             }
-            pq.add(new cell(i, j+1, matrix[i][j+1]));
-        }
-        return pq.poll().val;
-    }
-    //following solution slower but easier to understand
-    public int KthSmallest(int[][] matrix, int k){
-        if (matrix==null||matrix.length==0){
-            return 0;
-        }
-        int n = matrix.length;
-        boolean[][] visited = new boolean[n][n];
-        PriorityQueue<cell> pq = new PriorityQueue<cell>(new Comparator<cell>(){
-            @Override
-            public int compare(cell a, cell b){
-                if (a.val == b.val) {
-                    return 0;
-                }
-                return a.val > b.val ? 1 : -1;
-            } 
-        });
-        pq.offer(new cell(0,0,matrix[0][0]));
-        int count = 1;
-        while (count < k){
-            cell curr = pq.poll();
-            count++;
-            int i = curr.x;
-            int j = curr.y;
-            if (i < n-1 && !visited[i+1][j]){
-                visited[i+1][j] = true;
-                pq.offer(new cell(i+1,j,matrix[i+1][j]));
-            }
-            if (j < n-1 && !visited[i][j+1]){
-                visited[i][j+1] = true;
-                pq.offer(new cell(i,j+1,matrix[i][j+1]));
+            if (x < x_boundary && y + 1 < y_boundary && !visited[x][y + 1]) {
+                pq.add(new cell(x, y + 1, matrix[x][y + 1]));
+                visited[x][y + 1] = true;
             }
         }
-        return pq.poll().val;
+        return node.val;
     }
 }

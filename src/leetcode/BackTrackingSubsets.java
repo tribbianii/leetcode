@@ -43,10 +43,10 @@ public class BackTrackingSubsets {
 			//add new subset when whole array traversal completed
 		}
 		else {
-			helper(nums, res, subset, index + 1);
 			subset.add(nums[index]);
 			helper(nums, res, subset, index + 1);
 			subset.remove(subset.size() - 1);
+			helper(nums, res, subset, index + 1);
 		}
 	}
 	//method2 use backtracking that subset add new element or not at each level traversal

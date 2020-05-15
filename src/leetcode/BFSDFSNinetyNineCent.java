@@ -13,18 +13,16 @@ public class BFSDFSNinetyNineCent{
         return res;
     }
     private void find(ArrayList<List<Integer>> res, ArrayList<Integer> combin, int[] coins, int index, int left){
-        if (index==coins.length && left==0){
-            res.add(new ArrayList<Integer>(combin));
-        }
-        else if (index < coins.length && left >= 0){
-            for (int i=0;i <= (left/coins[index]);i++){
-                combin.add(i);
-                find(res,combin,coins,index+1,left-coins[index]*i);
-                combin.remove(combin.size()-1);
+        if (index == coins.length) { 
+            if (left == 0){
+                res.add(new ArrayList<Integer>(combin));
             }
-        }
-        else {
             return;
+        }
+        for (int i = 0; i <= (left / coins[index]); i++){
+            combin.add(i);
+            find(res, combin,coins, index+1, left - coins[index] * i);
+            combin.remove(combin.size() - 1);
         }
     }
 }
