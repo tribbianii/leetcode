@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.Arrays;
 
-public class HashMap<K, V> {
+public class MyHashMap<K, V> {
     public static class Pair<K, V> {
         final K key;
         V value;
@@ -27,10 +27,10 @@ public class HashMap<K, V> {
     private int size;
     private float loadFactor;
     
-    public HashMap() {
+    public MyHashMap() {
         this(DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR);
     }
-    public HashMap(int cap, float loadFactor) {
+    public MyHashMap(int cap, float loadFactor) {
         if (cap <= 0) {
             throw new IllegalArgumentException("cap canot be <= 0");
         }

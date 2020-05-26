@@ -35,7 +35,7 @@ public class StringReplace {
         }
         return new String(res);
     }
-    private List<Integer> findSub(String input, String sub){
+    private List<Integer> findSub(String input, String sub) {
         List<Integer> indices = new ArrayList<>();
         int len1 = input.length();
         int len2 = sub.length();
