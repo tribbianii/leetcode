@@ -31,8 +31,7 @@ public class DPJumpGame {
                 return true;
             }
             while (steps > 0) {
-                stack.offer(pos + steps);
-                steps --;
+                stack.offer(pos + steps--);
             }
         }
         return false;
