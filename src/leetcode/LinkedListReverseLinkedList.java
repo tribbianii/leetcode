@@ -44,7 +44,7 @@ public class LinkedListReverseLinkedList{
     // Note: keep tail as new head and return it
 
     //recursive idea solve follow-up question
-    public ListNode reverseListBypair(ListNode head){
+    public static ListNode reverseListBypair(ListNode head){
         if (head==null || head.next==null){
             return head;
         }
@@ -53,5 +53,16 @@ public class LinkedListReverseLinkedList{
         temp.next = head;
         head.next = newhead;
         return temp;
+    }
+    public static void main(String[] args) {
+        ListNode one = new ListNode(1);
+        one.next = new ListNode(2);
+        one.next.next = new ListNode(3);
+        one.next.next.next = new ListNode(4);
+        ListNode newnode = reverseListBypair(one);
+        while (newnode != null) {
+            System.out.println(newnode.val);
+            newnode = newnode.next;
+        }
     }
 }
