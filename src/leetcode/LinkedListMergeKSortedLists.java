@@ -62,39 +62,34 @@ public class LinkedListMergeKSortedLists {
         //    }
     //}
     public ListNode mergeKlists(ListNode[] lists){
-        ListNode orig = new ListNode(0);
-        if (lists==null||lists.length==0){
+        if (lists == null||lists.length == 0){
             return null;
         }
-        if (lists.length==1){
-            return lists[0];
-        }
-        int len = lists.length;
-        ListNode curr = orig;
-        //NodeComparator cmp = new NodeComparator();
+        ListNode dummy = new ListNode(0);
+        ListNode prev = dummy;
         PriorityQueue<ListNode> pq = new PriorityQueue<>(new Comparator<ListNode>(){
             @Override
             public int compare(ListNode a, ListNode b){
-                if (a.val==b.val) {
+                if (a.val == b.val) {
                     return 0;
                 }
                 return a.val > b.val ? 1 : -1;
             }
         });
-        for (int i=0;i<len;i++){
-            if (lists[i]!=null){
+        for (int i = 0;i < lists.length;i ++){
+            if (lists[i] != null){
                 pq.add(lists[i]);
             }
         }
-        while (pq.size()!=0){
+        while (!pq.isEmpty()) {
             ListNode node = pq.poll();
-            curr.next = node;
-            curr = curr.next;
-            if (node.next!=null){
+            prev.next = node;
+            prev = prev.next;
+            if (node.next != null){
                 pq.add(node.next);
             }
         }
-        return orig.next;
+        return dummy.next;
     }
     //this method use priority queue
     //to order nodes according to thier value

@@ -18,9 +18,7 @@ public class ArraySubArraySumEqualsK {
         
         for (int n = 1;n < nums.length;n ++){
             nums[n] = nums[n - 1] + nums[n];
-            if (map.containsKey(nums[n] - k)){
-                counts += map.get(nums[n] - k);
-            }
+            counts = map.containsKey(nums[n] - k) ? counts + map.get(nums[n] - k) : counts;
             map.put(nums[n], map.getOrDefault(nums[n], 0) + 1);
         }
         

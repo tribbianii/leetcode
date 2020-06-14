@@ -10,6 +10,7 @@ class ArrayMergeIntervals {
             return intervals;
         }
         Arrays.sort(intervals, new Comparator<int[]>() {
+            @Override
             public int compare(int[] cur,int[] nex){
                 if (cur[0] == nex[0]) {
                     return cur[1] - nex[1];
