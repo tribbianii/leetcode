@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - DPLargestSubArraySum",
+            "request": "launch",
+            "mainClass": "leetcode.DPLargestSubArraySum",
+            "projectName": "leetcode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Solution",
             "request": "launch",
             "mainClass": "leetcode.Solution",
