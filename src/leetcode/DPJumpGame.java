@@ -54,7 +54,7 @@ public class DPJumpGame {
     }
 
     public static void main(String[] args) {
-        int[] max_1 = new int[]{3,3,1,1,4};
+        int[] max_1 = new int[]{7,3,1,1,4};
         int[] max_2 = new int[]{3,2,1,0,4};
         System.out.println("1-1: " + MinJump(max_1));
         System.out.println("2-1: " + Jump(max_1));
