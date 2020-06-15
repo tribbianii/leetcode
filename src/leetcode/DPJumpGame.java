@@ -42,18 +42,19 @@ public class DPJumpGame {
         for (int i = max.length - 2; i >= 0; i --) {
             if (i + max[i] >= max.length - 1) {
                 max[i] = 1;
-                break;
+                continue;
             }
             int min = Integer.MAX_VALUE;
             for (int j = max[i]; j > 0; j --) {
                 min = Math.min(min, max[i + j]);
             }
+            max[i] = min + 1;
         }
         return max[0];
     }
 
     public static void main(String[] args) {
-        int[] max_1 = new int[]{2,3,1,1,4};
+        int[] max_1 = new int[]{3,3,1,1,4};
         int[] max_2 = new int[]{3,2,1,0,4};
         System.out.println("1-1: " + MinJump(max_1));
         System.out.println("2-1: " + Jump(max_1));
