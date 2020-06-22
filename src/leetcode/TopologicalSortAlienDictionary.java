@@ -1,65 +1,127 @@
 package leetcode;
 
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Deque;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
-import java.util.Queue;
 import java.util.Set;
 
 public class TopologicalSortAlienDictionary {
-    //topological sort step: Delete the vertexof in-degree 0(with no incoimng arrows) and all its outgoing(all outgoing arrows) edgesfrom the graph, then place it in the output
-    //https://courses.cs.washington.edu/courses/cse326/03wi/lectures/RaoLect20.pdf
-    public String alienOrder(String[] words) {
-        Map<Character,Set<Character>> outgoing = new HashMap<>();
-        int[] indegree = new int[26];
-        buildGraph(outgoing, indegree, words);
-        return bfs(outgoing, indegree);
+    Map<Character, Set<Character>> outgoing = new HashMap<>();
+    Map<Character, Integer> incoming = new HashMap<>();
+    StringBuilder res = new StringBuilder();
+    public String alienOrder(String[] words){
+        if (buildGraph(words) && bfsCheckCircle()) {
+            return res.toString();
+        }
+        return "";
     }
-    public void buildGraph(Map<Character, Set<Character>> outgoing, int[] indegree, String[] words) {
+    // return true if no sequence like ["ab", "a"] exists
+    public boolean buildGraph(String[] words) {
         for (String word : words) {
-            for (char c : word.toCharArray()) {
-                outgoing.putIfAbsent(c, new HashSet<>());
+            for (char c: word.toCharArray()) {
+                outgoing.put(c, new HashSet<Character>());
+                incoming.put(c, 0);
             }
-        }      
-        for (int i = 0;i < words.length - 1;i ++) {
-            String first = words[i];
-            String second = words[i + 1];
-            int len = Math.min(first.length(), second.length());
-            for (int j = 0;j < len;j ++) {
-                char c1 = first.charAt(j);
-                char c2 = second.charAt(j);
-                if (c1 != c2) {
-                    if (!outgoing.get(c1).contains(c2)) {
-                        indegree[c2 - 'a'] ++;
+        }
+        for (int i = 0; i < words.length - 1; i ++) {
+            String curr = words[i];
+            String next = words[i + 1];
+            if (curr.length() > next.length() && curr.startsWith(next)) {
+                return false;
+            }
+            for (int j = 0; j < Math.min(curr.length(), next.length()); j ++) {
+                char a = curr.charAt(j);
+                char b = next.charAt(j);
+                if (a != b) {
+                    if (!outgoing.get(a).contains(b)) {
+                        outgoing.get(a).add(b);
+                        incoming.put(b, incoming.get(b) + 1);
                     }
-                    outgoing.get(c1).add(c2);
                     break;
                 }
             }
         }
+        return true;
     }
-    public String bfs(Map<Character, Set<Character>> outgoing, int[] indegree) {
-        StringBuilder sb = new StringBuilder();
-        Queue<Character> q = new LinkedList<Character>();
-        for (char c : outgoing.keySet()) {
-            if (indegree[c - 'a'] == 0) {
-                q.offer(c);
+    // return true if no circle exists
+    public boolean bfsCheckCircle() {
+        Deque<Character> queue = new ArrayDeque<>();
+        for (char c : incoming.keySet()) {
+            if (incoming.get(c) == 0) {
+                queue.offerLast(c);
             }
         }
-        while (!q.isEmpty()) {
-            char c = q.poll();
-            sb.append(c);
-            if (outgoing.containsKey(c)) {
-                Set<Character> set = outgoing.get(c);
-                for (char next : set) {
-                    indegree[next - 'a'] --;
-                    if (indegree[next - 'a'] == 0) {
-                        q.offer(next);
-                    }
+        while (!queue.isEmpty()) {
+            char a = queue.poll();
+            for (char b : outgoing.get(a)) {
+                incoming.put(b, incoming.get(b) - 1);
+                if (incoming.get(b) == 0) {
+                    queue.offer(b);
+                }
+            }
+            res.append(a);
+        }
+        return res.length() == outgoing.size();
+    }
+    // dfs solution
+    // faster and consume less space
+    private Map<Character, List<Character>> reverseAdjList = new HashMap<>();
+    private Map<Character, Boolean> seen = new HashMap<>();
+    private StringBuilder output = new StringBuilder();
+    
+    public String AlienOrder(String[] words) {
+        // Step 0: Put all unique letters into reverseAdjList as keys.
+        for (String word : words) {
+            for (char c : word.toCharArray()) {
+                reverseAdjList.putIfAbsent(c, new ArrayList<>());
+            }
+        }
+        // Step 1: Find all edges and add reverse edges to reverseAdjList.
+        for (int i = 0; i < words.length - 1; i ++) {
+            String word1 = words[i];
+            String word2 = words[i + 1];
+            // Check that word2 is not a prefix of word1.
+            if (word1.length() > word2.length() && word1.startsWith(word2)) {
+                return "";
+            }
+            // Find the first non match and insert the corresponding relation.
+            for (int j = 0; j < Math.min(word1.length(), word2.length()); j ++) {
+                if (word1.charAt(j) != word2.charAt(j)) {
+                    reverseAdjList.get(word2.charAt(j)).add(word1.charAt(j));
+                    break;
                 }
             }
         }
-        return sb.length() == outgoing.size() ? sb.toString() : "";
+        // Step 2: DFS to build up the output list.
+        for (Character c : reverseAdjList.keySet()) {
+            if (!dfs(c)) {
+                return "";
+            }
+        }
+        if (output.length() < reverseAdjList.size()) {
+            return "";
+        }
+        return output.toString();
     }
+    // Return true if no cycles detected.
+    private boolean dfs(Character c) {
+        if (seen.containsKey(c)) {
+            // If this node was grey (false), a cycle was detected.
+            return seen.get(c); 
+        }
+        seen.put(c, false);
+        for (Character next : reverseAdjList.get(c)) {
+            boolean result = dfs(next);
+            if (!result) {
+                return false;
+            }
+        }
+        seen.put(c, true);
+        output.append(c);
+        return true;
+    }    
 }
