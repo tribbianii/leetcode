@@ -5,13 +5,15 @@ import java.util.PriorityQueue;
 public class StackAndPQKthLargestElementInArray{
     public int findKthLargest(int[] nums, int k) {
         PriorityQueue<Integer> pq = new PriorityQueue<>();
-        for (int num:nums){
-            pq.offer(num);
-            if (pq.size()>k){
+        for (int i = 0; i < nums.length; i ++) {
+            if (i < k) {
+                pq.offer(nums[i]);
+            } else if (nums[i] > pq.peek()){
                 pq.poll();
+                pq.offer(nums[i]);
             }
         }
-        return pq.peek();
+        return pq.poll();
     }
     //following method use quicksort
     public int FindKthLargest(int[] nums, int k) {

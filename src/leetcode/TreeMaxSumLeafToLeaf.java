@@ -3,31 +3,24 @@ package leetcode;
 import leetcode.Tree.TreeNode;
 
 class TreeMaxSumLeafToLeaf { 
-    class Max {
-        int val;
-    }
-    public int go (TreeNode root) {
-        if (root == null || (root.left ==null && root.right == null)) {
-            return root == null ? 0 : root.val;
+    public int max = Integer.MIN_VALUE;
+    public int maxPathSum(TreeNode root) {
+        if (root == null || (root.left == null || root.right == null)) {
+          return max;
         }
-        Max max = new Max();
-        max.val = Integer.MIN_VALUE;
-        maxSumPath(root, max);
-        return max.val;
+        find(root);
+        return max;
     }
-    public int maxSumPath (TreeNode root, Max max) {
+    public int find(TreeNode root) {
         if (root == null) {
             return 0;
         }
-        if (root.left == null && root.right == null) {
-            return root.val;
-        }
-        int fromLeft = maxSumPath(root.left, max);
-        int fromRight = maxSumPath(root.right, max);
+        int left = find(root.left);
+        int right = find(root.right);
         if (root.left != null && root.right != null) {
-            max.val = fromLeft + fromRight + root.val > max.val ? fromLeft + fromRight + root.val : max.val;
-            return Math.max(fromLeft, fromRight) + root.val;
+            max = Math.max(max, root.val + left + right);
+            return root.val + Math.max(left, right);
         }
-        return root.left == null ? fromRight + root.val : fromLeft + root.val;
+        return root.left == null ? root.val + right : root.val + left;
     }
 }

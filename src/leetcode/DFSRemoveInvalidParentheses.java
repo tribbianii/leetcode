@@ -9,45 +9,48 @@ import java.util.Deque;
 
 class DFSRemoveInvalidParentheses {
     public List<String> removeInvalidParentheses(String s) {
-        int rmL = 0;
-        int rmR = 0;
+        int extra_l = 0;
+        int extra_r = 0;
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '(') {
-                rmL++;
+                extra_l++;
             } else if (s.charAt(i) == ')') {
-                if (rmL != 0) {
-                    rmL--;
+                if (extra_l != 0) {
+                    extra_l--;
                 } else {
-                    rmR++;
+                    extra_r++;
                 }
             }
         }
         Set<String> res = new HashSet<>();
-        dfs(s, 0, res, new StringBuilder(), rmL, rmR, 0);
+        dfs(s, 0, res, new StringBuilder(), extra_l, extra_r, 0);
         return new ArrayList<String>(res);
     }
 
-    public void dfs(String s, int i, Set<String> res, StringBuilder sb, int rmL, int rmR, int open) {
-        if (rmL < 0 || rmR < 0 || open < 0) {
+    public void dfs(String s, int i, Set<String> res, StringBuilder sb, int extra_l, int extra_r, int open) {
+        if (extra_l < 0 || extra_r < 0 || open < 0) {
             return;
         }
         if (i == s.length()) {
-            if (rmL == 0 && rmR == 0 && open == 0) {
+            if (extra_l == 0 && extra_r == 0 && open == 0) {
                 res.add(sb.toString());
             }        
             return;
         }
         char c = s.charAt(i); 
         if (c == '(') {
-            dfs(s, i + 1, res, sb, rmL - 1, rmR, open);
-            dfs(s, i + 1, res, sb.append(c), rmL, rmR, open + 1);
+            dfs(s, i + 1, res, sb.append(c), extra_l, extra_r, open + 1);
+            sb.deleteCharAt(sb.length() - 1); 
+            dfs(s, i + 1, res, sb, extra_l - 1, extra_r, open);
         } else if (c == ')') {
-            dfs(s, i + 1, res, sb, rmL, rmR - 1, open);
-            dfs(s, i + 1, res, sb.append(c), rmL, rmR, open - 1);
+            dfs(s, i + 1, res, sb.append(c), extra_l, extra_r, open - 1);
+            sb.deleteCharAt(sb.length() - 1); 
+            dfs(s, i + 1, res, sb, extra_l, extra_r - 1, open);
         } else {
-            dfs(s, i + 1, res, sb.append(c), rmL, rmR, open);	
+            dfs(s, i + 1, res, sb.append(c), extra_l, extra_r, open);	
+            sb.deleteCharAt(sb.length() - 1); 
         }
-        sb.deleteCharAt(sb.length() - 1);       
+              
     }
     //my method exceeded time limit
     public List<String> RemoveInvalidParentheses(String s) {
