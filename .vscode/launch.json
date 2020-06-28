@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TreeBinaryTreeZigZagTraversal",
+            "request": "launch",
+            "mainClass": "leetcode.TreeBinaryTreeZigZagTraversal",
+            "projectName": "leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ArrayRotateMatrix90",
+            "request": "launch",
+            "mainClass": "leetcode.ArrayRotateMatrix90",
+            "projectName": "leetcode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - DPLargestSubArraySum",
             "request": "launch",
             "mainClass": "leetcode.DPLargestSubArraySum",
