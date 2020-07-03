@@ -20,6 +20,8 @@ public class StringFindAllAnagramsinString {
         for (int j = 0; j < s_len; j ++) {
             s_arr[s.charAt(j) - 'a'] ++;
             if (j >= p_len) {
+                // keep window size fixed as p_len
+                // remove the leftest letter
                 s_arr[s.charAt(j - p_len) - 'a'] --;
             }
             if (Arrays.equals(s_arr, p_arr)) {

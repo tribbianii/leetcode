@@ -35,35 +35,32 @@ public class ArrayMergeSort{
     }
     
     //original array being sorted
-    public int[] mergeSort(int[] nums){
-        if (nums==null || nums.length==0){
+    public static int[] mergeSort(int[] nums){
+        if (nums == null || nums.length == 0){
             return nums;
         }
-        //This is where additional space apllied
-        int[] copy = new int[nums.length]; 
+        //This is where additional space applied
+        int[] copy = Arrays.copyOf(nums, nums.length); 
         Sort (nums, copy, 0, nums.length - 1);
         return nums;
     }
-    private void Sort(int[] nums, int[] copy, int i, int j){
-        if (i>=j){
+    private static void Sort(int[] nums, int[] copy, int i, int j){
+        if (i >= j){
             return;
         }
-        int m = i+(j-i)/2;
-        sort(nums,copy,i,m);
-        sort(nums,copy,m+1,j);
-        merge(nums,copy,i,m,j);
+        int m = i + (j - i) / 2;
+        sort(nums, copy, i, m);
+        sort(nums, copy, m + 1, j);
+        merge(nums, copy, i, m, j);
     }
-    private void merge(int[] nums, int[] copy, int i, int m, int j){
-        for (int k=i;k<=j;k++){
-            copy[k] = nums[k];
+    private static void merge(int[] nums, int[] copy, int from, int mid, int end){
+        int left = from;
+        int right = mid + 1;
+        while (left <= mid && right <= end){
+            nums[from ++] = copy[left] <= copy[right] ? copy[left ++] : copy[right ++];
         }
-        int left = i;
-        int right = m+1;
-        while (left <= m && right <= j){
-            nums[i++] = copy[left] <= copy[right] ? copy[left++] : copy[right++];
-        }
-        while (left <= m) {
-            nums[i++] = copy[left++];
+        while (left <= mid) {
+            nums[from ++] = copy[left ++];
         }
     }
     
@@ -95,6 +92,6 @@ public class ArrayMergeSort{
     }
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(mergesort(new int[]{4,1,7,9,0,6,5,2})));
+        System.out.println(Arrays.toString(mergeSort(new int[]{4,1,7,9,0,6,5,2})));
     }
 }

@@ -1,18 +1,20 @@
 package leetcode;
 
-public class ArrayQuickSort{
-    public int[] QuickSort(int[] arr){
+import java.util.Arrays;
+
+public class ArrayQuickSort {
+    public static int[] QuickSort(int[] arr){
         Sort(arr, 0, arr.length-1);
         return arr;
     }
-    public void Sort(int[] arr, int low, int high){ 
+    public static void Sort(int[] arr, int low, int high){ 
         if (low < high){
             int mid = partition(arr, low, high); 
             Sort(arr, low, mid - 1); 
             Sort(arr, mid + 1, high); 
         } 
     }
-    private int partition(int[] arr, int low, int high){ 
+    private static int partition(int[] arr, int low, int high){ 
         int pivot = arr[high];
         int i = low;
         int j = high - 1;
@@ -27,9 +29,13 @@ public class ArrayQuickSort{
         swap(arr, i, high);
         return i; 
     } 
-    private void swap(int[] nums, int i, int j){
+    private static void swap(int[] nums, int i, int j){
         int temp = nums[i];
         nums[i] = nums[j];
         nums[j] = temp;
+    }
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(QuickSort(new int[]{4,1,7,9,0,6,5,2})));
+        System.out.println(((Boolean)false).getClass());
     }
 }

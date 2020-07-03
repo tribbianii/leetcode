@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LinkedListDeepCopyWithRandomNode",
+            "request": "launch",
+            "mainClass": "leetcode.LinkedListDeepCopyWithRandomNode",
+            "projectName": "leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BinarySearchKthSmallestTwoSortedArray",
+            "request": "launch",
+            "mainClass": "leetcode.BinarySearchKthSmallestTwoSortedArray",
+            "projectName": "leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ArrayQuickSort",
+            "request": "launch",
+            "mainClass": "leetcode.ArrayQuickSort",
+            "projectName": "leetcode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ArrayMergeSort",
+            "request": "launch",
+            "mainClass": "leetcode.ArrayMergeSort",
+            "projectName": "leetcode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TreeBinaryTreeZigZagTraversal",
             "request": "launch",
             "mainClass": "leetcode.TreeBinaryTreeZigZagTraversal",
