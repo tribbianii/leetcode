@@ -1,6 +1,6 @@
 package leetcode;
 
-class WordDictionary {
+public class DesignAddAndSearchWord {
 
     class Chara {
         Chara[] nexts;
@@ -14,7 +14,7 @@ class WordDictionary {
     Chara root;
     
     /** Initialize your data structure here. */
-    public WordDictionary() {
+    public DesignAddAndSearchWord() {
         this.root = new Chara();
     }
     

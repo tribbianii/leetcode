@@ -1,6 +1,6 @@
 package leetcode;
 
-class StringLongestPalidrome {
+public class StringLongestPalindrome {
     public String longestPalindrome(String s) {
         if (s == null || s.length() <= 1) {
             return s;
