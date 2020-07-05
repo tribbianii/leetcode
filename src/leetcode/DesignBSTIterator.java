@@ -6,23 +6,34 @@ import java.util.Deque;
 import leetcode.Tree.TreeNode;
 
 class DesignBSTIterator {
-    Deque<TreeNode> stack;
+    /*    
+              ___   end
+             /   |   \
+            /    a    \
+           /   / | \   \
+          /   b  |  c   \
+         /  /    |    \  \
+        /  d     |     e  \ 
+    start        |_________\   
+    
+    */
+    Deque<TreeNode> deque;
     
     public DesignBSTIterator(TreeNode root) {
-        this.stack = new ArrayDeque<TreeNode>();
+        this.deque = new ArrayDeque<TreeNode>();
         pushLeftMost(root);
     }
     
     public void pushLeftMost(TreeNode root) {
         while (root != null) {
-            stack.push(root);
+            deque.offerLast(root);
             root = root.left;
         }
     }
     
     /** @return the next smallest number */
     public int next() {
-        TreeNode node = stack.pop();
+        TreeNode node = deque.pollLast();
         if (node.right != null) {
            pushLeftMost(node.right); 
         }
@@ -31,6 +42,6 @@ class DesignBSTIterator {
     
     /** @return whether we have a next smallest number */
     public boolean hasNext() {
-        return !stack.isEmpty();
+        return !deque.isEmpty();
     }
 }

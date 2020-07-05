@@ -5,32 +5,22 @@ import leetcode.Tree.TreeNode;
 public class TreeBSTInsert {
     //iterative solution
     public TreeNode insertIntoBST(TreeNode root, int target){
-        if (root==null){
-            return new TreeNode(target);
+        if (root == null) {
+            return  new TreeNode(target);
         }
-        TreeNode node  = root;
-        while (node!=null){
-            if (node.val < target){
-                if (node.right==null){
-                    node.right = new TreeNode(target);
-                    return root;
-                }
-                else {
-                    node = node.right;
-                }
-            }
-            else if (node.val > target){
-                if (node.left==null){
-                    node.left = new TreeNode(target);
-                    return root;
-                }
-                else {
-                    node = node.left;
-                }
-            }
-            else {
+        TreeNode prev = null;
+        TreeNode curr = root;
+        while (curr != null) {
+            if (curr.val == target) {
                 return root;
             }
+            prev = curr;
+            curr = curr.val < target ? curr.right : curr.left;
+        }
+        if (prev.val > target) {
+            prev.left = new TreeNode(target);
+        } else {
+            prev.right = new TreeNode(target);
         }
         return root;
     }

@@ -24,18 +24,16 @@ class TreeDeleteNode {
             }
             //replace the root with the smalest one in root's right child nodes
             //OR the largest one in root's left child nodes
-            int newRoot = findSmallest (root.right);
-            root.val = newRoot;
-            root.right = delete (root.right, newRoot);
+            TreeNode smallest = findSmallest (root.right);
+            root.val = smallest.val;
+            root.right = delete (root.right, root.val);
             return root;
         }
     }
-    public int findSmallest (TreeNode root) {
-        int min = 0;
-        while (root != null) {
-            min = root.val;
+    public TreeNode findSmallest (TreeNode root) {
+        while (root.left != null) {
             root = root.left;
         }
-        return min;
+        return root;
     }
 }

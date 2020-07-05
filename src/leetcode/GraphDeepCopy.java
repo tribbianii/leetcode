@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Queue;
 
 public class GraphDeepCopy {
-    //DFS solution
+    //DFS solution 1
     Map<GraphNode, GraphNode> map = new HashMap<>();
     public GraphNode deepCopy (GraphNode node) {
         if (node == null) {
@@ -14,12 +14,28 @@ public class GraphDeepCopy {
         }
         if (!map.containsKey(node)) {
             map.put(node, new GraphNode(node.val));
+            GraphNode copy = map.get(node);
+            for (GraphNode neighbor : node.neighbors) {
+                copy.neighbors.add(deepCopy(neighbor));
+            }
         }
-        GraphNode copy = map.get(node);
+        return map.get(node);
+    }
+    //DFS solution 2
+    Map<GraphNode, GraphNode> mapp = new HashMap<>();
+    public GraphNode cloneGraph(GraphNode node) {
+        if (node == null) {
+            return null;
+        }
+        if (mapp.containsKey(node)) {
+            return mapp.get(node);
+        }
+        GraphNode newNode = new GraphNode(node.val);
+        mapp.put(node, newNode);
         for (GraphNode neighbor : node.neighbors) {
-            copy.neighbors.add(deepCopy(neighbor));
+            newNode.neighbors.add(cloneGraph(neighbor));
         }
-        return copy;
+        return newNode;
     }
 
     //BFS solution
