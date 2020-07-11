@@ -3,6 +3,7 @@ package leetcode;
 import leetcode.Tree.TreeNode;
 
 public class TreeMaxPathSum {
+    // any node to any node
     public int max = Integer.MIN_VALUE;
     public int maxPathSum(TreeNode root) {
         find(root);
