@@ -26,23 +26,288 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36b1760f-7c04-413d-ab92-0f4e5f14697b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/MathPower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/StackAndPQTopKFrequentWords.java" afterDir="false" />
+    <list default="true" id="36b1760f-7c04-413d-ab92-0f4e5f14697b" name="Default Changelist" comment="max sum tree node">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/MathHappyNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayBestTimeToBuyAndSellStock.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayBestTimeToBuyAndSellStock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayBestTimeToBuyAndSellStockII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayBestTimeToBuyAndSellStockII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayBestTimeToBuyAndSellStockIII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayBestTimeToBuyAndSellStockIII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayBestTimeToBuyAndSellStockIV.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayBestTimeToBuyAndSellStockIV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayBullsAndCows.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayBullsAndCows.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayFindCelebrity.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayFindCelebrity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayFindCommonEle.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayFindCommonEle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayFindKClosestElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayFindKClosestElements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayFirstMissingPositive.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayFirstMissingPositive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayGasStation.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayGasStation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayIntersectionOfTwoArrays.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayIntersectionOfTwoArrays.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayIntersectionOfTwoArraysII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayIntersectionOfTwoArraysII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayIntervalIntersaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayIntervalIntersaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayMagicArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayMagicArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayMajorityElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayMajorityElement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayMajorityElementII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayMajorityElementII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayMedianOfTwoSortedArrays.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayMedianOfTwoSortedArrays.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayMergeIntervals$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayMergeIntervals$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayMergeIntervals.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayMergeIntervals.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayMergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayMergeSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayMergeSortedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayMergeSortedArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayMoveZerosKeepOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayMoveZerosKeepOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayPascalsTriangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayPascalsTriangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayPascalsTriangleII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayPascalsTriangleII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayProductofArrayExceptSelf.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayProductofArrayExceptSelf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayQuickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayQuickSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayRainbowSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayRainbowSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayReadNGivenRead4.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayReadNGivenRead4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayReadNGivenRead4II.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayReadNGivenRead4II.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayRemoveDuplicateFromSortedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayRemoveDuplicateFromSortedArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayRemoveDuplicateFromSortedArrayII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayRemoveDuplicateFromSortedArrayII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayRemoveElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayRemoveElement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayRotateArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayRotateArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayRotateMatrix90.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayRotateMatrix90.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArraySelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArraySelectionSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArraySubArraySumEqualsK.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArraySubArraySumEqualsK.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSCheapestFlightsWithinKStops$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSCheapestFlightsWithinKStops$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSCheapestFlightsWithinKStops.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSCheapestFlightsWithinKStops.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSExpressionAddOperators.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSExpressionAddOperators.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSGenerateParentheses.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSGenerateParentheses.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSGenerateParenthesesII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSGenerateParenthesesII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSNQueens.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSNQueens.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSNearestSumCombin.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSNearestSumCombin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSNinetyNineCent.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSNinetyNineCent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSNumberOfIslands.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSNumberOfIslands.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSPermutations.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSPermutations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSPermutationsII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSPermutationsII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSReconstructionByHeight$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSReconstructionByHeight$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSReconstructionByHeight$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSReconstructionByHeight$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSReconstructionByHeight.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSReconstructionByHeight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSStrobogrammaticNumberII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSStrobogrammaticNumberII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSSurroundedRegions.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSSurroundedRegions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSWallsAndGates.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSWallsAndGates.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSWordLadder.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSWordLadder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSWordLadderII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSWordLadderII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BackTrackingCombinationSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BackTrackingCombinationSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BackTrackingCombinationSumII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BackTrackingCombinationSumII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BackTrackingCombinationSumIII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BackTrackingCombinationSumIII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BackTrackingCombinationSumIV.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BackTrackingCombinationSumIV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BackTrackingLetterCOmbinationOfPhoneNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BackTrackingLetterCOmbinationOfPhoneNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BackTrackingNextPermutation.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BackTrackingNextPermutation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BackTrackingPermutationSequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BackTrackingPermutationSequence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BackTrackingPermutationsII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BackTrackingPermutationsII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BackTrackingReconstructItinerary.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BackTrackingReconstructItinerary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BackTrackingSubsets.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BackTrackingSubsets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BackTrackingSubsetsII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BackTrackingSubsetsII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BackTrackingThreeSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BackTrackingThreeSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BacktrackingCombinations.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BacktrackingCombinations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchClassical.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchClassical.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchCountOfSmallNumberdAfterSelf$HuahuaSolution$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchCountOfSmallNumberdAfterSelf$HuahuaSolution$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchCountOfSmallNumberdAfterSelf$HuahuaSolution.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchCountOfSmallNumberdAfterSelf$HuahuaSolution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchCountOfSmallNumberdAfterSelf.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchCountOfSmallNumberdAfterSelf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchFindMinimumInRotatedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchFindMinimumInRotatedArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchFindPeakElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchFindPeakElement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchFindRangeOfElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchFindRangeOfElement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchFindTheClosestElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchFindTheClosestElement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchFirstBadVersion.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchFirstBadVersion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchGuessNumberHigherOrLower.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchGuessNumberHigherOrLower.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchKthSmallestTwoSortedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchKthSmallestTwoSortedArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchLeftMostColumnWithAtLeastOne$BinaryMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchLeftMostColumnWithAtLeastOne$BinaryMatrix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchLeftMostColumnWithAtLeastOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchLeftMostColumnWithAtLeastOne.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchLongestIncreasingSubsequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchLongestIncreasingSubsequence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchRussianDoll$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchRussianDoll$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchRussianDoll$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchRussianDoll$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchRussianDoll.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchRussianDoll.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchSearchInRotatedSortedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchSearchInRotatedSortedArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchSearchInRotatedSortedArrayII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchSearchInRotatedSortedArrayII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchSearchInsertPosition.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchSearchInsertPosition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BitManipulationDuplicateLetter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BitManipulationDuplicateLetter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BitManipulationFindTheDifference.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BitManipulationFindTheDifference.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BitManipulationMaximumProductOfWordLengths.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BitManipulationMaximumProductOfWordLengths.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BitManipulationSingleNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BitManipulationSingleNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DFSRemoveInvalidParentheses.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DFSRemoveInvalidParentheses.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPClimbingStairs.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPClimbingStairs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPCoinChangeII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPCoinChangeII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPContinuousSubarraySum.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPContinuousSubarraySum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPCuttingRod.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPCuttingRod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPDecodeWays.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPDecodeWays.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPEditDistance.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPEditDistance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPGuesNumberHigherLower.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPGuesNumberHigherLower.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPHouseRobber.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPHouseRobber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPHouseRobberII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPHouseRobberII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPInterleavingString.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPInterleavingString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPJumpGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPJumpGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPLargestProductCuttingRope.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPLargestProductCuttingRope.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPLargestRectangleOfOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPLargestRectangleOfOne.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPLargestSquareOfOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPLargestSquareOfOne.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPLargestSubArraySum.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPLargestSubArraySum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPLongestAscendingSubarray.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPLongestAscendingSubarray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPMinimumPathSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPMinimumPathSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPPaintFence.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPPaintFence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPPaintHouse.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPPaintHouse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPPaintHouseII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPPaintHouseII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPPerfectSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPPerfectSquare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPRangeSumQuery2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPRangeSumQuery2D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPTrappingWater.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPTrappingWater.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPTriangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPTriangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPUniquePaths.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPUniquePaths.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPUniquePathsII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPUniquePathsII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPWordBreak.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPWordBreak.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DPWordsConcatenating.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DPWordsConcatenating.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DesignBSTIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DesignBSTIterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DesignLRUCache$DLinkedNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DesignLRUCache$DLinkedNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DesignLRUCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DesignLRUCache.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DesignSerializeandDeserializeBinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DesignSerializeandDeserializeBinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/GraphDeepCopy.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/GraphDeepCopy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/GraphIsGraphBipartite.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/GraphIsGraphBipartite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/GraphMergeAccounts.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/GraphMergeAccounts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/GraphNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/GraphNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListAddTwoNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListAddTwoNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListCycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListCycle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListCycleII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListCycleII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListDeepCopyWithRandomNode$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListDeepCopyWithRandomNode$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListDeepCopyWithRandomNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListDeepCopyWithRandomNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListDeleteIndices.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListDeleteIndices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListInsertionSortList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListInsertionSortList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListIntersectionofTwoLinkedLists.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListIntersectionofTwoLinkedLists.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListMergeKSortedLists$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListMergeKSortedLists$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListMergeKSortedLists.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListMergeKSortedLists.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListMergeTwoSortedLists.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListMergeTwoSortedLists.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListOddEvenLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListOddEvenLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListPalidromeLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListPalidromeLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListPartitionList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListPartitionList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListPlusOneLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListPlusOneLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListRemoveDuplicatesfromSortedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListRemoveDuplicatesfromSortedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListRemoveDuplicatesfromSortedListII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListRemoveDuplicatesfromSortedListII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListRemoveLinkedListElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListRemoveLinkedListElements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListRemoveNthNodeFromEndOfList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListRemoveNthNodeFromEndOfList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListReorderList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListReorderList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListReverseLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListReverseLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListReverseLinkedListII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListReverseLinkedListII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListReverseNodesinKGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListReverseNodesinKGroup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListRotateList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListRotateList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListSortList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListSortList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LinkedListSwapNodesInPairs.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LinkedListSwapNodesInPairs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/LongestSubStringiWithAtMostKDistinctCharacters.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/LongestSubStringiWithAtMostKDistinctCharacters.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MathAddStrings.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MathAddStrings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MathCompareVersionNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MathCompareVersionNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MathDivideTwoIntegers.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MathDivideTwoIntegers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MathMaxPointsOnALine$Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MathMaxPointsOnALine$Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MathMaxPointsOnALine.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MathMaxPointsOnALine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MathPlusOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MathPlusOne.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MathReverseInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MathReverseInteger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MathStringToInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MathStringToInteger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MathTwoSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MathTwoSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixBestMeetingPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixBestMeetingPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixBombEnemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixBombEnemy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixKthSmallestElementInSortedMatrix$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixKthSmallestElementInSortedMatrix$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixKthSmallestElementInSortedMatrix$cell.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixKthSmallestElementInSortedMatrix$cell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixKthSmallestElementInSortedMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixKthSmallestElementInSortedMatrix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixLongestIncreasingPathInMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixLongestIncreasingPathInMatrix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixSearch2DMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixSearch2DMatrix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixSearch2DMatrixII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixSearch2DMatrixII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixSetMatrixZeroes.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixSetMatrixZeroes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixShortestDistanceFromAllBuildings.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixShortestDistanceFromAllBuildings.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixSparseMatrixMultiplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixSparseMatrixMultiplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringLongestPalidrome.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/Trie$TrieNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/Trie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/WordDictionary$Chara.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/WordDictionary.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/MatrixSparseMatrixMultiplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/MatrixSparseMatrixMultiplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixSpiralMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixSpiralMatrix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixSpiralMatrixII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixSpiralMatrixII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixSudokuSolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixSudokuSolver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixValidSudoku.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixValidSudoku.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixWordSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixWordSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MinHeap.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MinHeap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MyHashMap$Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MyHashMap$Pair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MyHashMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MyHashMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQBasicCaculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQBasicCaculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQBasicCaculatorII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQBasicCaculatorII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQDecodeString.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQDecodeString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQEvaluateReversePolishNotation.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQEvaluateReversePolishNotation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQExclusiveTimeOfFuntions.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQExclusiveTimeOfFuntions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQImplementQueueUsingStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQImplementQueueUsingStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQKthLargestElementInArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQKthLargestElementInArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQLargestRectangleInHistogram.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQLargestRectangleInHistogram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQMinStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQMinStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQSimplifyPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQSimplifyPath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQSkylineProblem.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQSkylineProblem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQTopKFrequentElement$PairComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQTopKFrequentElement$PairComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQTopKFrequentElement$pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQTopKFrequentElement$pair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQTopKFrequentElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQTopKFrequentElement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQValidParentheses.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQValidParentheses.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQValidParenthesisString$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQValidParenthesisString$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQValidParenthesisString.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQValidParenthesisString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringAddBinary.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringAddBinary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringCompress.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringCompress.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringDeduplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringDeduplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringFindAllAnagramsinString.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringFindAllAnagramsinString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringFirstUniqueCharacterInString.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringFirstUniqueCharacterInString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringGroupAnagrams.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringGroupAnagrams.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringILoveGoogle.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringILoveGoogle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringImplementStr.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringImplementStr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringIntegertoEnglishWords.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringIntegertoEnglishWords.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringIsPalindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringIsPalindrome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringLengthOfLastWord.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringLengthOfLastWord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringLongestCommonPrefix.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringLongestCommonPrefix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringLongestSubstringWithoutRepeatingCharater.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringLongestSubstringWithoutRepeatingCharater.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringLongestValidParentheses.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringLongestValidParentheses.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringMinRemoveToValid.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringMinRemoveToValid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringMinimumWindowSubstring$Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringMinimumWindowSubstring$Pair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringMinimumWindowSubstring.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringMinimumWindowSubstring.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringPermutationinString.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringPermutationinString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringRansomNote.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringRansomNote.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringRegularExpressionMatching.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringRegularExpressionMatching.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringRemoveSpaces.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringRemoveSpaces.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringReplace.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringReplace.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringReverseString.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringReverseString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringUniqueEmailAddresses.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringUniqueEmailAddresses.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TopologicalSortAlienDictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TopologicalSortAlienDictionary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TopologicalSortCourseSchedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TopologicalSortCourseSchedule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TopologicalSortCourseScheduleII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TopologicalSortCourseScheduleII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/Tree$TreeLinkNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/Tree$TreeLinkNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/Tree$TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/Tree$TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/Tree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeAreIdentical.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeAreIdentical.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeBSTInsert.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeBSTInsert.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeBSTPrintInRange.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeBSTPrintInRange.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeBSTPrintPaths.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeBSTPrintPaths.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeBinaryTreeInOrderTraversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeBinaryTreeInOrderTraversal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeBinaryTreeLevelOrderTraversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeBinaryTreeLevelOrderTraversal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeBinaryTreePostoderTraversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeBinaryTreePostoderTraversal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeBinaryTreePreorderTraversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeBinaryTreePreorderTraversal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeBinaryTreeVerticalOrderTraversal$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeBinaryTreeVerticalOrderTraversal$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeBinaryTreeVerticalOrderTraversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeBinaryTreeVerticalOrderTraversal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeBinaryTreeZigZagTraversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeBinaryTreeZigZagTraversal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeConstructBSTfromPreorderTraversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeConstructBSTfromPreorderTraversal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeConstructTreeFromLevelAndInOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeConstructTreeFromLevelAndInOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeConstructTreeFromPostAndInOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeConstructTreeFromPostAndInOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeConstructTreeFromPreAndInOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeConstructTreeFromPreAndInOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeConvertBSTToDoublyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeConvertBSTToDoublyLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeConvertTreeToDoublyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeConvertTreeToDoublyLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeDeleteNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeDeleteNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeDeleteNodeBST.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeDeleteNodeBST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeDiameterOfBT.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeDiameterOfBT.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeFindNearestNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeFindNearestNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeHouseRobberIII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeHouseRobberIII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeInsertNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeInsertNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeInvertTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeInvertTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeIsBST.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeIsBST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeIsBalanced.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeIsBalanced.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeIsSymmetric.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeIsSymmetric.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeLowestCommonAncestor.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeLowestCommonAncestor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeMaxNumDistinctVal.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeMaxNumDistinctVal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeMaxPathSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeMaxPathSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeMaxSumLeafToLeaf.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeMaxSumLeafToLeaf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeMaxSumRootToLeaf.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeMaxSumRootToLeaf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeMinimumDepthOfBT.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeMinimumDepthOfBT.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreePathSumToTargetI.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreePathSumToTargetI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreePathSumToTargetII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreePathSumToTargetII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreePopulatingNextRightPointersInEachNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreePopulatingNextRightPointersInEachNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreePopulatingNextRightPointersInEachNodeII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreePopulatingNextRightPointersInEachNodeII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeReverseTreeUpAndDown.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeReverseTreeUpAndDown.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeUniqueBinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeUniqueBinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeUniqueBinaryTreeII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeUniqueBinaryTreeII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeVerticalOrderSortTraversal$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeVerticalOrderSortTraversal$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeVerticalOrderSortTraversal$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeVerticalOrderSortTraversal$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeVerticalOrderSortTraversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeVerticalOrderSortTraversal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/TreeConvertTreeToDoublyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/TreeConvertTreeToDoublyLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/TreeIsBalanced.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/TreeIsBalanced.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/TreeMaxPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/TreeMaxPathSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/TreePathSumToTargetII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/TreePathSumToTargetII.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,9 +339,12 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
   </component>
-  <component name="RunManager" selected="Application.ArrayMergeSort">
+  <component name="RunManager" selected="Application.TreeConvertTreeToDoublyLinkedList">
     <configuration name="ArrayMergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.ArrayMergeSort" />
       <module name="leetcode" />
@@ -103,8 +371,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TreeConvertTreeToDoublyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.TreeConvertTreeToDoublyLinkedList" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TreeConvertTreeToDoublyLinkedList" />
         <item itemvalue="Application.ArrayMergeSort" />
         <item itemvalue="Application.Solution" />
       </list>
@@ -124,7 +406,8 @@
       <workItem from="1593953328768" duration="8656000" />
       <workItem from="1594066473440" duration="6261000" />
       <workItem from="1594404685266" duration="64000" />
-      <workItem from="1594404969816" duration="5477000" />
+      <workItem from="1594404969816" duration="5673000" />
+      <workItem from="1594498541719" duration="7428000" />
     </task>
     <task id="LOCAL-00001" summary="move to intellij">
       <created>1593920787802</created>
@@ -133,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593920787802</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="max sum tree node">
+      <created>1594444354516</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1594444354516</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,7 +456,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="move to intellij" />
-    <option name="LAST_COMMIT_MESSAGE" value="move to intellij" />
+    <MESSAGE value="max sum tree node" />
+    <option name="LAST_COMMIT_MESSAGE" value="max sum tree node" />
   </component>
   <component name="WindowStateProjectService">
     <state x="738" y="402" key="#Tomcat_Server" timestamp="1593976412613">
@@ -177,33 +468,33 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1593976409237" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1593926557878">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1594511224004">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1593926557878" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1593926557877">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594511224004" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1594511224003">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1593926557877" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1593926557876">
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594511224003" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1594511224003">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1593926557876" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1593926557877">
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594511224003" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1594511224004">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1593926557877" />
-    <state x="461" y="169" key="SettingsEditor" timestamp="1593976711574">
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594511224004" />
+    <state x="524" y="131" key="SettingsEditor" timestamp="1594510303803">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1593976711574" />
+    <state x="524" y="131" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1594510303803" />
     <state x="519" y="135" key="new project wizard" timestamp="1593998773791">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="519" y="135" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1593998773791" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1594411196253">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1594503716931">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1594411196253" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1594503716931" />
   </component>
 </project>

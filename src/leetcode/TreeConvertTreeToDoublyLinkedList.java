@@ -4,9 +4,9 @@ import leetcode.Tree.TreeNode;
 
 public class TreeConvertTreeToDoublyLinkedList {
     //not converted to circle ring
-    TreeNode head = null;
-    TreeNode prev = null;
-    public TreeNode treeToDoublyLinked (TreeNode root) {
+    static TreeNode head = null;
+    static TreeNode prev = null;
+    public static TreeNode treeToDoublyLinked (TreeNode root) {
         if (root == null) {
             return root;
         }
@@ -18,8 +18,9 @@ public class TreeConvertTreeToDoublyLinkedList {
         */
         return head;
     }
-    public void convert (TreeNode node) {
+    public static void convert (TreeNode node) {
         if (node != null) {
+            convert(node.left);
             if (prev == null) {
                 head = node;
             }
@@ -28,6 +29,20 @@ public class TreeConvertTreeToDoublyLinkedList {
                 prev.right = node;
             }
             prev = node;
+            convert(node.right);
+        }
+    }
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(10);
+        root.left = new TreeNode(12);
+        root.right = new TreeNode(15);
+        root.left.left = new TreeNode(25);
+        root.left.right = new TreeNode(30);
+        root.right.left = new TreeNode(36);
+        TreeNode head = treeToDoublyLinked(root);
+        while (head != null) {
+            System.out.println((head.left == null ? "null" : head.left.val) + " <==> " + head.val + " <==> " + (head.right == null ? "null" : head.right.val));
+            head = head.right;
         }
     }
 }

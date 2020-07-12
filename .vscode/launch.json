@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TreeConvertTreeToDoublyLinkedList",
+            "request": "launch",
+            "mainClass": "leetcode.TreeConvertTreeToDoublyLinkedList",
+            "projectName": "leetcode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LinkedListDeepCopyWithRandomNode",
             "request": "launch",
             "mainClass": "leetcode.LinkedListDeepCopyWithRandomNode",

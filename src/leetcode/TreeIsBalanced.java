@@ -8,17 +8,17 @@ public class TreeIsBalanced {
         if (root == null){
             return true;
         }
-        else if (Math.abs(getheight(root.left) - getheight(root.right)) > 1){
+        else if (Math.abs(getTheheight(root.left) - getTheheight(root.right)) > 1){
             return false;
         }
         return isBalanced(root.left) && isBalanced(root.right);
     }
-    private int getheight(TreeNode root){
+    private int getTheheight(TreeNode root){
         if (root == null){
             return 0;
         }
         else {
-            return Math.max(getheight(root.left), getheight(root.right)) + 1;
+            return Math.max(getTheheight(root.left), getTheheight(root.right)) + 1;
         }
     }
     // O(n) solution
