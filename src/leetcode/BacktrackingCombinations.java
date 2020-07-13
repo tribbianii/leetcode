@@ -3,8 +3,29 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-//find all possible combinations consisted with k numbers from 1 to n, no duplicated numbers in combination and different order doesn't counts
 public class BacktrackingCombinations {
+    //given an array with no duplicated integers, print all combinations of k elements picked from array
+    //The first method is THE BEST
+    public List<List<Integer>> combinations(int[] nums, int k) {
+        List<List<Integer>> res = new ArrayList<List<Integer>>();
+        dfs(nums, res, new ArrayList<Integer>(), 0, k);
+        return  res;
+    }
+
+    public void dfs(int[] nums, List<List<Integer>> res, ArrayList<Integer> combin, int index, int needed) {
+        if(needed == 0) {
+            res.add(new ArrayList<Integer>(combin));
+            return;
+        }
+        if (needed > nums.length - index) {
+            return;
+        }
+        combin.add(nums[index]);
+        dfs(nums, res, combin, index + 1, needed - 1);
+        combin.remove(combin.size()-1);
+        dfs(nums, res, combin, index + 1, needed);
+    }
+    //find all possible combinations consisted with k numbers from 1 to n, no duplicated numbers in combination and different order doesn't counts
     public List<List<Integer>> Combinations(int n, int k){
         List<List<Integer>> res = new ArrayList<List<Integer>>();
         if (n<k||n<=0||k<=0){
