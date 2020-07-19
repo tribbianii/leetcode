@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - BFSDFSGymPutChair",
+            "request": "launch",
+            "mainClass": "leetcode.BFSDFSGymPutChair",
+            "projectName": "leetcode"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TreeConvertTreeToDoublyLinkedList",
             "request": "launch",
             "mainClass": "leetcode.TreeConvertTreeToDoublyLinkedList",

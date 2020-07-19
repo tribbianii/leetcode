@@ -7,48 +7,65 @@ import java.util.Deque;
 
 public class BFSDFSGenerateParenthesesII {
     //Get all valid permutations of l pairs of (), m pairs of <> and n pairs of {}
-    public List<String> validParentheses(int l, int m, int n) {
+    public static List<String> generateValidParentheses(int l, int m, int n) {
         ArrayList<String> res = new ArrayList<String>();
         Deque<Character> stack = new ArrayDeque<>();
-        dfs(res, stack, "", 2 * (l + m + n), l, l, m, m, n, n);
+        dfs(res, stack, new StringBuilder(), 2 * (l + m + n), new int[]{l, m, n}, new int[]{l, m, n});
         return res;
     }
 
-    private void dfs(ArrayList<String> res, Deque<Character> stack, String str, int len, int l_l, int l_r, int m_l,
-            int m_r, int n_l, int n_r) {
-        if (str.length() == len) {
-            res.add(str);
+    private static void dfs(ArrayList<String> res, Deque<Character> stack, StringBuilder str, int len, int[] lefts, int[] rights) {
+        if (len == 0) {
+            res.add(new String(str));
             return;
         }
-        if (l_l > 0) {
+        if (lefts[0] > 0) {
             stack.push('(');
-            dfs(res, stack, str + '(', len, l_l - 1, l_r, m_l, m_r, n_l, n_r);
+            lefts[0] --;
+            dfs(res, stack, str.append('('), len - 1, lefts, rights);
+            str.deleteCharAt(str.length() - 1);
+            lefts[0] ++;
             stack.pop();
         }
-        if (m_l > 0) {
+        if (lefts[1] > 0) {
             stack.push('<');
-            dfs(res, stack, str + '<', len, l_l, l_r, m_l - 1, m_r, n_l, n_r);
+            lefts[1] --;
+            dfs(res, stack, str.append('<'), len - 1, lefts, rights);
+            str.deleteCharAt(str.length() - 1);
+            lefts[1] ++;
             stack.pop();
         }
-        if (n_l > 0) {
+        if (lefts[2] > 0) {
             stack.push('{');
-            dfs(res, stack, str + '{', len, l_l, l_r, m_l, m_r, n_l - 1, n_r);
+            lefts[2] --;
+            dfs(res, stack, str.append('{'), len - 1, lefts, rights);
+            str.deleteCharAt(str.length() - 1);
+            lefts[2] ++;
             stack.pop();
         }
         if (!stack.isEmpty()) {
-            if (l_r > 0 && stack.peek() == '(') {
+            if (rights[0] > 0 && stack.peek() == '(') {
                 stack.pop();
-                dfs(res, stack, str + ")", len, l_l, l_r - 1, m_l, m_r, n_l, n_r);
+                rights[0] --;
+                dfs(res, stack, str.append(')'), len - 1, lefts, rights);
+                str.deleteCharAt(str.length() - 1);
+                rights[0] ++;
                 stack.push('(');
             }
-            if (m_r > 0 && stack.peek() == '<') {
+            if (rights[1] > 0 && stack.peek() == '<') {
                 stack.pop();
-                dfs(res, stack, str + ">", len, l_l, l_r, m_l, m_r - 1, n_l, n_r);
+                rights[1] --;
+                dfs(res, stack, str.append('>'), len - 1, lefts, rights);
+                str.deleteCharAt(str.length() - 1);
+                rights[1] ++;
                 stack.push('<');
             }
-            if (n_r > 0 && stack.peek() == '{') {
+            if (rights[2] > 0 && stack.peek() == '{') {
                 stack.pop();
-                dfs(res, stack, str + "}", len, l_l, l_r, m_l, m_r, n_l, n_r - 1);
+                rights[2] --;
+                dfs(res, stack, str.append('}'), len - 1, lefts, rights);
+                str.deleteCharAt(str.length() - 1);
+                rights[2] ++;
                 stack.push('{');
             }
         }

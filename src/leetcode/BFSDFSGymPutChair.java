@@ -10,9 +10,13 @@ import java.util.PriorityQueue;
 class BFSDFSGymPutChair {
     public static void main(String[] args) {
         int[] res = chairPos();
-        System.out.println("Put chair at [" + res[0] + ", " + res[1] + "], total distance: " + res[2]);
+        if (res[2] == Integer.MAX_VALUE) {
+            System.out.println("Unreachable equipment exists");
+        } else {
+            System.out.println("Put chair at [" + res[0] + ", " + res[1] + "], total distance: " + res[2]);
+        }
     }
-    
+
     public static int[][] gym = new int[][]{{1, 2, 1, 0, 1},
     /* 1: vacancy */                        {1, 0, 1, 1, 2},
     /* 2: equipment */                      {1, 1, 0, 1, 1},
@@ -30,9 +34,9 @@ class BFSDFSGymPutChair {
         for (int i = 0; i < distances.length; i ++) {
             for (int j = 0; j < distances[0].length; j ++) {
                 if (gym[i][j] == 1 && distances[i][j] < res[2]) {
-                    res[0] = i;
-                    res[1] = j;
-                    res[2] = distances[i][j];
+                    res[0] = i;                 // chair row
+                    res[1] = j;                 // chair col
+                    res[2] = distances[i][j];   // total distance
                 }
             }
         }
@@ -79,23 +83,26 @@ class BFSDFSGymPutChair {
             if (!visited[x][y]) {
                 visited[x][y] = true;
                 unvisited --;
-                if (gym[x][y] == 0) {
+                // if obstacle || unreachable vacancy || unreachable equipment
+                if (gym[x][y] == 0 || distances[x][y] == Integer.MAX_VALUE || distance == Integer.MAX_VALUE) {
                     distances[x][y] = Integer.MAX_VALUE;
+                    distance = Integer.MAX_VALUE;
                 } else {
                     distances[x][y] += distance;
-                    if (x + 1 < gym.length && !visited[x + 1][y]) {
-                        pq.offer(new Station(curr.row + 1, curr.col, distance + 1));
-                    }
-                    if (x - 1 >= 0 && !visited[x - 1][y]) {
-                        pq.offer(new Station(curr.row - 1, curr.col, distance + 1));
-                    }
-                    if (y + 1 < gym[0].length && !visited[x][y + 1]) {
-                        pq.offer(new Station(curr.row, curr.col + 1, distance + 1));
-                    }
-                    if (y - 1 >= 0 && !visited[x][y - 1]) {
-                        pq.offer(new Station(curr.row, curr.col - 1, distance + 1));
-                    }  
-                }  
+                }
+                int new_distance = distance == Integer.MAX_VALUE ? Integer.MAX_VALUE : distance + 1;
+                if (x + 1 < gym.length && !visited[x + 1][y]) {
+                    pq.offer(new Station(curr.row + 1, curr.col, new_distance));
+                }
+                if (x - 1 >= 0 && !visited[x - 1][y]) {
+                    pq.offer(new Station(curr.row - 1, curr.col, new_distance));
+                }
+                if (y + 1 < gym[0].length && !visited[x][y + 1]) {
+                    pq.offer(new Station(curr.row, curr.col + 1, new_distance));
+                }
+                if (y - 1 >= 0 && !visited[x][y - 1]) {
+                    pq.offer(new Station(curr.row, curr.col - 1, new_distance));
+                }
             }
         }
         System.out.println("distances:");

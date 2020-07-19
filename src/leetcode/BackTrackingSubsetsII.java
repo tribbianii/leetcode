@@ -14,21 +14,21 @@ public class BackTrackingSubsetsII {
 			return res;
 		}
         Arrays.sort(nums);
-		helper(nums, res, new ArrayList<Integer>(), 0);
+		dfs(nums, res, new ArrayList<Integer>(), 0);
         return res;
 	}
-	public void helper(int[] nums, ArrayList<List<Integer>> res, ArrayList<Integer> subset, int index){
+	public void dfs(int[] nums, ArrayList<List<Integer>> res, ArrayList<Integer> subset, int index){
 		if (index == nums.length) {
             res.add(new ArrayList<>(subset));
             return;
         }
         subset.add(nums[index]);
-        helper(nums, res, subset, index + 1);
+        dfs(nums, res, subset, index + 1);
         subset.remove(subset.size() - 1);
         while (index < nums.length - 1 && nums[index] == nums[index + 1]) {
             index++;
         }
-        helper(nums, res, subset, index + 1);
+        dfs(nums, res, subset, index + 1);
     }
     //method 2
     public List<List<Integer>> SubsetsII(int[] nums){
