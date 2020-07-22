@@ -27,8 +27,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b1760f-7c04-413d-ab92-0f4e5f14697b" name="Default Changelist" comment="max sum tree node">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/StackAndPQMaxSlidingWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/TopologicalSortAlienDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/TopologicalSortAlienDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/BinarySearchKthSmallestTwoSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/BinarySearchKthSmallestTwoSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/DesignLRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/DesignLRUCache.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,6 +165,8 @@
       <workItem from="1595004980877" duration="8183000" />
       <workItem from="1595105715218" duration="1223000" />
       <workItem from="1595178289493" duration="13191000" />
+      <workItem from="1595256862140" duration="8327000" />
+      <workItem from="1595343965656" duration="7142000" />
     </task>
     <task id="LOCAL-00001" summary="move to intellij">
       <created>1593920787802</created>
@@ -259,9 +263,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="519" y="135" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1593998773791" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1595208733241">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1595265003508">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595208733241" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595265003508" />
   </component>
 </project>
