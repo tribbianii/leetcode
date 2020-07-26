@@ -49,6 +49,9 @@ class Solution{
 
 		int[] level = new int[]{1,6,5,7,4,10,9};
 		int[] inorder = new int[]{4,1,10,5,9,6,7};
+		int[] data = new int[]{1,2,3,1,2,3,1,2,3,1,6,5,7,4,10,9};
+		DesignStreamFirstNonRepeating fnr = new DesignStreamFirstNonRepeating(data);
+		System.out.println(Arrays.toString(fnr.generateFNR()));
 		TreeConstructTreeFromLevelAndInOrder exam = new TreeConstructTreeFromLevelAndInOrder();
 		System.out.println(exam.reconstruct(inorder, level).val);
 	}

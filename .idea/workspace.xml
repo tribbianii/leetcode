@@ -27,10 +27,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b1760f-7c04-413d-ab92-0f4e5f14697b" name="Default Changelist" comment="max sum tree node">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/StackAndPQMaxSlidingWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/ArraySmallerNumsBehind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/DPLongestCommonSubSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/DPLongestCommonSubString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/DPPickPizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/DesignStreamFirstNonRepeating.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/BinarySearchKthSmallestTwoSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/BinarySearchKthSmallestTwoSortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/DesignLRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/DesignLRUCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayFindCommonEle.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayFindCommonEle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSGenerateParenthesesII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSGenerateParenthesesII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSGymPutChair$Station.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSGymPutChair$Station.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSGymPutChair.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSGymPutChair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchKthSmallestTwoSortedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchKthSmallestTwoSortedArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchLongestIncreasingSubsequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchLongestIncreasingSubsequence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BitManipulationMaximumProductOfWordLengths$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BitManipulationMaximumProductOfWordLengths$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BitManipulationMaximumProductOfWordLengths.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BitManipulationMaximumProductOfWordLengths.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DesignLRUCache$DListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DesignLRUCache$DListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DesignLRUCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DesignLRUCache.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MathFourSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MathFourSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MathThreeSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MathThreeSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQLargestRectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQLargestRectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQMaxSlidingWindow$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQMaxSlidingWindow$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQMaxSlidingWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQMaxSlidingWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TopologicalSortAlienDictionary$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TopologicalSortAlienDictionary$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/TopologicalSortAlienDictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TopologicalSortAlienDictionary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/ArrayMergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/ArrayMergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/BinarySearchLongestIncreasingSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/BinarySearchLongestIncreasingSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,9 +88,9 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.BFSDFSGymPutChair">
+  <component name="RunManager" selected="Application.ArraySmallerNumsBehind">
     <configuration name="ArrayMergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.ArrayMergeSort" />
       <module name="leetcode" />
@@ -81,8 +104,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BFSDFSGenerateParenthesesII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.BFSDFSGenerateParenthesesII" />
+    <configuration name="ArraySmallerNumsBehind" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.ArraySmallerNumsBehind" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
@@ -107,8 +130,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BacktrackingCombinations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.BacktrackingCombinations" />
+    <configuration name="DPPickPizza" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.DPPickPizza" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
@@ -120,8 +143,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TreeConvertTreeToDoublyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.TreeConvertTreeToDoublyLinkedList" />
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.Solution" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
@@ -135,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BFSDFSGymPutChair" />
-        <item itemvalue="Application.BFSDFSGenerateParenthesesII" />
-        <item itemvalue="Application.BacktrackingCombinations" />
-        <item itemvalue="Application.TreeConvertTreeToDoublyLinkedList" />
+        <item itemvalue="Application.ArraySmallerNumsBehind" />
         <item itemvalue="Application.ArrayMergeSort" />
+        <item itemvalue="Application.DPPickPizza" />
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.BFSDFSGymPutChair" />
       </list>
     </recent_temporary>
   </component>
@@ -167,6 +190,12 @@
       <workItem from="1595178289493" duration="13191000" />
       <workItem from="1595256862140" duration="8327000" />
       <workItem from="1595343965656" duration="7142000" />
+      <workItem from="1595434034701" duration="729000" />
+      <workItem from="1595472229051" duration="1218000" />
+      <workItem from="1595527390989" duration="13729000" />
+      <workItem from="1595551673005" duration="1795000" />
+      <workItem from="1595645381272" duration="687000" />
+      <workItem from="1595694461914" duration="13102000" />
     </task>
     <task id="LOCAL-00001" summary="move to intellij">
       <created>1593920787802</created>
@@ -239,33 +268,33 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1593976409237" />
-    <state width="1877" height="287" key="GridCell.Tab.0.bottom" timestamp="1595134789347">
+    <state width="1877" height="287" key="GridCell.Tab.0.bottom" timestamp="1595717506859">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595134789347" />
-    <state width="1877" height="287" key="GridCell.Tab.0.center" timestamp="1595134789346">
+    <state width="1877" height="287" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1595717506859" />
+    <state width="1877" height="287" key="GridCell.Tab.0.center" timestamp="1595717506858">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595134789346" />
-    <state width="1877" height="287" key="GridCell.Tab.0.left" timestamp="1595134789346">
+    <state width="1877" height="287" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1595717506858" />
+    <state width="1877" height="287" key="GridCell.Tab.0.left" timestamp="1595717506858">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595134789345" />
-    <state width="1877" height="287" key="GridCell.Tab.0.right" timestamp="1595134789346">
+    <state width="1877" height="287" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1595717506858" />
+    <state width="1877" height="287" key="GridCell.Tab.0.right" timestamp="1595717506859">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="287" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595134789346" />
-    <state x="524" y="131" key="SettingsEditor" timestamp="1594510303803">
+    <state width="1877" height="287" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1595717506859" />
+    <state x="524" y="131" key="SettingsEditor" timestamp="1595551498937">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="524" y="131" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1594510303803" />
+    <state x="524" y="131" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1595551498937" />
     <state x="519" y="135" key="new project wizard" timestamp="1593998773791">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="519" y="135" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1593998773791" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1595265003508">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1595531350216">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595265003508" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595531350216" />
   </component>
 </project>

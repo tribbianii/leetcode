@@ -40,7 +40,7 @@ public class ArrayMergeSort{
             return nums;
         }
         //This is where additional space applied
-        int[] copy = Arrays.copyOf(nums, nums.length); 
+        int[] copy = new int[nums.length];
         Sort (nums, copy, 0, nums.length - 1);
         return nums;
     }
@@ -49,13 +49,16 @@ public class ArrayMergeSort{
             return;
         }
         int m = i + (j - i) / 2;
-        sort(nums, copy, i, m);
-        sort(nums, copy, m + 1, j);
+        Sort(nums, copy, i, m);
+        Sort(nums, copy, m + 1, j);
         merge(nums, copy, i, m, j);
     }
     private static void merge(int[] nums, int[] copy, int from, int mid, int end){
         int left = from;
         int right = mid + 1;
+        for (int i = from; i <= end; i ++) {
+            copy[i] = nums[i];
+        }
         while (left <= mid && right <= end){
             nums[from ++] = copy[left] <= copy[right] ? copy[left ++] : copy[right ++];
         }
@@ -64,7 +67,7 @@ public class ArrayMergeSort{
         }
     }
     
-    //one helper funtion version
+    //one helper function version
     public static int[] mergesort (int[] arr) {
         int[] copy = new int[arr.length];
         return sort(copy, arr, 0, arr.length - 1);
