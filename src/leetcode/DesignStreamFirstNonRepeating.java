@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class DesignStreamFirstNonRepeating {
-    class Number {
+    static class Number {
         int value;
         Number next;
         Number prev;

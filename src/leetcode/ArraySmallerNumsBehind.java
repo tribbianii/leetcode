@@ -9,16 +9,15 @@ public class ArraySmallerNumsBehind {
     public static int[] mergeSort(int[] nums){
         int[] backup = Arrays.copyOf(nums, nums.length);
         int[] copy = new int[nums.length];
-        int[] res = new int[nums.length];
         Map<Integer, Integer> map = new HashMap<>();
         for (int num : nums) {
             map.put(num, 0);
         }
         Sort (nums, copy, map,0, nums.length - 1);
         for (int i = 0; i < backup.length; i ++) {
-            res[i] = map.get(backup[i]);
+            copy[i] = map.get(backup[i]);
         }
-        return res;
+        return copy;
     }
     private static void Sort(int[] nums, int[] copy, Map<Integer, Integer> map, int i, int j){
         if (i < j) {

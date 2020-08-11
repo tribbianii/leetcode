@@ -1,6 +1,8 @@
 package leetcode;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 import leetcode.Tree.TreeNode;;
 
@@ -54,6 +56,14 @@ class Solution{
 		System.out.println(Arrays.toString(fnr.generateFNR()));
 		TreeConstructTreeFromLevelAndInOrder exam = new TreeConstructTreeFromLevelAndInOrder();
 		System.out.println(exam.reconstruct(inorder, level).val);
+		boolean end = true;
+		System.out.println(String.valueOf(end));
+		String str = "";
+		Set<String> set = new HashSet<>(Arrays.asList(str.split("\\s+")));
+		for (String st : set) {
+			System.out.println("st: " + st);
+		}
+		System.out.println("set size: " + set.size());
 	}
 
 }
