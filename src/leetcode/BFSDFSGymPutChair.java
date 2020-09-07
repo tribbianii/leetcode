@@ -47,7 +47,7 @@ class BFSDFSGymPutChair {
         switch(item) {
             case "vacancy": code = 1; break;
             case "equipment": code = 2; break;
-            case "obstacle": code = 0; break;
+            default: code = 0; break;
         }
         ArrayList<int[]> pos = new ArrayList<>();
         for (int i = 0; i < gym.length; i ++) {

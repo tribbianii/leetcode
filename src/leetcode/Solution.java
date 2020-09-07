@@ -1,7 +1,9 @@
 package leetcode;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import leetcode.Tree.TreeNode;;
@@ -64,6 +66,13 @@ class Solution{
 			System.out.println("st: " + st);
 		}
 		System.out.println("set size: " + set.size());
+		StringBuilder strr = new StringBuilder("new");
+		List<String> list = new ArrayList<>();
+		change(strr);
+		System.out.println(new String(strr));
+		System.out.println("a = " + (long)Math.ceil((double)100/3 + (double)100/3 + (double)100/3));
 	}
-
+	public static void change(StringBuilder sb) {
+		sb.append("life");
+	}
 }

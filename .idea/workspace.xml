@@ -28,23 +28,15 @@
   <component name="ChangeListManager">
     <list default="true" id="36b1760f-7c04-413d-ab92-0f4e5f14697b" name="Default Changelist" comment="max sum tree node">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayFindCommonEle.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayFindCommonEle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayMergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayMergeSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSGymPutChair$Station.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSGymPutChair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchKthSmallestTwoSortedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchKthSmallestTwoSortedArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/BinarySearchLongestIncreasingSubsequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BinarySearchLongestIncreasingSubsequence.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/DesignLRUCache$DListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DesignLRUCache$DListNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/DesignLRUCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DesignLRUCache.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DesignStreamFirstNonRepeating$Number.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DesignStreamFirstNonRepeating$Number.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/DesignStreamFirstNonRepeating.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DesignStreamFirstNonRepeating.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQLargestRectangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQMaxSlidingWindow$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQMaxSlidingWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/TopologicalSortAlienDictionary$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TopologicalSortAlienDictionary$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/TopologicalSortAlienDictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TopologicalSortAlienDictionary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/ArraySmallerNumsBehind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/ArraySmallerNumsBehind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/DesignStreamFirstNonRepeating.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/DesignStreamFirstNonRepeating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/BFSDFSGymPutChair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/BFSDFSGymPutChair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/DesignLRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/DesignLRUCache.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/TreeBSTPrintInRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/TreeBSTPrintInRange.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,19 +139,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Solution" />
@@ -210,7 +189,13 @@
       <workItem from="1596124941670" duration="82000" />
       <workItem from="1596125059432" duration="1968000" />
       <workItem from="1596224021929" duration="3089000" />
-      <workItem from="1597101587382" duration="1527000" />
+      <workItem from="1597101587382" duration="1655000" />
+      <workItem from="1597192967055" duration="1232000" />
+      <workItem from="1597375693970" duration="653000" />
+      <workItem from="1597630779265" duration="743000" />
+      <workItem from="1597631747262" duration="829000" />
+      <workItem from="1598657176590" duration="75000" />
+      <workItem from="1598657482251" duration="1445000" />
     </task>
     <task id="LOCAL-00001" summary="move to intellij">
       <created>1593920787802</created>
@@ -295,26 +280,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1595010262210" />
+    <state x="640" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1598657209142">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="640" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1598657209142" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1593976409237">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1593976409237" />
-    <state width="937" height="181" key="GridCell.Tab.0.bottom" timestamp="1597101875263">
+    <state width="937" height="181" key="GridCell.Tab.0.bottom" timestamp="1597118214767">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="937" height="181" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597101875263" />
-    <state width="937" height="181" key="GridCell.Tab.0.center" timestamp="1597101875262">
+    <state width="937" height="181" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597118214767" />
+    <state width="937" height="181" key="GridCell.Tab.0.center" timestamp="1597118214766">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="937" height="181" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597101875262" />
-    <state width="937" height="181" key="GridCell.Tab.0.left" timestamp="1597101875261">
+    <state width="937" height="181" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597118214766" />
+    <state width="937" height="181" key="GridCell.Tab.0.left" timestamp="1597118214766">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="937" height="181" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597101875261" />
-    <state width="937" height="181" key="GridCell.Tab.0.right" timestamp="1597101875262">
+    <state width="937" height="181" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597118214766" />
+    <state width="937" height="181" key="GridCell.Tab.0.right" timestamp="1597118214766">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="937" height="181" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597101875262" />
+    <state width="937" height="181" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597118214766" />
     <state x="500" y="176" key="SettingsEditor" timestamp="1595986213950">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -323,10 +312,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="519" y="135" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1593998773791" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1595531350216">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598657588507">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1595531350216" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598657588507" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
