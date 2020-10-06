@@ -1,40 +1,31 @@
 package leetcode;
 
 public class MatrixLongestIncreasingPathInMatrix{
-    public int longestIncreasingPath(int[][] matrix) {
-        if (matrix==null||matrix[0].length==0){
-            return 0;
-        }   
-        int height = matrix.length;
-        int width = matrix[0].length;
-        int[][] dp = new int[height][width];
-        int res = 0;
-        for (int i=0; i<height; i++){
-            for (int j=0; j<width; j++){
-                dp[i][j] = helper(i, j, matrix, height, width, dp);
-                res = Math.max(res,dp[i][j]);
-            }
-        }
-        return res;
-    }
-    public static final int[][] dirs = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
-    //set the increment of x and y for cell to reach its four direction neighbors
-    private int helper(int i, int j, int[][]matrix, int height, int width, int[][]dp){
-        if (dp[i][j]!=0){
-            return dp[i][j];
-            //if not 0, which is computed, just return
-        }
+    public int[][] directions = new int[][]{{1,0},{-1,0},{0,1},{0,-1}};
+    public int longest(int[][] matrix) {
         int max = 1;
-        for(int[] dir: dirs) {
-            int x = i+dir[0], y = j+dir[1];
-            if(x < 0 || x == height || y < 0 || y == width || matrix[x][y] <= matrix[i][j]){
-                continue;
-                //if neighbor out of bound or has value less than or equal with cell, then no need to be considered
+        int[][] dp = new int[matrix.length][matrix[0].length];
+        for (int i = 0; i < matrix.length; i ++) {
+            for (int j = 0; j < matrix[0].length; j ++) {
+                dfs(matrix, dp, i, j);
+                max = Math.max(max, dp[i][j]);
             }
-            int len = 1 + helper(x,y,matrix,height,width,dp);
-            max = Math.max(max, len);
         }
-        dp[i][j] = max;
         return max;
+    }
+    public void dfs(int[][]matrix, int[][]dp, int rowNum, int colNum) {
+        if (dp[rowNum][colNum] != 0) {
+            return;
+        }
+        int maxFromHere = 1;
+        for (int[] dir : directions) {
+            int x = rowNum + dir[0];
+            int y = colNum + dir[1];
+            if (x >= 0 && x < matrix.length && y >= 0 && y < matrix[0].length && matrix[x][y] > matrix[rowNum][colNum]) {
+                dfs(matrix, dp, x, y);
+                maxFromHere = Math.max(maxFromHere, dp[x][y] + 1);
+            }
+        }
+        dp[rowNum][colNum] = maxFromHere;
     }
 }

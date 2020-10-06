@@ -1,10 +1,6 @@
 package leetcode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 import leetcode.Tree.TreeNode;;
 
@@ -71,6 +67,27 @@ class Solution{
 		change(strr);
 		System.out.println(new String(strr));
 		System.out.println("a = " + (long)Math.ceil((double)100/3 + (double)100/3 + (double)100/3));
+		List<Integer> listr = new ArrayList<>();
+		listr.add(1);
+		Map<String, Object> mapp = new HashMap<>();
+		mapp.put("key", listr);
+		System.out.println("value tye: " + mapp.get("key").getClass().toString());
+		System.out.println("component type: " + mapp.get("key").getClass().getComponentType());
+		List<Integer> listrr = null;
+		try {
+			listrr = (List<Integer>)(mapp.get("key"));
+		} catch (Exception e1) {
+			e1.printStackTrace();
+			System.out.println("convert failed");
+		}
+		System.out.println(listrr);
+	  	String id = "ccid-test-x";
+	  	System.out.println(id.contains("-test"));
+	  	StringTextJustification tj = new StringTextJustification();
+	  	String[] words = new String[]{"Science","is","what","we","understand","well","enough","to","explain","to","a","computer.","Art","is","everything","else","we","do"};
+	  	for (String word : tj.fullJustify(words, 20)) {
+			System.out.println(word + " " + word.length());
+		}
 	}
 	public static void change(StringBuilder sb) {
 		sb.append("life");

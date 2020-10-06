@@ -27,16 +27,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b1760f-7c04-413d-ab92-0f4e5f14697b" name="Default Changelist" comment="max sum tree node">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/StringIsPalindromeII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/StringRemoveAdjacentDupCharII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/StringTextJustification.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/DesignLRUCache$DListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DesignLRUCache$DListNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/DesignLRUCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DesignLRUCache.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/DesignStreamFirstNonRepeating$Number.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DesignStreamFirstNonRepeating$Number.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/DesignStreamFirstNonRepeating.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/DesignStreamFirstNonRepeating.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSGymPutChair$Station.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSGymPutChair$Station.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSGymPutChair.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSGymPutChair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixLongestIncreasingPathInMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixLongestIncreasingPathInMatrix.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/BFSDFSGymPutChair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/BFSDFSGymPutChair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/DesignLRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/DesignLRUCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringIsPalindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringIsPalindrome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/MatrixLongestIncreasingPathInMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/MatrixLongestIncreasingPathInMatrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/TreeBSTPrintInRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/TreeBSTPrintInRange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/StringIsPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/StringIsPalindrome.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +68,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
@@ -74,19 +77,6 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Application.Solution">
-    <configuration name="ArrayMergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.ArrayMergeSort" />
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ArraySmallerNumsBehind" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.ArraySmallerNumsBehind" />
       <module name="leetcode" />
@@ -139,13 +129,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StringIsPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.StringIsPalindrome" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.StringIsPalindrome" />
         <item itemvalue="Application.BFSDFSGymPutChair" />
         <item itemvalue="Application.DPPickPizza" />
         <item itemvalue="Application.ArraySmallerNumsBehind" />
-        <item itemvalue="Application.ArrayMergeSort" />
       </list>
     </recent_temporary>
   </component>
@@ -196,6 +210,16 @@
       <workItem from="1597631747262" duration="829000" />
       <workItem from="1598657176590" duration="75000" />
       <workItem from="1598657482251" duration="1445000" />
+      <workItem from="1600832042981" duration="2002000" />
+      <workItem from="1600836294433" duration="39000" />
+      <workItem from="1600838961922" duration="387000" />
+      <workItem from="1600876604788" duration="2561000" />
+      <workItem from="1601231975396" duration="8000" />
+      <workItem from="1601488333127" duration="1380000" />
+      <workItem from="1601497567529" duration="12000" />
+      <workItem from="1601739329618" duration="8474000" />
+      <workItem from="1601842814186" duration="4464000" />
+      <workItem from="1601929269465" duration="9959000" />
     </task>
     <task id="LOCAL-00001" summary="move to intellij">
       <created>1593920787802</created>
@@ -288,34 +312,34 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1593976409237" />
-    <state width="937" height="181" key="GridCell.Tab.0.bottom" timestamp="1597118214767">
+    <state width="937" height="181" key="GridCell.Tab.0.bottom" timestamp="1601944116991">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="937" height="181" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1597118214767" />
-    <state width="937" height="181" key="GridCell.Tab.0.center" timestamp="1597118214766">
+    <state width="937" height="181" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1601944116991" />
+    <state width="937" height="181" key="GridCell.Tab.0.center" timestamp="1601944116990">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="937" height="181" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1597118214766" />
-    <state width="937" height="181" key="GridCell.Tab.0.left" timestamp="1597118214766">
+    <state width="937" height="181" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1601944116990" />
+    <state width="937" height="181" key="GridCell.Tab.0.left" timestamp="1601944116990">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="937" height="181" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1597118214766" />
-    <state width="937" height="181" key="GridCell.Tab.0.right" timestamp="1597118214766">
+    <state width="937" height="181" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1601944116990" />
+    <state width="937" height="181" key="GridCell.Tab.0.right" timestamp="1601944116991">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="937" height="181" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1597118214766" />
+    <state width="937" height="181" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1601944116991" />
     <state x="500" y="176" key="SettingsEditor" timestamp="1595986213950">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="500" y="176" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1595986213950" />
-    <state x="519" y="135" key="new project wizard" timestamp="1593998773791">
+    <state x="519" y="135" key="new project wizard" timestamp="1600839112484">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="519" y="135" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1593998773791" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1598657588507">
+    <state x="519" y="135" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1600839112484" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1601753721403">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1598657588507" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1601753721403" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
