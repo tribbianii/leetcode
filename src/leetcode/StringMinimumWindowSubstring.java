@@ -6,76 +6,46 @@ import java.util.List;
 import java.util.Map;
 
 public class StringMinimumWindowSubstring {
-    class Pair {
-        int index;
-        char key;
-        Pair (int num, char ch) {
-            this.index = num;
-            this.key = ch;
-        }
-    }
     public String minWindow(String s, String t) {
-
-        if (s.length() == 0 || t.length() == 0) {
+        if(s == null || s.length() < t.length() || s.length() == 0) {
             return "";
         }
-
-        Map<Character, Integer> dictT = new HashMap<Character, Integer>();
-
-        for (int i = 0; i < t.length(); i++) {
-            int count = dictT.getOrDefault(t.charAt(i), 0);
-            dictT.put(t.charAt(i), count + 1);
-        }
-
-        int required = dictT.size();
-
-        // Filter all the characters from s into a new list along with their index.
-        // The filtering criteria is that the character should be present in t.
-        List<Pair> filteredS = new ArrayList<Pair>();
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            if (dictT.containsKey(c)) {
-                filteredS.add(new Pair(i, c));
+        Map<Character,Integer> map = new HashMap<Character,Integer>();
+        for(char c : t.toCharArray()) {
+            if(map.containsKey(c)){
+                map.put(c, map.get(c) + 1);
+            } else {
+                map.put(c, 1);
             }
         }
-
-        int l = 0, r = 0, formed = 0;
-        Map<Character, Integer> windowCounts = new HashMap<Character, Integer>();  
-        int[] ans = {-1, 0, 0};
-
-        // Look for the characters only in the filtered list instead of entire s.
-        // This helps to reduce our search.
-        // Hence, we follow the sliding window approach on as small list.
-        while (r < filteredS.size()) {
-            char c = filteredS.get(r).key;
-            int count = windowCounts.getOrDefault(c, 0);
-            windowCounts.put(c, count + 1);
-
-            if (dictT.containsKey(c) && windowCounts.get(c).intValue() == dictT.get(c).intValue()) {
-                formed++;
-            }
-
-            // Try and contract the window till the point where it ceases to be 'desirable'.
-            while (l <= r && formed == required) {
-                c = filteredS.get(l).key;
-
-                // Save the smallest window until now.
-                int end = filteredS.get(r).index;
-                int start = filteredS.get(l).index;
-                if (ans[0] == -1 || end - start + 1 < ans[0]) {
-                    ans[0] = end - start + 1;
-                    ans[1] = start;
-                    ans[2] = end;
+        int left = 0;
+        int minLen_left = 0;
+        int minLen = Integer.MAX_VALUE;
+        int count = 0;
+        for(int right = 0; right < s.length(); right ++) {
+            if(map.containsKey(s.charAt(right))) {
+                map.put(s.charAt(right), map.get(s.charAt(right)) - 1);
+                if(map.get(s.charAt(right)) >= 0) {
+                    count ++;
                 }
-
-                windowCounts.put(c, windowCounts.get(c) - 1);
-                if (dictT.containsKey(c) && windowCounts.get(c).intValue() < dictT.get(c).intValue()) {
-                    formed--;
+                while(count == t.length()) {
+                    if(right-left + 1 < minLen) {
+                        minLen_left = left;
+                        minLen = right - left + 1;
+                    }
+                    if(map.containsKey(s.charAt(left))) {
+                        map.put(s.charAt(left), map.get(s.charAt(left)) + 1);
+                        if(map.get(s.charAt(left)) > 0) {
+                            count --;
+                        }
+                    }
+                    left ++ ;
                 }
-                l++;
             }
-            r++;   
         }
-        return ans[0] == -1 ? "" : s.substring(ans[1], ans[2] + 1);
+        if(minLen > s.length()) {
+            return "";
+        }
+        return s.substring(minLen_left,minLen_left + minLen);
     }
 }

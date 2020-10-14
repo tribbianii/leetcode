@@ -36,4 +36,42 @@ public class ArrayRotateMatrix90 {
             System.out.println(Arrays.toString(level));
         }
     }
+    public void rotate(int[][] matrix) {
+        int layer = matrix.length / 2;
+        int layerLen = matrix.length;
+        int upLeft_x = 0;
+        int upLeft_y = 0;
+        int hop = 4;
+        while ((layer --) > 0) {
+            // initialize the starting position as up-left of this layer
+            int curr_y = upLeft_y;
+            for (int i = layerLen; i > 1; i --) {
+                // initialize the first hop position
+                int next_x = curr_y;
+                int next_y = matrix.length - upLeft_x - 1;
+                // back up the current position value
+                int backup = matrix[upLeft_x][curr_y];
+                // hop 4 times
+                while ((hop --) > 0) {
+                    // replace the hop position with backup value
+                    // update backup value
+                    int temp = matrix[next_x][next_y];
+                    matrix[next_x][next_y] = backup;
+                    backup = temp;
+                    // determine the next hop position
+                    int x_temp = next_x;
+                    next_x = next_y;
+                    next_y = matrix.length - x_temp - 1;
+                }
+                // after 4 times hop, move to next position of this layer
+                curr_y ++;
+                hop = 4;
+            }
+            // elements number decrease by 2 as layer goes deeper
+            layerLen -= 2;
+            // up-left position changes as layer changes
+            upLeft_x ++;
+            upLeft_y ++;
+        }
+    }
 }

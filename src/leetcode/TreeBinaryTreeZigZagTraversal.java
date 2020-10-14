@@ -10,29 +10,28 @@ import leetcode.Tree.TreeNode;
 public class TreeBinaryTreeZigZagTraversal {
     // odd line from left to right
     // even line from right to left
-    public static List<Integer> ZigZag(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
+    public static List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        List<List<Integer>> res = new ArrayList<>();
+        if (root == null) {
+            return res;
+        }
         Deque<TreeNode> deque = new ArrayDeque<>();
-        deque.offerFirst(root);
-        int sign = 0;
+        deque.offerLast(root);
+        boolean toRight = true;
         while (!deque.isEmpty()) {
+            List<Integer> level = new ArrayList<>();
             int size = deque.size();
-            if (sign == 0) {
-                for (int i = 0; i < size; i ++) {
-                    TreeNode node = deque.pollFirst();
-                    res.add(node.val);
+            for (int i = 0; i < size; i ++) {
+                TreeNode node = toRight ? deque.pollFirst() : deque.pollLast();
+                level.add(node.val);
+                if (toRight) {
                     if (node.left != null) {
                         deque.offerLast(node.left);
                     }
                     if (node.right != null) {
                         deque.offerLast(node.right);
                     }
-                }
-                sign = 1;
-            } else {
-                for (int i = 0; i < size; i ++) {
-                    TreeNode node = deque.pollLast();
-                    res.add(node.val);
+                } else {
                     if (node.right != null) {
                         deque.offerFirst(node.right);
                     }
@@ -40,8 +39,9 @@ public class TreeBinaryTreeZigZagTraversal {
                         deque.offerFirst(node.left);
                     }
                 }
-                sign = 0;
             }
+            toRight = !toRight;
+            res.add(level);
         }
         return res;
     }
@@ -51,6 +51,6 @@ public class TreeBinaryTreeZigZagTraversal {
         root.right = new TreeNode(2);
         root.left.left = new TreeNode(3);
         root.left.right = new TreeNode(4);
-        System.out.println(ZigZag(root));
+        System.out.println(zigzagLevelOrder(root));
     }
 }

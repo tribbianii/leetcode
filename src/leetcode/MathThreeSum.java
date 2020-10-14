@@ -9,26 +9,26 @@ public class MathThreeSum {
     public List<List<Integer>> ThreeSum(int[] num) {
         Arrays.sort(num);
         ArrayList<List<Integer>> res = new ArrayList<List<Integer>>();
-        for (int i = 0; i < num.length-2; i++) {
-            if (i == 0 || (i > 0 && num[i] != num[i-1])) {
-                int lo = i+1;
-                int hi = num.length-1;
-                int sum = 0 - num[i];
+        for (int i = 0; i < num.length - 2; i ++) {
+            if (i == 0 || (i > 0 && num[i] != num[i - 1])) {
+                int lo = i + 1;
+                int hi = num.length - 1;
+                int sum = -num[i];
                 while (lo < hi) {
                     if (num[lo] + num[hi] == sum) {
                         res.add(Arrays.asList(num[i], num[lo], num[hi]));
-                        while (lo < hi && num[lo] == num[lo+1]) {
-                            lo++;
+                        while (lo < hi && num[lo] == num[lo + 1]) {
+                            lo ++;
                         }
-                        while (lo < hi && num[hi] == num[hi-1]) {
-                            hi--;
+                        while (lo < hi && num[hi] == num[hi - 1]) {
+                            hi --;
                         }
-                        lo++;
-                        hi--;
+                        lo ++;
+                        hi --;
                     } else if (num[lo] + num[hi] < sum) {
-                        lo++;
+                        lo ++;
                     } else {
-                        hi--;
+                        hi --;
                     }
                 }
             }

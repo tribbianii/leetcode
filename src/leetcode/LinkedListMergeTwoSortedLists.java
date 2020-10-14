@@ -4,25 +4,23 @@ package leetcode;
 //Output: 1->1->2->3->4->4
 public class LinkedListMergeTwoSortedLists{
     public ListNode mergeTwoLists(ListNode node1, ListNode node2) {
-        if (node1==null||node2==null){
-            return node1==null?node2:node1;
+        if (node1 == null || node2 == null) {
+            return node1 == null ? node2 : node1;
         }
-        ListNode orig = new ListNode(0);
-        ListNode prev = orig;
-        while (node1!=null&&node2!=null){
-            if (node1.val<=node2.val){
-                prev.next = node1;
-                prev = node1;
+        ListNode res = new ListNode(0);
+        ListNode pre = res;
+        while (node1 != null && node2 != null) {
+            if (node1.val <= node2.val) {
+                pre.next = new ListNode(node1.val);
                 node1 = node1.next;
-            }
-            else {
-                prev.next = node2;
-                prev = node2;   
+            } else {
+                pre.next = new ListNode(node2.val);
                 node2 = node2.next;
             }
+            pre = pre.next;
         }
-        prev.next = node1==null?node2:node1;
-        return orig.next;
+        pre.next = node1 == null ? node2 : node1;
+        return res.next;
     }
     //my method
     public ListNode MergeTwoLists(ListNode l1, ListNode l2){

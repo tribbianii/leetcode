@@ -5,28 +5,28 @@ import java.util.Deque;
 
 public class StackAndPQValidParentheses {
     public boolean isValid(String s){
-        if (s.length()==0){
+        if (s.length() == 0){
             return true;
         }
-        if (s.length()%2==1){
+        if (s.length() % 2 == 1){
             return false;
         }
         Deque<Character> stack = new ArrayDeque<>();
-        for (int i=0;i<s.length();i++){
-            if (s.charAt(i)=='('||s.charAt(i)=='['||s.charAt(i)=='{'){
-                stack.push(s.charAt(i));
-            }
-            else if (stack.isEmpty()){
+        for (int i = 0; i < s.length(); i ++){
+            char c = s.charAt(i);
+            if (c == '(' || c == '[' || c == '{') {
+                stack.offerLast(c);
+                continue;
+            } else if (stack.isEmpty()) {
                 return false;
             }
-            else if (s.charAt(i)==')'&&stack.peek()=='('){
-                stack.pop();
-            }
-            else if (s.charAt(i)==']'&&stack.peek()=='['){
-                stack.pop();
-            }
-            else if (s.charAt(i)=='}'&&stack.peek()=='{'){
-                stack.pop();
+            char d = stack.peekLast();
+            if ((c == ')' && d != '(')
+                    || (c == ']' && d != '[')
+                    || (c == '}' && d != '{')) {
+                return false;
+            } else {
+                stack.pollLast();
             }
         }
         return stack.isEmpty();

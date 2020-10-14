@@ -13,7 +13,7 @@ class StringIntegertoEnglishWords {
         String words = "";
         while (num > 0) {
             if (num % 1000 != 0) {
-                words = helper(num % 1000) +THOUSANDS[i] + " " + words;
+                words = lessThanThousand(num % 1000) + THOUSANDS[i] + " " + words;
             }
             num /= 1000;
             i++;
@@ -21,14 +21,15 @@ class StringIntegertoEnglishWords {
         return words.trim();
     }
 
-    private String helper(int num) {
-        if (num == 0) 
+    private String lessThanThousand(int num) {
+        if (num == 0) {
             return "";
-        else if (num < 20)
+        } else if (num < 20) {
             return LESS_THAN_20[num] + " ";
-        else if (num < 100)
-            return TENS[num / 10] + " " + helper(num % 10);
-        else
-            return LESS_THAN_20[num / 100] + " Hundred " + helper(num % 100);
+        } else if (num < 100) {
+            return TENS[num / 10] + " " + lessThanThousand(num % 10);
+        } else {
+            return LESS_THAN_20[num / 100] + " Hundred " + lessThanThousand(num % 100);
+        }
     }
 }

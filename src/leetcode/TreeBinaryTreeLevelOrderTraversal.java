@@ -10,27 +10,24 @@ import leetcode.Tree.TreeNode;
 
 public class TreeBinaryTreeLevelOrderTraversal {
 
-	public List<List<Integer>> BinaryTreeLevelOrderTraversal(TreeNode root) {
-		
-		List<List<Integer>> res = new LinkedList<List<Integer>>();
-		Deque<TreeNode> Level = new ArrayDeque<>();
-		//queue is first-in-first-out, can be replaced with stack with right->left traversal
-		if (root==null) {
+	public List<List<Integer>> levelOrder(TreeNode root) {
+		List<List<Integer>> res = new ArrayList<>();
+		if (root == null) {
 			return res;
 		}
-		Level.offer(root);
-		while (!Level.isEmpty()) {
-			ArrayList<Integer> level = new ArrayList<Integer>();
-			int size = Level.size();
-			//in for loop Level.size() will change due to poll operation so should be stored at first
-			for (int i=0;i<size;i++) {
-				TreeNode node = Level.pollFirst();
+		Deque<TreeNode> deque = new ArrayDeque<>();
+		deque.offerLast(root);
+		while (!deque.isEmpty()) {
+			List<Integer> level = new ArrayList<>();
+			int size = deque.size();
+			for (int i = 0; i < size; i ++) {
+				TreeNode node = deque.pollFirst();
 				level.add(node.val);
-                if (node.left!=null) {
-					Level.offer(node.left);
+				if (node.left != null) {
+					deque.offerLast(node.left);
 				}
-				if (node.right!=null) {
-					Level.offer(node.right);
+				if (node.right != null) {
+					deque.offerLast(node.right);
 				}
 			}
 			res.add(level);
@@ -59,29 +56,6 @@ public class TreeBinaryTreeLevelOrderTraversal {
 	}
 //recursion to store the depth of level and put the value into list
 //if the index deeper than current level, than add a new list and continue inserting
-	public List<List<Integer>> levelOrder(TreeNode root){
-		ArrayList<List<Integer>> res = new ArrayList<List<Integer>>();
-		if (root==null){return res;}
-		Deque<TreeNode> level = new LinkedList<>();
-		level.offer(root);
-		while (!level.isEmpty()){
-			ArrayList<Integer> list = new ArrayList<>();
-			int size = level.size();
-			for (int i=0;i<size;i++){
-				//Note: Deque.poll() to poll the FIRST element
-				TreeNode node = level.poll();
-				list.add(node.val);
-				if (node.left!=null){
-					level.offer(node.left);
-				}
-				if (node.right!=null){
-					level.offer(node.right);
-				}
-			}
-			res.add(new ArrayList<Integer>(list));
-		}
-		return res;
-	}
 }
 
 
