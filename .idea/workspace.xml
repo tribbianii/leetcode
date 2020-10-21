@@ -29,25 +29,24 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36b1760f-7c04-413d-ab92-0f4e5f14697b" name="Default Changelist" comment="text justification">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/MathContainerWithMostWater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/MathIntegerToRoman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/MathRomanToInteger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/StringMostCommonWord.java" afterDir="false" />
+    <list default="true" id="36b1760f-7c04-413d-ab92-0f4e5f14697b" name="Default Changelist" comment="reverse k-nodes">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/ArrayMeetingRoomsII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/BFSDFSCutOffTrees.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/BFSDFSWordSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/BFSDFSWordSearchII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/DPCoinChange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/ArrayRotateMatrix90.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/ArrayRotateMatrix90.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/LinkedListMergeTwoSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/LinkedListMergeTwoSortedLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/LinkedListReverseNodesinKGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/LinkedListReverseNodesinKGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/MathCompareVersionNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/MathCompareVersionNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/MathStringToInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/MathStringToInteger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/MathThreeSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/MathThreeSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/StackAndPQValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/StackAndPQValidParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/StringGroupAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/StringGroupAnagrams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/StringIntegertoEnglishWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/StringIntegertoEnglishWords.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/StringMinimumWindowSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/StringMinimumWindowSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/TreeBinaryTreeLevelOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/TreeBinaryTreeLevelOrderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/TreeBinaryTreeZigZagTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/TreeBinaryTreeZigZagTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/TreeIsSymmetric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/TreeIsSymmetric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/ArrayMedianOfTwoSortedArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/ArrayMedianOfTwoSortedArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/BFSDFSGenerateParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/BFSDFSGenerateParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/BFSDFSNumberOfIslands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/BFSDFSNumberOfIslands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/BFSDFSWordLadder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/BFSDFSWordLadder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/BFSDFSWordLadderII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/BFSDFSWordLadderII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/BackTrackingLetterCOmbinationOfPhoneNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/BackTrackingLetterCOmbinationOfPhoneNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/BinarySearchSearchInRotatedSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/BinarySearchSearchInRotatedSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/MatrixWordSearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/StackAndPQTopKFrequentElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/StackAndPQTopKFrequentElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/StringLongestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/StringLongestPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/TopologicalSortCourseSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/TopologicalSortCourseSchedule.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +235,13 @@
       <workItem from="1602092324166" duration="11866000" />
       <workItem from="1602263545113" duration="3766000" />
       <workItem from="1602438672571" duration="6476000" />
-      <workItem from="1602598227033" duration="15475000" />
+      <workItem from="1602598227033" duration="15594000" />
+      <workItem from="1602691121359" duration="16299000" />
+      <workItem from="1602880813958" duration="699000" />
+      <workItem from="1602956963226" duration="786000" />
+      <workItem from="1603046784150" duration="7311000" />
+      <workItem from="1603117221694" duration="11391000" />
+      <workItem from="1603204664787" duration="13587000" />
     </task>
     <task id="LOCAL-00001" summary="move to intellij">
       <created>1593920787802</created>
@@ -273,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601944185668</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="reverse k-nodes">
+      <created>1602649474564</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602649474564</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,33 +322,26 @@
     <MESSAGE value="dfs combinations" />
     <MESSAGE value="smaller numbers behind" />
     <MESSAGE value="text justification" />
-    <option name="LAST_COMMIT_MESSAGE" value="text justification" />
+    <MESSAGE value="reverse k-nodes" />
+    <option name="LAST_COMMIT_MESSAGE" value="reverse k-nodes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="845" y="387" key="#Notifications" timestamp="1595985225853">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="845" y="387" key="#Notifications/0.0.1920.1050@0.0.1920.1050" timestamp="1595985225853" />
-    <state x="738" y="402" key="#Tomcat_Server" timestamp="1593976412613">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="738" y="402" key="#Tomcat_Server/0.0.1920.1050@0.0.1920.1050" timestamp="1593976412613" />
     <state x="726" y="413" key="#Updates" timestamp="1595964803209">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="726" y="413" key="#Updates/0.0.1920.1050@0.0.1920.1050" timestamp="1595964803209" />
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1595010262210">
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1603222794109">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1595010262210" />
+    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1603222794109" />
     <state x="640" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602018896120">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="640" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602018896120" />
-    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1593976409237">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1593976409237" />
     <state width="937" height="181" key="GridCell.Tab.0.bottom" timestamp="1601959246573">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -357,22 +362,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="500" y="176" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1602189170797" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601944206118">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602649483646">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1601944206118" />
-    <state x="668" y="100" width="583" height="849" key="find.popup" timestamp="1602005292644">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1602649483646" />
+    <state x="668" y="100" width="583" height="849" key="find.popup" timestamp="1602732955242">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="668" y="100" width="583" height="849" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602005292644" />
+    <state x="668" y="100" width="583" height="849" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602732955242" />
     <state x="519" y="135" key="new project wizard" timestamp="1600839112484">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="519" y="135" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1600839112484" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1602640538742">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1603247733145">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1602640538742" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603247733145" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

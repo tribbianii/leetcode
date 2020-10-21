@@ -1,11 +1,6 @@
 package leetcode;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Queue;
+import java.util.*;
 
 public class TopologicalSortCourseSchedule {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
@@ -43,6 +38,42 @@ public class TopologicalSortCourseSchedule {
                 return false;
             }
         }
+        return true;
+    }
+    //dfs method
+    public boolean CanFinish(int numCourses, int[][] prerequisites) {
+        Map<Integer, Set<Integer>> map = new HashMap<>();
+        for (int[] pair: prerequisites) {
+            int pre = pair[1];
+            int sub = pair[0];
+            if (!map.containsKey(pair[1])) {
+                map.put(pair[1], new HashSet<Integer>());
+            }
+            map.get(pair[1]).add(pair[0]);
+        }
+        Map<Integer, Boolean> visited = new HashMap<>();
+        for (int id : map.keySet()) {
+            if(!checkCircle(map, visited, id)) {
+                return false;
+            }
+        }
+        return true;
+    }
+    public boolean checkCircle(Map<Integer, Set<Integer>> map, Map<Integer, Boolean> visited, int id) {
+        if (visited.containsKey(id)) {
+            return visited.get(id);
+        }
+        if (!map.containsKey(id)) {
+            visited.put(id, true);
+            return true;
+        }
+        visited.put(id, false);
+        for (int pre : map.get(id)) {
+            if (!checkCircle(map, visited, pre)) {
+                return false;
+            }
+        }
+        visited.put(id, true);
         return true;
     }
 }

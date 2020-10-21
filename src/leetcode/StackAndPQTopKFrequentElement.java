@@ -8,46 +8,34 @@ import java.util.ArrayList;
 import java.util.Comparator;
 
 public class StackAndPQTopKFrequentElement {
-    public class pair{
-        int num;
-        int fre;
-        pair(int number, int frequency){
-            num = number;
-            fre = frequency;
-        }
-    }
-    class PairComparator implements Comparator<pair>{
-        @Override
-        public int compare(pair a, pair b){
-            if (a.fre == b.fre) {
-                return 0;
+    public int[] topKFrequent(int[] nums, int k) {
+        int[] res = new int[k];
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int num : nums){
+            if (!map.containsKey(num)){
+                map.put(num, 0);
             }
-            return a.fre > b.fre ? 1 : -1;
-            //not using "a.fre - b.fre" to avoid overflow like a.fre is WAY greater than b.fre
+            map.put(num, map.get(num) + 1);
         }
-    }
-    public List<Integer> topKFrequent(int[] nums, int k) {
-        ArrayList<Integer> res = new ArrayList<>();
-        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
-        for (int i:nums){
-            if (map.containsKey(i)){
-                map.put(i, map.get(i)+1);
+        PriorityQueue<Map.Entry<Integer, Integer>> pq = new PriorityQueue<>(new Comparator<Map.Entry<Integer, Integer>>() {
+            @Override
+            public int compare(Map.Entry<Integer, Integer> o1, Map.Entry<Integer, Integer> o2) {
+                return Integer.compare(o1.getValue(), o2.getValue());
             }
-            else {
-                map.put(i, 1);
+        });
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            if (pq.size() == k) {
+                if (entry.getValue() > pq.peek().getValue()) {
+                    pq.poll();
+                    pq.offer(entry);
+                }
+                continue;
             }
+            pq.offer(entry);
         }
-        PairComparator cmp = new PairComparator();
-        PriorityQueue<pair> pq = new PriorityQueue<>(cmp);
-        for (int key:map.keySet()){
-            pair p = new pair(key,map.get(key));
-            pq.add(p);
-            if (pq.size()>k){
-                pq.poll();
-            }
-        }
+        int index = 0;
         while (!pq.isEmpty()){
-            res.add(0,pq.poll().num);
+            res[index ++] = pq.poll().getKey();
         }
         return res;
     }

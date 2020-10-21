@@ -1,30 +1,10 @@
 package leetcode;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class BFSDFSGenerateParentheses {
-    public List<String> generateParenthesis(int n) {
-        ArrayList<String> res = new ArrayList<String>();
-        if (n < 1) {
-            return res;
-        }
-        helper(res, "", n, 0, 0);
-        return res;
-    }
-    public void helper (ArrayList<String> res, String sb, int n, int left, int right) {
-        if (left + right == 2 * n) {
-            res.add(sb);
-            return;
-        }
-        if (left < n) {
-            helper(res, sb + "(", n, left + 1, right);
-        }
-        if (right < left) {
-            helper(res, sb + ")", n, left, right + 1);
-        }
-    }
-    /* or use StringBuilder involving classic backtracking
     public List<String> generateParenthesis(int n) {
         ArrayList<String> res = new ArrayList<String>();
         if (n < 1) {
@@ -48,6 +28,6 @@ public class BFSDFSGenerateParentheses {
             helper(res, sb, n, left, right + 1);
             sb.deleteCharAt(sb.length() - 1);
         }
+        Arrays.fill(new boolean[1], false);
     }
-    */
-} 
+}

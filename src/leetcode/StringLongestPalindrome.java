@@ -1,6 +1,41 @@
 package leetcode;
 
 public class StringLongestPalindrome {
+    // My dp method, slower but intuitive
+    public int[] res_index = new int[]{0, 0};
+    public String LongestPalindrome(String s) {
+        boolean[][] valid = new boolean[s.length()][s.length()];
+        boolean[][] visited = new boolean[s.length()][s.length()];
+        for (int i = valid.length - 1; i > 0; i --) {
+            for (int j = 0; j < i; j ++) {
+                if ((i - j) <= (res_index[1] - res_index[0])) {
+                    break;
+                }
+                dfs(s, valid, visited, j, i);
+            }
+        }
+        return s.substring(res_index[0], res_index[1] + 1);
+    }
+    public boolean dfs(String s, boolean[][] valid, boolean[][] visited, int from, int end) {
+        if (visited[from][end]) {
+            return valid[from][end];
+        }
+        if (from >= end) {
+            return true;
+        }
+        if (s.charAt(from) == s.charAt(end) && dfs(s, valid, visited, from + 1, end - 1)) {
+            valid[from][end] = true;
+        }
+        if (valid[from][end]) {
+            if ((end - from) > (res_index[1] - res_index[0])) {
+                res_index[0] = from;
+                res_index[1] = end;
+            }
+        }
+        visited[from][end] = true;
+        return valid[from][end];
+    }
+    // optimal solution
     public String longestPalindrome(String s) {
         if (s == null || s.length() <= 1) {
             return s;
