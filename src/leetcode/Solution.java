@@ -88,6 +88,16 @@ class Solution{
 	  	for (String word : tj.fullJustify(words, 20)) {
 			System.out.println(word + " " + word.length());
 		}
+		Queue<TreeNode> q = new LinkedList<>();
+	  	q.offer(null);
+	  	String strrr = "null:null1|null:null2";
+	  	String[] strarr = strrr.split("\\|");
+	  	for (String dob : strarr) {
+			System.out.println("splited: " +  dob.split(":")[0]);
+		}
+	  	String empt = "";
+	  	List<String> emp = Arrays.asList(empt.split(","));
+		System.out.println("this is" + new ArrayList<String>().size() + ".");
 	}
 	public static void change(StringBuilder sb) {
 		sb.append("life");

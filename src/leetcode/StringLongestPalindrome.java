@@ -1,5 +1,7 @@
 package leetcode;
 
+import org.jetbrains.annotations.NotNull;
+
 public class StringLongestPalindrome {
     // My dp method, slower but intuitive
     public int[] res_index = new int[]{0, 0};
@@ -16,7 +18,7 @@ public class StringLongestPalindrome {
         }
         return s.substring(res_index[0], res_index[1] + 1);
     }
-    public boolean dfs(String s, boolean[][] valid, boolean[][] visited, int from, int end) {
+    public boolean dfs(String s, boolean[][] valid, boolean[] @NotNull [] visited, int from, int end) {
         if (visited[from][end]) {
             return valid[from][end];
         }
