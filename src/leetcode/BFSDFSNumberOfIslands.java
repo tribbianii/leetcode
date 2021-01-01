@@ -53,4 +53,32 @@ public class BFSDFSNumberOfIslands{
         dfs(i-1, j, grid, visited, true);
         dfs(i, j-1, grid, visited, true);
     }
+    //following is for max island area
+    public int maxArea = 0;
+    public int maxAreaOfIsland(char[][] grid) {
+        if (grid==null || grid.length==0){
+            return 0;
+        }
+        num = 0;
+        boolean[][] visited = new boolean[grid.length][grid[0].length];
+        for (int i = 0; i < grid.length; i ++){
+            for (int j = 0; j < grid[0].length; j ++){
+                dfs(i, j, grid, visited);
+            }
+        }
+        return num;
+    }
+    public int Dfs(int i, int j, char[][]grid, boolean[][] visited){
+        if (i < 0 || j < 0 || i >= grid.length || j >= grid[0].length || grid[i][j] == '0' || visited[i][j]){
+            return 0;
+        }
+        visited[i][j] = true;
+        int down = Dfs(i + 1, j, grid, visited);
+        int right = Dfs(i, j + 1, grid, visited);
+        int up = Dfs(i - 1, j, grid, visited);
+        int left = Dfs(i, j - 1, grid, visited);
+        int area = up + down + left + right + 1;
+        maxArea = Math.max(area, maxArea);
+        return area;
+    }
 }

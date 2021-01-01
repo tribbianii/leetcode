@@ -29,12 +29,25 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36b1760f-7c04-413d-ab92-0f4e5f14697b" name="Default Changelist" comment="word search">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/DPMinDifficultyOfJobSchedule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/DesignMaxFrequencyStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/DesignMedianOfDataStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/DesignTicTacToe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/StringPartitionLabels.java" afterDir="false" />
+    <list default="true" id="36b1760f-7c04-413d-ab92-0f4e5f14697b" name="Default Changelist" comment="minDifficulty of job schedule">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/ArrayFreshPromotion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/ArrayInsertInterval.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/ArrayItemInContainers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/ArrayPrisonCell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/BFSDFSFriendCircles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/BFSDFSRottingOranges.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/DPConcatenatedWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/DPConnectSticks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/DPWildCardMatching.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/DPWordBreakII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/DesignLFUCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/GraphCriticalConnectionsInNetwork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/MathBaseballGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/StackAndPQTurnstile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/StringAnalyzeUserWebsiteVisit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/StringBackSpaceStringCompare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/TreeAllNodesDistanceK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/TreeIsSubtree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayBestTimeToBuyAndSellStock.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayBestTimeToBuyAndSellStock.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/ArrayBestTimeToBuyAndSellStockII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/ArrayBestTimeToBuyAndSellStockII.class" afterDir="false" />
@@ -78,6 +91,8 @@
       <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSExpressionAddOperators.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSExpressionAddOperators.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSGenerateParentheses.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSGenerateParentheses.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSGenerateParenthesesII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSGenerateParenthesesII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSGymPutChair$Station.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSGymPutChair$Station.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSGymPutChair.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSGymPutChair.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSNQueens.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSNQueens.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSNearestSumCombin.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSNearestSumCombin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/BFSDFSNinetyNineCent.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/BFSDFSNinetyNineCent.class" afterDir="false" />
@@ -219,6 +234,7 @@
       <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixKthSmallestElementInSortedMatrix$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixKthSmallestElementInSortedMatrix$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixKthSmallestElementInSortedMatrix$cell.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixKthSmallestElementInSortedMatrix$cell.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixKthSmallestElementInSortedMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixKthSmallestElementInSortedMatrix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixLongestIncreasingPathInMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixLongestIncreasingPathInMatrix.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixSearch2DMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixSearch2DMatrix.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixSearch2DMatrixII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixSearch2DMatrixII.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixSetMatrixZeroes.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixSetMatrixZeroes.class" afterDir="false" />
@@ -228,7 +244,6 @@
       <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixSpiralMatrixII.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixSpiralMatrixII.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixSudokuSolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixSudokuSolver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixValidSudoku.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MatrixValidSudoku.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/MatrixWordSearch.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/MinHeap.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MinHeap.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/MyHashMap$Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MyHashMap$Pair.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/MyHashMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/MyHashMap.class" afterDir="false" />
@@ -247,8 +262,6 @@
       <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQMinStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQMinStack.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQSimplifyPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQSimplifyPath.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQSkylineProblem.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQSkylineProblem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQTopKFrequentElement$PairComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQTopKFrequentElement$pair.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQTopKFrequentElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQTopKFrequentElement.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQTopKFrequentWords$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQTopKFrequentWords$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/StackAndPQTopKFrequentWords$Word.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StackAndPQTopKFrequentWords$Word.class" afterDir="false" />
@@ -265,13 +278,13 @@
       <change beforePath="$PROJECT_DIR$/bin/leetcode/StringILoveGoogle.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringILoveGoogle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/StringImplementStr.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringImplementStr.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/StringIntegertoEnglishWords.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringIntegertoEnglishWords.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringIsPalindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringIsPalindrome.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/StringLengthOfLastWord.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringLengthOfLastWord.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/StringLongestCommonPrefix.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringLongestCommonPrefix.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/StringLongestPalindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringLongestPalindrome.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/StringLongestSubstringWithoutRepeatingCharater.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringLongestSubstringWithoutRepeatingCharater.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/StringLongestValidParentheses.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringLongestValidParentheses.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/StringMinRemoveToValid.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringMinRemoveToValid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/leetcode/StringMinimumWindowSubstring$Pair.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/StringMinimumWindowSubstring.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringMinimumWindowSubstring.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/StringPermutationinString.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringPermutationinString.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/StringRansomNote.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/StringRansomNote.class" afterDir="false" />
@@ -332,12 +345,11 @@
       <change beforePath="$PROJECT_DIR$/bin/leetcode/TreeVerticalOrderSortTraversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/TreeVerticalOrderSortTraversal.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/Trie$TrieNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/Trie$TrieNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/leetcode/Trie.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/leetcode/Trie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/DPWordBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/DPWordBreak.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/DesignSerializeandDeserializeBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/DesignSerializeandDeserializeBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/BFSDFSNumberOfIslands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/BFSDFSNumberOfIslands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/BFSDFSWordLadderII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/BFSDFSWordLadderII.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/StackAndPQMinStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/StackAndPQMinStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/StringLongestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/StringLongestPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/TopologicalSortAlienDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/TopologicalSortAlienDictionary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -372,27 +384,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/ood" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="shared-indexes" />
   </component>
   <component name="RunManager" selected="Application.Solution">
-    <configuration name="ArraySmallerNumsBehind" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.ArraySmallerNumsBehind" />
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BFSDFSGymPutChair" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.BFSDFSGymPutChair" />
       <module name="leetcode" />
@@ -432,6 +437,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StackAndPQTurnstile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.StackAndPQTurnstile" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StringIsPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.StringIsPalindrome" />
       <module name="leetcode" />
@@ -448,10 +466,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.StackAndPQTurnstile" />
         <item itemvalue="Application.StringIsPalindrome" />
         <item itemvalue="Application.BFSDFSGymPutChair" />
         <item itemvalue="Application.DPPickPizza" />
-        <item itemvalue="Application.ArraySmallerNumsBehind" />
       </list>
     </recent_temporary>
   </component>
@@ -534,7 +552,37 @@
       <workItem from="1604685188461" duration="1421000" />
       <workItem from="1605802507727" duration="6612000" />
       <workItem from="1605934809246" duration="2066000" />
-      <workItem from="1606017544796" duration="3055000" />
+      <workItem from="1606017544796" duration="3414000" />
+      <workItem from="1606069481880" duration="2653000" />
+      <workItem from="1606154519284" duration="12975000" />
+      <workItem from="1606360298707" duration="247000" />
+      <workItem from="1606360770378" duration="1380000" />
+      <workItem from="1606610119742" duration="18000" />
+      <workItem from="1606610178198" duration="18135000" />
+      <workItem from="1606682344968" duration="1742000" />
+      <workItem from="1606762066306" duration="1378000" />
+      <workItem from="1606882394016" duration="1173000" />
+      <workItem from="1606884650171" duration="3462000" />
+      <workItem from="1606960269012" duration="4423000" />
+      <workItem from="1607016946635" duration="4081000" />
+      <workItem from="1607101499413" duration="827000" />
+      <workItem from="1607132606410" duration="642000" />
+      <workItem from="1607225516083" duration="114000" />
+      <workItem from="1607226801196" duration="62000" />
+      <workItem from="1607281021465" duration="2335000" />
+      <workItem from="1607354913781" duration="5678000" />
+      <workItem from="1607470655336" duration="3755000" />
+      <workItem from="1607534943905" duration="2882000" />
+      <workItem from="1607630279494" duration="2017000" />
+      <workItem from="1607720554426" duration="2978000" />
+      <workItem from="1607735232106" duration="2055000" />
+      <workItem from="1607785448942" duration="4231000" />
+      <workItem from="1607959851890" duration="7313000" />
+      <workItem from="1608165050471" duration="633000" />
+      <workItem from="1608234026318" duration="601000" />
+      <workItem from="1608477154303" duration="1334000" />
+      <workItem from="1608595116768" duration="2383000" />
+      <workItem from="1609351875593" duration="1386000" />
     </task>
     <task id="LOCAL-00001" summary="move to intellij">
       <created>1593920787802</created>
@@ -585,7 +633,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603251146104</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="minDifficulty of job schedule">
+      <created>1606027762392</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606027762392</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,57 +679,8 @@
     <MESSAGE value="text justification" />
     <MESSAGE value="reverse k-nodes" />
     <MESSAGE value="word search" />
-    <option name="LAST_COMMIT_MESSAGE" value="word search" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1603222794109">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="765" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1603222794109" />
-    <state x="640" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602018896120">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="640" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1602018896120" />
-    <state width="937" height="181" key="GridCell.Tab.0.bottom" timestamp="1605936952397">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="937" height="181" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605936952397" />
-    <state width="937" height="181" key="GridCell.Tab.0.center" timestamp="1605936952396">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="937" height="181" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605936952396" />
-    <state width="937" height="181" key="GridCell.Tab.0.left" timestamp="1605936952395">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="937" height="181" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605936952395" />
-    <state width="937" height="181" key="GridCell.Tab.0.right" timestamp="1605936952396">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="937" height="181" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605936952396" />
-    <state x="500" y="176" key="SettingsEditor" timestamp="1602189170797">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="500" y="176" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1602189170797" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603251156126">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1603251156126" />
-    <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1603285248288">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="664" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1050@0.0.1920.1050" timestamp="1603285248288" />
-    <state x="668" y="100" width="583" height="849" key="find.popup" timestamp="1605816075971">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="668" y="100" width="583" height="849" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605816075971" />
-    <state x="519" y="135" key="new project wizard" timestamp="1600839112484">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="519" y="135" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1600839112484" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1603587601207">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1603587601207" />
+    <MESSAGE value="minDifficulty of job schedule" />
+    <option name="LAST_COMMIT_MESSAGE" value="minDifficulty of job schedule" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

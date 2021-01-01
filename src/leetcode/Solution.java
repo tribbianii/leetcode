@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.*;
 
-import leetcode.Tree.TreeNode;;
+import leetcode.Tree.TreeNode;
 
 class Solution{
 
@@ -90,14 +90,26 @@ class Solution{
 		}
 		Queue<TreeNode> q = new LinkedList<>();
 	  	q.offer(null);
-	  	String strrr = "null:null1|null:null2";
-	  	String[] strarr = strrr.split("\\|");
+	  	String strrr = "|";
+	  	Set<String> strarr = new HashSet<String>(Arrays.asList(strrr.split("\\|")));
 	  	for (String dob : strarr) {
-			System.out.println("splited: " +  dob.split(":")[0]);
+			System.out.println("splited: " + dob);
 		}
 	  	String empt = "";
 	  	List<String> emp = Arrays.asList(empt.split(","));
 		System.out.println("this is" + new ArrayList<String>().size() + ".");
+		List<List<Integer>> listoflist = new ArrayList<>();
+		Collections.sort(listoflist, new Comparator<List<Integer>>() {
+			@Override
+			public int compare(List<Integer> o1, List<Integer> o2) {
+				return 0;
+			}
+		});
+		Set<String> strset = new HashSet<>();
+		Set<String> strrset = new HashSet<>();
+		for (String stri : strset) {
+			System.out.println(strrset.contains(stri));
+		}
 	}
 	public static void change(StringBuilder sb) {
 		sb.append("life");

@@ -181,9 +181,6 @@ public class TopologicalSortAlienDictionary {
                 return "";
             }
         }
-        if (output.length() < reverseAdjList.size()) {
-            return "";
-        }
         return output.toString();
     }
     // Return true if no cycles detected.
@@ -193,8 +190,8 @@ public class TopologicalSortAlienDictionary {
             return seen.get(c); 
         }
         seen.put(c, false);
-        for (Character next : reverseAdjList.get(c)) {
-            boolean result = dfs(next);
+        for (Character prev : reverseAdjList.get(c)) {
+            boolean result = dfs(prev);
             if (!result) {
                 return false;
             }
