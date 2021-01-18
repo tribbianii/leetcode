@@ -32,22 +32,24 @@ public class StackAndPQMaxSlidingWindow {
     }
     // dequeue solution, Time: O(n)
     public int[] MaxSlidingWindow(int[] nums, int k) {
-        int[] res = new int[nums.length - k + 1];
-        Deque<Node> deque = new ArrayDeque<Node>();
-        int res_index = 0;
-        for (int i = 0; i < nums.length; i ++) {
-            int val = nums[i];
-            while (!deque.isEmpty() && deque.peekFirst().value <= val) {
-                deque.pollFirst();
+        int len = nums.length;
+        if (len == 0) {
+            return nums;
+        }
+        int[] result = new int[len - k + 1];
+        Deque<Integer> dq = new ArrayDeque<>();
+        for (int i = 0; i < len; i++) {
+            if (!dq.isEmpty() && dq.peekFirst() < i - k + 1) {
+                dq.pollFirst();
             }
-            if (!deque.isEmpty() && i > (k - 1) && deque.peekLast().index < i - (k - 1)) {
-                deque.pollLast();
+            while (!dq.isEmpty() && nums[i] >= nums[dq.peekLast()]) {
+                dq.pollLast();
             }
-            deque.offerFirst(new Node(val, i));
-            if (i > (k - 2)) {
-                res[res_index ++] = deque.peekLast().value;
+            dq.offerLast(i);
+            if (i >= (k -1)) {
+                result[i - k + 1] = nums[dq.peekFirst()];
             }
         }
-        return res;
+        return result;
     }
 }
