@@ -65,8 +65,7 @@ public class TriePalindromePairs {
         }
         if (backward.endWordIndex >= 0) {
             for (int forwardWordIndex : forward.wordIndexes) {
-                if (backward.endWordIndex != forwardWordIndex &&
-                        isPalindrome(words[forwardWordIndex], forward.level + 1, words[forwardWordIndex].length() - 1)) {
+                if (isPalindrome(words[forwardWordIndex], forward.level + 1, words[forwardWordIndex].length() - 1)) {
                     res.add(Arrays.asList(forwardWordIndex, backward.endWordIndex));
                 }
             }
