@@ -1,6 +1,6 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode;
+
 
 public class TreeMaxPathSum {
     // any node to any node

@@ -1,6 +1,6 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode;
+
 
 class TreeConvertBSTToDoublyLinkedList {
     /*
@@ -32,12 +32,12 @@ class TreeConvertBSTToDoublyLinkedList {
     public void helper (TreeNode node) {
         if (node != null) {
             helper(node.left);
+            if (head == null) {
+                head = node;
+            }
             if (tail != null) {
                 tail.right = node;
                 node.left = tail;
-            }
-            else {
-                head = node;
             }
             tail = node;
             helper(node.right);

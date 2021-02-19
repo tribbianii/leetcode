@@ -1,6 +1,6 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode;
+
 
 //also refered as DP problem
 //houses are tree structured and can't rob adjacently connnected houses(nodes)

@@ -3,7 +3,7 @@ package leetcode;
 import java.util.HashMap;
 import java.util.Map;
 
-import leetcode.Tree.TreeNode;
+
 
 public class TreeConstructTreeFromLevelAndInOrder {
     public TreeNode reconstruct(int[] inOrder, int[] levelOrder) {

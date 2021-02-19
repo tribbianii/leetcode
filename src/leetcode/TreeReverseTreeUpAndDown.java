@@ -1,6 +1,6 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode;
+
 
 public class TreeReverseTreeUpAndDown {
     // tree with all right nodes being leaf nodes

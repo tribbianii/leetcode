@@ -1,7 +1,5 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode;
-
 public class TreeBSTInsert {
     //iterative solution
     public TreeNode insertIntoBST(TreeNode root, int target){

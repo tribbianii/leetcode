@@ -1,6 +1,6 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode;
+
 
 public class TreeIsBalanced {
     // O(n * log(n)) solution

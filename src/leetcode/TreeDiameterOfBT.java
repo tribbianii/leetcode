@@ -1,6 +1,6 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode;
+
 //determine the longest distance from one leaf node to another
 public class TreeDiameterOfBT{
     private int max = 0;

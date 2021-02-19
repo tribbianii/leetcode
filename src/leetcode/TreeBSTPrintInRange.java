@@ -1,6 +1,6 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode;
+
 
 public class TreeBSTPrintInRange {
     public void inRange(TreeNode root, int low, int high){

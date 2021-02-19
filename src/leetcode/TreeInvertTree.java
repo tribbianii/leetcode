@@ -1,6 +1,6 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode;
+
 
 public class TreeInvertTree {
     public TreeNode invertTree(TreeNode root) {

@@ -1,7 +1,5 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode;
-
 import java.util.*;
 
 public class TreeAllNodesDistanceK {

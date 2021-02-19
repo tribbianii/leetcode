@@ -1,6 +1,6 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode;
+
 
 class TreeInsertNode {
     public TreeNode insert (TreeNode root, int target) {

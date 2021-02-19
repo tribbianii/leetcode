@@ -1,7 +1,5 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode;
-
 public class TreeAreIdentical {
     public boolean areIdentical(TreeNode one, TreeNode two){
         if (one==null && two==null){

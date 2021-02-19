@@ -1,6 +1,6 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode;
+
 
 // find the lowest level common ancestor of two given nodes
 // if either of these two nodes doesn't exist, return null

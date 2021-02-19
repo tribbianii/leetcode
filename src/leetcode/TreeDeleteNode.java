@@ -1,6 +1,6 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode;
+
 
 class TreeDeleteNode {
     public TreeNode delete (TreeNode root, int target) {

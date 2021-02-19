@@ -7,11 +7,12 @@ public class ArrayPascalsTriangleII {
     public List<Integer> getRow(int rowIndex) {
         List<Integer> res = new ArrayList<>();
         res.add(1);
-        for (int i = 0; i < rowIndex; i++) {
-            for (int j = 0; j < res.size() - 1; j++) {
-                res.set(j, res.get(j) + res.get(j + 1));
+        if (rowIndex > 0) {
+            List<Integer> lastRow = getRow(rowIndex - 1);
+            for (int i = 0; i < lastRow.size() - 1; i ++) {
+                res.add(lastRow.get(i) + lastRow.get(i + 1));
             }
-            res.add(0, 1);
+            res.add(1);
         }
         return res;
     }

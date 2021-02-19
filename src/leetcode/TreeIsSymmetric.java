@@ -1,21 +1,15 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode;
+
 
 public class TreeIsSymmetric {
     public boolean isSymmetric(TreeNode root) {
-        if (root == null) {
-            return true;
-        }
-        return dfs(root.left, root.right);
+        return  root == null || compare(root.left, root.right);
     }
-    public boolean dfs(TreeNode left, TreeNode right) {
-        if (left == null && right == null){
-            return true;
+    public boolean compare(TreeNode left, TreeNode right) {
+        if (left != null && right != null) {
+            return left.val == right.val && compare(left.left, right.right) && compare(left.right, right.left);
         }
-        if (left == null || right == null){
-            return false;
-        }
-        return left.val == right.val && dfs(left.left, right.right) && dfs(left.right, right.left);
+        return left == null && right == null;
     }
 }

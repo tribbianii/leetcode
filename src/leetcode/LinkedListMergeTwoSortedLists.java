@@ -3,6 +3,20 @@ package leetcode;
 //Input: 1->2->4, 1->3->4
 //Output: 1->1->2->3->4->4
 public class LinkedListMergeTwoSortedLists{
+    public ListNode MergeTwoLists(ListNode node1, ListNode node2) {
+        if (node1 != null && node2 != null) {
+            if (node1.val <= node2.val) {
+                node1.next = mergeTwoLists(node1.next, node2);
+                return node1;
+            } else {
+                node2.next = mergeTwoLists(node1, node2.next);
+                return node2;
+            }
+        } else {
+            return node1 != null ? node1 : node2;
+        }
+    }
+    //recursive method
     public ListNode mergeTwoLists(ListNode node1, ListNode node2) {
         if (node1 == null || node2 == null) {
             return node1 == null ? node2 : node1;
@@ -23,16 +37,4 @@ public class LinkedListMergeTwoSortedLists{
         return res.next;
     }
     //my method
-    public ListNode MergeTwoLists(ListNode l1, ListNode l2){
-		if(l1 == null) return l2;
-		if(l2 == null) return l1;
-		if(l1.val < l2.val){
-			l1.next = MergeTwoLists(l1.next, l2);
-			return l1;
-		} else{
-			l2.next = MergeTwoLists(l1, l2.next);
-			return l2;
-		}
-    }
-    //recursive method
 }

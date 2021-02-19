@@ -3,7 +3,7 @@ package leetcode;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import leetcode.Tree.TreeLinkNode;
+
 
 public class TreePopulatingNextRightPointersInEachNodeII {
 

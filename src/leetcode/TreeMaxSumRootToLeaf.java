@@ -1,6 +1,6 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode;
+
 
 class TreeMaxSumRootToLeaf {
     public int maxSumPath (TreeNode root) {

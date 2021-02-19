@@ -45,14 +45,14 @@ public class LinkedListReverseLinkedList{
 
     //recursive idea solve follow-up question
     public static ListNode reverseListBypair(ListNode head){
-        if (head==null || head.next==null){
+        if (head == null || head.next == null) {
             return head;
         }
-        ListNode newhead = reverseListBypair(head.next.next);
-        ListNode temp = head.next;
-        temp.next = head;
-        head.next = newhead;
-        return temp;
+        ListNode nextHead = reverseListBypair(head.next.next);
+        ListNode newHead = head.next;
+        newHead.next = head;
+        head.next = nextHead;
+        return newHead;
     }
     public static void main(String[] args) {
         ListNode one = new ListNode(1);

@@ -1,6 +1,6 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode;
+
 
 public class TreeMinimumDepthOfBT {
     public int minDepth(TreeNode root){

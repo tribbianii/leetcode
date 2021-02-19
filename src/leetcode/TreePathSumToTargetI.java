@@ -1,19 +1,16 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode;
+
 
 class TreePathSumToTargetI {
     //path from root to leaf
-    public boolean exist(TreeNode root, int target) {
+    public boolean hasPathSum(TreeNode root, int targetSum) {
         if (root == null) {
             return false;
+        } else if (root.left == null && root.right == null) {
+            return targetSum == root.val;
+        } else {
+            return hasPathSum(root.left, targetSum - root.val) || hasPathSum(root.right, targetSum - root.val);
         }
-        if (root.left == null && root.right == null) {
-            return root.val == target;
-        }
-        if (root.left != null && root.right != null) {
-            return exist(root.left, target - root.val) || exist(root.right, target - root.val);
-        }
-        return root.left == null ? exist(root.right, target - root.val) : exist(root.left, target - root.val);
-    } 
+    }
 }

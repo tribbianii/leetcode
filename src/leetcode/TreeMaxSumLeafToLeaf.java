@@ -1,6 +1,6 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode;
+
 
 class TreeMaxSumLeafToLeaf { 
     public int max = Integer.MIN_VALUE;

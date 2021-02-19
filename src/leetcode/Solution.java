@@ -2,10 +2,8 @@ package leetcode;
 
 import java.util.*;
 
-import leetcode.Tree.TreeNode;
-
 class Solution{
-
+	static String trythat;
 	public static void main(String[] args) {
 		TreeNode g = new TreeNode(5);
 		TreeNode e = new TreeNode(1);
@@ -95,8 +93,6 @@ class Solution{
 	  	for (String dob : strarr) {
 			System.out.println("splited: " + dob);
 		}
-	  	String empt = "";
-	  	List<String> emp = Arrays.asList(empt.split(","));
 		System.out.println("this is" + new ArrayList<String>().size() + ".");
 		List<List<Integer>> listoflist = new ArrayList<>();
 		Collections.sort(listoflist, new Comparator<List<Integer>>() {
@@ -110,6 +106,15 @@ class Solution{
 		for (String stri : strset) {
 			System.out.println(strrset.contains(stri));
 		}
+		for (char cha = '0'; cha < '9'; cha ++) {
+			System.out.println(cha);
+		}
+		System.out.println(('.' < '0') + ". < 0");
+		String sentence = "I am";
+		char space = sentence.charAt(1);
+		System.out.println("space: " + space + "end");
+		System.out.println("0<<1: " + (0 << 1));
+		System.out.println("1<<1: " + (1 << 2));
 	}
 	public static void change(StringBuilder sb) {
 		sb.append("life");

@@ -1,6 +1,6 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode; 
+
 
 //there can be two valid status with deleted node replaced by
 //either the smallest node among all nodes in deleted.right

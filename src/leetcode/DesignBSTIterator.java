@@ -3,8 +3,6 @@ package leetcode;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-import leetcode.Tree.TreeNode;
-
 class DesignBSTIterator {
     /*    
               ___   end

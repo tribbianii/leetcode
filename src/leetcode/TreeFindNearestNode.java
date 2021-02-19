@@ -1,6 +1,6 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode;
+
 
 class TreeFindNearestNode {
     public TreeNode findNearest (TreeNode root, int target) {

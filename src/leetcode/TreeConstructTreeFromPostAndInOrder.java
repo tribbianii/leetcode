@@ -3,27 +3,26 @@ package leetcode;
 import java.util.HashMap;
 import java.util.Map;
 
-import leetcode.Tree.TreeNode;
+
 
 public class TreeConstructTreeFromPostAndInOrder {
     public TreeNode buildTree(int[] inOrder, int[] postOrder) {
-        Map<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < inOrder.length; i++) {
+        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+        for (int i = 0; i < inOrder.length; i ++) {
             map.put(inOrder[i], i);
         }
-        return construct(inOrder, postOrder, map, inOrder.length - 1, 0, inOrder.length - 1);
+        return construct(inOrder, postOrder, map, postOrder.length - 1, 0, inOrder.length - 1);
     }
-
-    public TreeNode construct(int[] inOrder, int[] postOrder, Map<Integer, Integer> map, int post_curr, int in_left, int in_right) {
-        if (in_left > in_right) {
+    public TreeNode construct(int[] inOrder, int[] postOrder, Map<Integer, Integer> map, int postIndex, int inLeftIndex, int inRightIndex) {
+        if (inLeftIndex > inRightIndex) {
             return null;
         }
-        int val = postOrder[post_curr];
-        int mid = map.get(val);
-        int right_size = in_right - mid;
-        TreeNode node = new TreeNode(val);
-        node.right = construct(inOrder, postOrder, map, post_curr - 1, mid + 1, in_right);
-        node.left = construct(inOrder, postOrder, map, post_curr - right_size - 1, in_left, mid - 1);
-        return node;
+        int rootVal = postOrder[postIndex];
+        int rootIndex = map.get(rootVal);
+        int rightChildrenNum = inRightIndex - rootIndex;
+        TreeNode root = new TreeNode(rootVal);
+        root.right = construct(inOrder, postOrder, map, postIndex - 1, rootIndex + 1, inRightIndex);
+        root.left = construct(inOrder, postOrder, map, postIndex - rightChildrenNum - 1, inLeftIndex, rootIndex - 1);
+        return root;
     }
 }

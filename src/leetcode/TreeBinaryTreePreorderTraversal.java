@@ -6,8 +6,6 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
-import leetcode.Tree.TreeNode;
-
 public class TreeBinaryTreePreorderTraversal {
 	public List<Integer> BinaryTreePreorderTraversal(TreeNode root) {
 		List<Integer> res = new LinkedList<Integer>();

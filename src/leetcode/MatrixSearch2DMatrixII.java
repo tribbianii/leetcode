@@ -2,65 +2,40 @@ package leetcode;
 
 public class MatrixSearch2DMatrixII{
     public boolean searchMatrix(int[][] matrix, int target) {
-        if (matrix==null||matrix.length==0||matrix[0].length==0){
-            return false;
-        }   
-        int height = matrix.length;
-        int width = matrix[0].length;
-        if (target<matrix[0][0] || target>matrix[height-1][width-1]){
+        if (matrix == null || matrix.length == 0) {
             return false;
         }
-        int height_max = search(0,height-1,0,0,matrix,target);
-        if (matrix[height_max][0]==target) {
-            return true;
-        }
-        int width_max = search(0,width-1,1,0,matrix,target);
-        if (matrix[0][width_max]==target) {
-            return true;
-        }
-        for (int i=height_max;i>=0;i--){
-            int j = search(0,width_max,1,i,matrix,target);
-            if (matrix[i][j]==target){
+        int shorterDim = Math.min(matrix.length, matrix[0].length);
+        for (int i = 0; i < shorterDim; i ++) {
+            if (binarySearch(matrix, target, i, true) || binarySearch(matrix, target, i, false)) {
                 return true;
             }
         }
         return false;
     }
-    public int search(int start, int end, int dir, int fixed, int[][]matrix, int target){
-        if (start==end){
-            return start;
-        }
-        if (dir==0){
-            //search matrix[x][0]
-            while (start!=end){
-                int mid = start+(end-start)/2;
-                if (matrix[mid][fixed]==target){
-                    return mid;
+    private boolean binarySearch(int[][] matrix, int target, int start, boolean checkRow) {
+        int lo = start;
+        int hi = checkRow ? matrix[0].length - 1 : matrix.length - 1;
+        while (hi >= lo) {
+            int mid = (lo + hi)/2;
+            if (checkRow) {
+                if (matrix[start][mid] == target) {
+                    return true;
+                } else if (matrix[start][mid] > target) {
+                    hi = mid - 1;
+                } else {
+                    lo = mid + 1;
                 }
-                else if (matrix[mid][fixed]>target){
-                    end = mid;
-                }
-                else {
-                    start = mid+1;
-                }
-            }
-        }
-        else {
-            //search matrix[0][y]
-            while (start!=end){
-                int mid = start+(end-start)/2;
-                if (matrix[fixed][mid]==target){
-                    return mid;
-                }
-                else if (matrix[fixed][mid]>target){
-                    end = mid;
-                }
-                else {
-                    start = mid+1;
+            } else {
+                if (matrix[mid][start] == target) {
+                    return true;
+                } else if (matrix[mid][start] > target) {
+                    hi = mid - 1;
+                } else {
+                    lo = mid + 1;
                 }
             }
         }
-        return start;
+        return false;
     }
-    //my method accepted at first submission!
 }

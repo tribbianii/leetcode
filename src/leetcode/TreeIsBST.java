@@ -1,21 +1,19 @@
 package leetcode;
 
-import leetcode.Tree.TreeNode;
+
 
 public class TreeIsBST {
     //Note: here the the min and max limiattion shoud be Integer.min and Integer.max
     //set to long only for werid test case on leetcode smh
     public boolean isValidBST(TreeNode root){
-        return  isbst(root,Long.MIN_VALUE,Long.MAX_VALUE);
+        return dfs(root, Long.MIN_VALUE, Long.MAX_VALUE);
     }
-    public boolean isbst(TreeNode root, long low, long high){
-        if (root==null){
-            return true;
-        }
-        if (root.val <= low || root.val >= high){
-            return false;
-        }
-        return isbst(root.left,low,root.val) && isbst(root.right,root.val,high);
+    public boolean dfs(TreeNode root, long min, long max) {
+        return root == null ||
+                ((long) root.val < max
+                    && (long) root.val > min
+                    && dfs(root.left, min, (long) root.val)
+                    && dfs(root.right, (long) root.val, max));
     }
     //here comes the dumber solution
     public boolean isBST(TreeNode root) {
