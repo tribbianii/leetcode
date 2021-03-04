@@ -20,17 +20,17 @@ public class LinkedListCycle{
     //method 1 use hashset(extra space) to store and determine
     //whether a certain node has already been visited
     public boolean HasCycle(ListNode head){
-        if (head==null||head.next==null){
+        if (head == null){
             return false;
         }
-        ListNode fast = head.next;
         ListNode slow = head;
-        while (fast!=null&&fast.next!=null){
-            if(fast==slow){
+        ListNode fast = head.next;
+        while (fast != null && fast.next != null){
+            if (fast == slow) {
                 return true;
             }
-            fast = fast.next.next;
             slow = slow.next;
+            fast = fast.next.next;
         }
         return false;
     }

@@ -16,10 +16,7 @@ public class MathPower {
         if (n == 0) {
             return 1;
         }
-        double half = pow(x, n/2);
-        if (n % 2 == 1) {
-            return half * half * x;
-        }
-        return  half * half;
+        double half = pow(x, n / 2);
+        return  (n % 2 == 1 ? x : 1) * half * half;
     }
 }

@@ -7,6 +7,38 @@ package leetcode;
 //or the greatest node among all nodes in deleted.left
 //here we adopt the first one
 public class TreeDeleteNodeBST{
+    // my composed recursive solution, nearly optimal
+    public TreeNode replace;
+    public boolean found;
+    public TreeNode DeleteNode(TreeNode root, int target) {
+        if (root == null) {
+            return null;
+        }
+        if (root.val == target) {
+            found = true;
+            if (root.left == null) {
+                // use target's right as replace when its left is null
+                return root.right;
+            }
+            // find the largest node amonheapg nodes less than target as replace
+            TreeNode newLeft = DeleteNode(root.left, target);
+            replace.left = newLeft;
+            replace.right = root.right;
+            return replace;
+        } else if (root.val > target) {
+            // continue to find the target
+            root.left = DeleteNode(root.left, target);
+        } else {
+            if (found && root.right == null) {
+                // found the target and replace
+                replace = root;
+                return root.left;
+            }
+            root.right = DeleteNode(root.right, target);
+        }
+        return root;
+    }
+    // intuitive solution
     public TreeNode deleteNode(TreeNode root, int target){
         if (root==null){
             return null;

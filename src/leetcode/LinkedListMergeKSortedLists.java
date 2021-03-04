@@ -16,27 +16,14 @@ public class LinkedListMergeKSortedLists {
             res = MergeTwoLists(res, lists[i]);
         }    
         return res;
-    }            
+    }
     public ListNode MergeTwoLists(ListNode node1, ListNode node2) {
-        if (node1==null||node2==null){                 
-            return node1==null?node2:node1;
+        if (node1 != null && node2 != null) {
+            ListNode node = node1.val <= node2.val ? node1 : node2;
+            node.next = node == node1 ? MergeTwoLists(node1.next, node2) : MergeTwoLists(node1, node2.next);
+            return node;
         }
-        ListNode orig = new ListNode(0);
-        ListNode prev = orig;
-        while (node1!=null&&node2!=null){
-            if (node1.val<=node2.val){
-                prev.next = node1;
-                prev = node1;
-                node1 = node1.next;
-            }
-            else {
-                prev.next = node2;
-                prev = node2;   
-                node2 = node2.next;
-            }
-        }
-        prev.next = node1==null?node2:node1;
-        return orig.next;
+        return node1 == null ? node2 : node1;
     }
     //this method merge lists one by one, slow
 

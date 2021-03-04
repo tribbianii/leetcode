@@ -5,16 +5,11 @@ package leetcode;
 public class LinkedListMergeTwoSortedLists{
     public ListNode MergeTwoLists(ListNode node1, ListNode node2) {
         if (node1 != null && node2 != null) {
-            if (node1.val <= node2.val) {
-                node1.next = mergeTwoLists(node1.next, node2);
-                return node1;
-            } else {
-                node2.next = mergeTwoLists(node1, node2.next);
-                return node2;
-            }
-        } else {
-            return node1 != null ? node1 : node2;
+            ListNode node = node1.val <= node2.val ? node1 : node2;
+            node.next = node == node1 ? MergeTwoLists(node1.next, node2) : MergeTwoLists(node1, node2.next);
+            return node;
         }
+        return node1 == null ? node2 : node1;
     }
     //recursive method
     public ListNode mergeTwoLists(ListNode node1, ListNode node2) {

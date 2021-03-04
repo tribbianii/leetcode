@@ -3,45 +3,38 @@ package leetcode;
 import java.util.*;
 
 public class DesignSerializeandDeserializeBinaryTree {
-    // Encodes a tree to a single string.
-    public String rserialize(TreeNode root, String str) {
-    // Recursive serialization.
-        if (root == null) {
-            str += "null,";
-        } else {
-            str += String.valueOf(root.val) + ",";
-            str = rserialize(root.left, str);
-            str = rserialize(root.right, str);
-        }
-        return str;
-    }
-    
-    // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
-        return rserialize(root, "");
+        return new String(dfsS(root, new StringBuilder()));
     }
-    
-    // Decodes your encoded data to tree.
-    public TreeNode rdeserialize(List<String> l) {
-    // Recursive deserialization.
-        if (l.get(0).equals("null")) {
-            l.remove(0);
+
+    public StringBuilder dfsS(TreeNode root, StringBuilder res) {
+        if (root == null) {
+            res.append("null,");
+            return res;
+        }
+        res.append(root.val).append(",");
+        dfsS(root.left, res);
+        dfsS(root.right, res);
+        return res;
+    }
+
+    public TreeNode deserialize(String str) {
+        Deque<String> strDeque = new LinkedList<>();
+        for (String val : str.split(",")) {
+            strDeque.offerLast(val);
+        }
+        return dfsD(strDeque);
+    }
+
+    public TreeNode dfsD(Deque<String> strDeque) {
+        String val = strDeque.pollFirst();
+        if (val.equals("null")) {
             return null;
         }
-
-        TreeNode root = new TreeNode(Integer.valueOf(l.get(0)));
-        l.remove(0);
-        root.left = rdeserialize(l);
-        root.right = rdeserialize(l);
-
-        return root;
-    }
-    
-    // Decodes your encoded data to tree.
-    public TreeNode deserialize(String data) {
-        String[] data_array = data.split(",");
-        List<String> data_list = new LinkedList<String>(Arrays.asList(data_array));
-        return rdeserialize(data_list);
+        TreeNode node = new TreeNode(Integer.parseInt(val));
+        node.left = dfsD(strDeque);
+        node.right = dfsD(strDeque);
+        return node;
     }
 
     // following is BFS solution using level order

@@ -1,6 +1,21 @@
 package leetcode;
 
 public class LinkedListAddTwoNumber {
+    // recursion
+    public int carry = 0;
+    public ListNode AddTwoNumbers(ListNode l1, ListNode l2) {
+        boolean isNull1 = l1 == null;
+        boolean isNull2 = l2 == null;
+        if (carry == 0 && (isNull1 || isNull2)) {
+            return l1 == null ? l2 : l1;
+        }
+        int val = carry + (isNull1 ? 0 : l1.val) + (isNull2 ? 0 : l2.val);
+        ListNode node = new ListNode(val % 10);
+        carry = val / 10;
+        node.next = addTwoNumbers(isNull1 ? null : l1.next, isNull2 ? null : l2.next);
+        return node;
+    }
+    // iterative one
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode res = new ListNode(0);
         ListNode l3 = res;

@@ -2,31 +2,22 @@ package leetcode;
 
 public class ArrayMergeSortedArray{
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-        if (m==0){
-            for (int i=0;i<n;i++){
-                nums1[i]=nums2[i];
+        if (n == 0) {
+            return;
+        }
+        if (m == 0) {
+            while (n > 0) {
+                nums1[n - 1] = nums2[n - 1];
+                n --;
             }
             return;
         }
-        for (int i=0;i<n;i++){
-            for (int j=0;j<m+n;j++){
-                if (nums2[i]<=nums1[j]){
-                    insert(nums1,n,m,j,nums2[i]);
-                    break;
-                }
-                else if(j>=m+i){
-                    nums1[j]=nums2[i];
-                }
-                else {
-                    continue;
-                }
-            }
+        if (nums1[m - 1] >= nums2[n - 1]) {
+            nums1[m + n - 1] = nums1[m - 1];
+            merge(nums1, m - 1, nums2, n);
+        } else {
+            nums1[m + n - 1] = nums2[n - 1];
+            merge(nums1, m, nums2, n - 1);
         }
-    }
-    public void insert(int[]nums,int n,int m, int index, int num){
-        for (int i=n+m-1;i>index;i--){
-            nums[i]=nums[i-1];
-        }
-        nums[index]=num;
     }
 }

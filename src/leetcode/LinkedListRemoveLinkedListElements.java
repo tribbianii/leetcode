@@ -2,17 +2,13 @@ package leetcode;
 
 public class LinkedListRemoveLinkedListElements{
     public ListNode removeElements(ListNode head, int val) {
-        ListNode dummy = new ListNode(0);
-        dummy.next = head;
-        ListNode pre = dummy;
-        while (pre.next != null) {
-            if (pre.next.val == val){
-                pre.next = pre.next.next;
-            }
-            else{
-                pre = pre.next;
-            } 
+        if (head == null) {
+            return null;
         }
-        return dummy.next;
+        head.next = removeElements(head.next, val);
+        if (head.val == val) {
+            return head.next;
+        }
+        return head;
     }
 }

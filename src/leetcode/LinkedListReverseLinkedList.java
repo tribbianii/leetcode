@@ -4,12 +4,11 @@ public class LinkedListReverseLinkedList{
     //iteration solution
     public ListNode reverseList(ListNode head){
         ListNode prev = null;
-        ListNode curr = head;
-        while (curr!=null){
-            ListNode next = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = next;
+        while (head != null) {
+            ListNode temp = head.next;
+            head.next = prev;
+            prev = head;
+            head = temp;
         }
         return prev;
     }

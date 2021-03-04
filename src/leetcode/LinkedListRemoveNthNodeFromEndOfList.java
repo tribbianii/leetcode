@@ -4,29 +4,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LinkedListRemoveNthNodeFromEndOfList{
+    //my genius solution
+    public int index;
     public ListNode removeNthFromEnd(ListNode head, int n) {
-        int i =0;
-        Map<Integer, ListNode> table = new HashMap<>();
-        ListNode node = head;
-        while (node!=null){
-            i++;
-            table.put(i, node);
-            node=node.next;
-        }
-        if (i==1){
+        if (head == null) {
+            index = 0;
             return null;
         }
-        if (i==n){
-            return head.next;
-        }
-        ListNode pre = table.get(i-n);
-        if (n==1){
-            pre.next = null;
-        }
-        else{
-            pre.next = pre.next.next;
-        }
-        return table.get(1);
+        head.next = removeNthFromEnd(head.next, n);
+        index ++;
+        return index == n ? head.next : head;
     }
     //my method. really shouldn't have used map
     public ListNode RemoveNthFromEnd(ListNode head, int n){

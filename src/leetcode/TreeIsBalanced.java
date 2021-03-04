@@ -22,18 +22,21 @@ public class TreeIsBalanced {
         }
     }
     // O(n) solution
-    public boolean IsBalanced(TreeNode root) {
-        return GetHeight(root) != -1;
+    public boolean IsBalanced(TreeNode root){
+        return getHeight(root) >= 0;
     }
-    private int GetHeight(TreeNode root) {
-        if (root == null) {
+    public int getHeight(TreeNode node) {
+        if (node == null) {
             return 0;
         }
-        int left = GetHeight(root.left);
-        int right = GetHeight(root.right);
-        if (left == -1 || right == -1 || Math.abs(left - right) > 1) {
+        int leftHeight = getHeight(node.left);
+        if (leftHeight < 0) {
             return -1;
         }
-        return Math.max(left, right) + 1;
+        int rightHeight = getHeight(node.right);
+        if (rightHeight < 0 || Math.abs(leftHeight - rightHeight) > 1) {
+            return -1;
+        }
+        return 1 + Math.max(leftHeight, rightHeight);
     }
 }

@@ -3,13 +3,15 @@ package leetcode;
 import java.util.*;
 
 public class DesignRangeModule {
-    /*
+
     TreeSet<Interval> ranges;
+    /*
     public DesignRangeModule() {
         ranges = new TreeSet();
     }
+     */
 
-    public void addRange(int left, int right) {
+    public void AddRange(int left, int right) {
         Iterator<Interval> itr = ranges.tailSet(new Interval(0, left - 1)).iterator();
         while (itr.hasNext()) {
             Interval iv = itr.next();
@@ -21,12 +23,12 @@ public class DesignRangeModule {
         ranges.add(new Interval(left, right));
     }
 
-    public boolean queryRange(int left, int right) {
+    public boolean QueryRange(int left, int right) {
         Interval iv = ranges.higher(new Interval(0, left));
         return (iv != null && iv.left <= left && right <= iv.right);
     }
 
-    public void removeRange(int left, int right) {
+    public void RemoveRange(int left, int right) {
         Iterator<Interval> itr = ranges.tailSet(new Interval(0, left)).iterator();
         ArrayList<Interval> todo = new ArrayList();
         while (itr.hasNext()) {
@@ -53,7 +55,7 @@ public class DesignRangeModule {
             return this.right - that.right;
         }
     }
-    */
+
     TreeMap<Integer, Integer> intervals;
     public DesignRangeModule() {
         intervals = new TreeMap<>();
