@@ -1,6 +1,38 @@
 package leetcode;
 
 public class LinkedListAddTwoNumber {
+    // time O(n) space O(1)
+    public ListNode AddTwoNumber(ListNode l1, ListNode l2) {
+        ListNode r_l1 = reverse(l1);
+        ListNode r_l2 = reverse(l2);
+        ListNode curr = r_l1;
+        ListNode orig = curr;
+        boolean carry = false;
+        while (r_l1 != null || r_l2 != null) {
+            int val = (carry ? 1 : 0) + (r_l1 == null ? 0 : r_l1.val) +  (r_l2 == null ? 0 : r_l2.val);
+            carry = val > 9;
+            curr.val = val % 10;
+            r_l1 = r_l1 == null ? null : r_l1.next;
+            r_l2 = r_l2 == null ? null : r_l2.next;
+            curr.next = r_l1 == null ? r_l2 : r_l1;
+            if (curr.next == null) {
+                curr.next = carry ? new ListNode(1) : null;
+            }
+            curr = curr.next;
+        }
+        return reverse(orig);
+    }
+    public ListNode reverse(ListNode head) {
+        ListNode prev = null;
+        ListNode curr = head;
+        while (curr != null) {
+            ListNode next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        return prev;
+    }
     // recursion
     public int carry = 0;
     public ListNode AddTwoNumbers(ListNode l1, ListNode l2) {
