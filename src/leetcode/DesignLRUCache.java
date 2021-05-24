@@ -4,6 +4,123 @@ import java.util.HashMap;
 import java.util.Map;
 
 class DesignLRUCache {
+    static class Node {
+        int key;
+        int val;
+        int fre;
+        Node prev;
+        Node next;
+        Node(int key, int val) {
+            this.key = key;
+            this.val = val;
+            this.fre = 1;
+        }
+    }
+    static class Dll {
+        Node head;
+        Node tail;
+        int size;
+        Dll() {
+            this.size = 0;
+            this.head = new Node(0, 0);
+            this.tail = new Node(0, 0);
+            head.next = tail;
+            tail.prev = head;
+        }
+
+        Dll add(Node node) {
+            node.next = head.next;
+            node.next.prev = node;
+            head.next = node;
+            node.prev = head;
+            size ++;
+            return this;
+        }
+
+        Dll delete(Node node) {
+            node.prev.next = node.next;
+            node.next.prev = node.prev;
+            size --;
+            return this;
+        }
+
+        Node cutLast() {
+            Node node = tail.prev;
+            tail.prev = node.prev;
+            tail.prev.next = tail;
+            size --;
+            return node;
+        }
+
+        boolean isEmpty() {
+            return size == 0;
+        }
+    }
+
+    int capacity;
+    int size;
+    int minFreq;
+    Map<Integer, Node> nodeMap;
+    Map<Integer, Dll> freqMap;
+
+    DesignLRUCache(int capacity) {
+        this.capacity = capacity;
+        this.size = 0;
+        this.minFreq = 1;
+        this.nodeMap = new HashMap<Integer, Node>();
+        this.freqMap = new HashMap<Integer, Dll>();
+    }
+
+    int get(int key) {
+        Node node = nodeMap.get(key);
+        if (node == null) {
+            return -1;
+        }
+        update(node);
+        return node.val;
+    }
+
+    void put(int key, int value) {
+        if (capacity == 0) {
+            return;
+        }
+        Node node = nodeMap.get(key);
+        if (node != null) {
+            node.val = value;
+            update(node);
+        } else {
+            if (size == capacity) {
+                invalidate();
+            }
+            add(new Node(key, value));
+        }
+    }
+
+    void update(Node node) {
+        if (freqMap.get(node.fre).delete(node).isEmpty() && node.fre == minFreq) {
+            minFreq ++;
+        }
+        node.fre ++;
+        freqMap.put(node.fre, freqMap.getOrDefault(node.fre, new Dll()).add(node));
+    }
+
+    void add(Node node) {
+        freqMap.put(1, freqMap.getOrDefault(1, new Dll()).add(node));
+        nodeMap.put(node.key, node);
+        minFreq = 1;
+        size ++;
+    }
+
+    void invalidate() {
+        Dll LFUList = freqMap.get(minFreq);
+        nodeMap.remove(LFUList.cutLast().key);
+        if (LFUList.isEmpty()) {
+            minFreq ++;
+        }
+        size --;
+    }
+    // following is my naive solution, slower
+    /*
     static class DListNode {
         int key;
         int value;
@@ -79,6 +196,7 @@ class DesignLRUCache {
         last.prev.next = tail;
         size--;
     }
+     */
     //another solution with more divided functionalities
     /*
     class DLinkedNode {

@@ -33,7 +33,7 @@ public class DPLargestProductCuttingRope {
         }
         return max[n];
     }
-    //the second idea is nore general using in related issues
+    //the second idea is more general using in related issues
     //2 solutions above are all dp and time complexity O(n^2)
 
     //recursion solution with time complexity O(n!)

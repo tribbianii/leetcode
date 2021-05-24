@@ -1,29 +1,28 @@
 package leetcode;
 
 public class StackAndPQDecodeString{
-    private int i = 0;
+    private int index = 0;
     public String decodeString(String s) {
-        StringBuilder string = new StringBuilder();
-        String num = "";
-        for (; i < s.length(); i++) {
-            if (s.charAt(i) != '[' && s.charAt(i) != ']' && !Character.isDigit(s.charAt(i))) {
-                string.append(s.charAt(i));
-            //determine if char is digit
-            } else if (Character.isDigit(s.charAt(i))) {
-                num += s.charAt(i);
-            } else if (s.charAt(i) == '[') {
-                i++;
-                //recursion
+        StringBuilder res = new StringBuilder();
+        StringBuilder num = new StringBuilder();
+        while (index < s.length()) {
+            char c = s.charAt(index);
+            if (c != '[' && c != ']' && !Character.isDigit(c)) {
+                res.append(c);
+            } else if (Character.isDigit(c)) {
+                num.append(c);
+            } else if (c == '[') {
+                index ++;
                 String next = decodeString(s);
-                //both Integer.valueOf() and Integer.parseInt() work
-                for (int n = Integer.valueOf(num); n > 0; n--) {
-                    string.append(next);
+                for (int n = Integer.parseInt(new String(num)); n > 0; n--) {
+                    res.append(next);
                 }
-                num = "";
-            } else if (s.charAt(i) == ']') {
-                return string.toString();
+                num = new StringBuilder();
+            } else if (c == ']') {
+                return res.toString();
             }
+            index ++;
         }
-        return string.toString();
+        return res.toString();
     }
 }

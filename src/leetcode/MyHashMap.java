@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.Arrays;
 
-public class MyHashMap<K, V> {
+public class MyHashMap<K extends Comparable<K>, V extends Comparable<V>> {
     public static class Pair<K, V> {
         final K key;
         V value;

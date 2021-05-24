@@ -115,6 +115,14 @@ class Solution{
 		System.out.println("space: " + space + "end");
 		System.out.println("0<<1: " + (0 << 1));
 		System.out.println("1<<1: " + (1 << 2));
+		int offset = 0;
+		char cap = offset == 0 ? 'Z' : 'A' + 1;
+		System.out.println("cap " + cap);
+		System.out.println("0^1 = " + (int)Math.pow(0, 1));
+		MyHashMap<String, Float> mymap = new MyHashMap<String, Float>();
+		String strval = "String node value";
+		GenericNode<String> genericNode = new StringNode(strval);
+		System.out.println(genericNode.getValue());
 	}
 	public static void change(StringBuilder sb) {
 		sb.append("life");
