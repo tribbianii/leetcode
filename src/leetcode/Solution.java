@@ -123,6 +123,7 @@ class Solution{
 		String strval = "String node value";
 		GenericNode<String> genericNode = new StringNode(strval);
 		System.out.println(genericNode.getValue());
+		System.out.println("67" + ('6' < '7' ? "greater" : "less") + "than" + "32");
 	}
 	public static void change(StringBuilder sb) {
 		sb.append("life");
