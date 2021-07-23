@@ -1,6 +1,30 @@
 package leetcode;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 public class DPTrappingWater {
+    // time: O(n)
+    // space: O(n)
+    public int trapp(int[] height) {
+        int res = 0;
+        int index = 0;
+        Deque<Integer> stack = new ArrayDeque<>();
+        while (index < height.length) {
+            while (!stack.isEmpty() && height[stack.peekLast()] < height[index]) {
+                int low = height[stack.pollLast()];
+                if (stack.isEmpty()) {
+                    break;
+                }
+                int left = stack.peekLast();
+                int right = index;
+                int distance = right - left - 1;
+                res += (Math.min(height[left], height[right]) - low) * distance;
+            }
+            stack.offerLast(index ++);
+        }
+        return res;
+    }
     // time: O(n)
     // space: O(1)
     public int Trap(int[] height) {

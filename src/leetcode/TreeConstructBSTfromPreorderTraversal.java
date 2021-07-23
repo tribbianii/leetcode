@@ -3,22 +3,20 @@ package leetcode;
 
 
 public class TreeConstructBSTfromPreorderTraversal {
-    int index = 0;
-    int[] preorder;
-    
+    int index;
     public TreeNode bstFromPreorder(int[] preorder) {
-        this.preorder = preorder;
-        return construct(Integer.MIN_VALUE, Integer.MAX_VALUE);
+        index = 0;
+        return build(preorder, Integer.MIN_VALUE, Integer.MAX_VALUE);
     }
-    
-    public TreeNode construct(int lower, int upper) {
-        if (index == preorder.length || preorder[index] < lower || preorder[index] > upper) {
+
+    public TreeNode build(int[] preorder, int min, int max) {
+        if (index >= preorder.length || preorder[index] < min || preorder[index] > max) {
             return null;
         }
-        TreeNode root = new TreeNode(preorder[index]);
+        TreeNode node = new TreeNode(preorder[index]);
         index ++;
-        root.left = construct(lower, root.val);
-        root.right = construct(root.val, upper);
-        return root;
+        node.left = build(preorder, min, node.val);
+        node.right = build(preorder, node.val, max);
+        return node;
     }
 }

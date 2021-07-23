@@ -1,28 +1,33 @@
 package leetcode;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 public class StackAndPQDecodeString{
-    private int index = 0;
     public String decodeString(String s) {
-        StringBuilder res = new StringBuilder();
-        StringBuilder num = new StringBuilder();
-        while (index < s.length()) {
-            char c = s.charAt(index);
-            if (c != '[' && c != ']' && !Character.isDigit(c)) {
-                res.append(c);
-            } else if (Character.isDigit(c)) {
-                num.append(c);
+        Deque<Integer> num_stack = new ArrayDeque<>();
+        Deque<StringBuilder> str_stack = new ArrayDeque<>();
+        str_stack.offerLast(new StringBuilder());
+        int times = 0;
+        char[] arr = s.toCharArray();
+        for (char c : arr) {
+            if (Character.isDigit(c)) {
+                times = times * 10 + (int)(c - '0');
             } else if (c == '[') {
-                index ++;
-                String next = decodeString(s);
-                for (int n = Integer.parseInt(new String(num)); n > 0; n--) {
-                    res.append(next);
-                }
-                num = new StringBuilder();
+                num_stack.offerLast(times);
+                str_stack.offerLast(new StringBuilder());
+                times = 0;
             } else if (c == ']') {
-                return res.toString();
+                times = num_stack.pollLast();
+                StringBuilder sb = str_stack.pollLast();
+                while (times > 0) {
+                    str_stack.peekLast().append(new String(sb));
+                    times --;
+                }
+            } else {
+                str_stack.peekLast().append(c);
             }
-            index ++;
         }
-        return res.toString();
+        return new String(str_stack.pollLast());
     }
 }

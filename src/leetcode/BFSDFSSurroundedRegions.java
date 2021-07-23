@@ -2,46 +2,30 @@ package leetcode;
 
 public class BFSDFSSurroundedRegions{
     public void solve(char[][] board) {
-        if (board==null || board.length==0){
-            return;
-        }
-        for (int i=0;i<board.length;i=board.length==1?i+1:i+board.length-1){
-            for (int j=0;j<board[0].length;j++){
-                if (board[i][j]=='O'){
-                    dfs(i,j,board,false);
+        boolean[][] keep = new boolean[board.length][board[0].length];
+        for (int i = 0; i < board.length; i ++) {
+            for (int j = 0; j < board[0].length; j ++) {
+                if (i * j == 0 || i == board.length - 1 || j == board[0].length - 1) {
+                    dfs(board, keep, i, j);
                 }
             }
         }
-        for (int j=0;j<board[0].length;j=board[0].length==1?j+1:j+board[0].length-1){
-            for (int i=0;i<board.length;i++){
-                if (board[i][j]=='O'){
-                    dfs(i,j,board,false);
-                }   
-            }
-        }
-        for (int i=1;i<board.length-1;i++){
-            for (int j=1;j<board[0].length-1;j++){
-                if (board[i][j]=='O'){
-                    dfs(i,j,board,true);
-                }
-            }
-        }
-        for (int i=0;i<board.length;i++){
-            for (int j=0;j<board[0].length;j++){
-                if (board[i][j]=='Y'){
-                    board[i][j]='O';
+        for (int i = 0; i < board.length; i ++) {
+            for (int j = 0; j < board[0].length; j ++) {
+                if (board[i][j] == 'O' && !keep[i][j]) {
+                    board[i][j] = 'X';
                 }
             }
         }
     }
-    private void dfs(int i, int j, char[][]board, boolean validO){
-        if (i<0||j<0||i>=board.length||j>=board[0].length||board[i][j]=='X'||board[i][j]=='Y'){
+    public void dfs(char[][] board, boolean[][] keep, int row, int col) {
+        if (row < 0 || row == board.length || col < 0 || col == board[0].length || board[row][col] == 'X' || keep[row][col]) {
             return;
         }
-        board[i][j]=validO?'X':'Y';
-        dfs(i+1,j,board,validO);
-        dfs(i,j+1,board,validO);
-        dfs(i-1,j,board,validO);
-        dfs(i,j-1,board,validO);
+        keep[row][col] = true;
+        dfs(board, keep, row + 1, col);
+        dfs(board, keep, row - 1, col);
+        dfs(board, keep, row, col + 1);
+        dfs(board, keep, row, col - 1);
     }
 }
