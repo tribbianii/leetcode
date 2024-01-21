@@ -7,7 +7,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 
-
 public class TreeBinaryTreeLevelOrderTraversal {
 
 	public List<List<Integer>> levelOrder(TreeNode root) {

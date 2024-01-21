@@ -6,32 +6,22 @@ import java.util.List;
 
 public class ArrayInsertInterval {
     public int[][] insert(int[][] intervals, int[] newInterval) {
-        int newStart = newInterval[0];
-        int newEnd = newInterval[1];
-        int idx = 0;
-        int n = intervals.length;
-        LinkedList<int[]> output = new LinkedList<int[]>();
-        while (idx < n && intervals[idx][0] < newStart) {
-            output.add(intervals[idx++]);
+        List<int[]> list = new ArrayList<>();
+        int[] curr = newInterval;
+        for (int index = 0; index <= intervals.length; index ++) {
+            curr = merge(curr, index == intervals.length ? null : intervals[index], list);
         }
-        int[] interval = new int[2];
-        if (output.isEmpty() || output.getLast()[1] < newStart) {
-            output.add(newInterval);
-        } else {
-            interval = output.removeLast();
-            interval[1] = Math.max(interval[1], newEnd);
-            output.add(interval);
+        return list.toArray(new int[list.size()][]);
+    }
+    public int[] merge(int[] curr, int[] next, List<int[]> list) {
+        if (next == null || curr[1] < next[0]) {
+            list.add(curr);
+            return next;
         }
-        while (idx < n) {
-            interval = intervals[idx++];
-            int start = interval[0];
-            int end = interval[1];
-            if (output.getLast()[1] >= start) {
-                interval = output.removeLast();
-                interval[1] = Math.max(interval[1], end);
-            }
-            output.add(interval);
+        if (next[1] < curr[0]) {
+            list.add(next);
+            return curr;
         }
-        return output.toArray(new int[output.size()][2]);
+        return new int[]{Math.min(curr[0], next[0]), Math.max(curr[1], next[1])};
     }
 }

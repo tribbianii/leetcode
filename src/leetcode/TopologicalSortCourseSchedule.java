@@ -4,6 +4,43 @@ import java.util.*;
 
 public class TopologicalSortCourseSchedule {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
+        Map<Integer, List<Integer>> map = new HashMap<>();
+        for (int[] order : prerequisites) {
+            if (!map.containsKey(order[1])) {
+                map.put(order[1], new ArrayList<>());
+            }
+            map.get(order[1]).add(order[0]);
+        }
+        int[] status = new int[numCourses];
+        //status[i] denotes the status of the visit from course i
+        //status[i] = 0: course i hasn't been visited
+        //status[i] = 1: in visiting the descendants of course i
+        //status[i] = 2: course i and its descendants has been visited
+        for (int course = 0;  course < numCourses; course ++) {
+            if (!dfs(map, status, course)) {
+                return false;
+            }
+        }
+        return true;
+    }
+    public boolean dfs(Map<Integer, List<Integer>> map, int[] status, int course) {
+        if (status[course] == 1) {
+            return false;
+        }
+        if (status[course] == 2) {
+            return true;
+        }
+        status[course] = 1;
+        for (int next : map.getOrDefault(course, new ArrayList<>())) {
+            if (!dfs(map, status, next)) {
+                return false;
+            }
+        }
+        status[course] = 2;
+        return true;
+    }
+    //bfs
+    public boolean CanFinish(int numCourses, int[][] prerequisites) {
         int[] precourse_num = new int[numCourses];
         Map<Integer,List<Integer>> map = new HashMap<>();
         for (int[] pair:prerequisites){
@@ -40,40 +77,5 @@ public class TopologicalSortCourseSchedule {
         }
         return true;
     }
-    //dfs method
-    public boolean CanFinish(int numCourses, int[][] prerequisites) {
-        Map<Integer, Set<Integer>> map = new HashMap<>();
-        for (int[] pair: prerequisites) {
-            int pre = pair[1];
-            int sub = pair[0];
-            if (!map.containsKey(pair[1])) {
-                map.put(pair[1], new HashSet<Integer>());
-            }
-            map.get(pair[1]).add(pair[0]);
-        }
-        Map<Integer, Boolean> visited = new HashMap<>();
-        for (int id : map.keySet()) {
-            if(!checkCircle(map, visited, id)) {
-                return false;
-            }
-        }
-        return true;
-    }
-    public boolean checkCircle(Map<Integer, Set<Integer>> map, Map<Integer, Boolean> visited, int id) {
-        if (visited.containsKey(id)) {
-            return visited.get(id);
-        }
-        if (!map.containsKey(id)) {
-            visited.put(id, true);
-            return true;
-        }
-        visited.put(id, false);
-        for (int pre : map.get(id)) {
-            if (!checkCircle(map, visited, pre)) {
-                return false;
-            }
-        }
-        visited.put(id, true);
-        return true;
-    }
+
 }

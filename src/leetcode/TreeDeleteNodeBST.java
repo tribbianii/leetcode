@@ -20,7 +20,7 @@ public class TreeDeleteNodeBST{
                 // use target's right as replace when its left is null
                 return root.right;
             }
-            // find the largest node amonheapg nodes less than target as replace
+            // find the largest node among nodes less than target as replace
             TreeNode newLeft = DeleteNode(root.left, target);
             replace.left = newLeft;
             replace.right = root.right;

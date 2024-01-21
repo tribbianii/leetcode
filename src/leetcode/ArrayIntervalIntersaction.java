@@ -4,21 +4,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ArrayIntervalIntersaction {
-    public static int[][] meetingsIntersection(int[][] meetingsA, int[][] meetingsB){
-        ArrayList<int []> intersection = new ArrayList<>();
-        int i = 0;
-        int j = 0;
-        while (i < meetingsA.length && j < meetingsB.length) {
-            int start = Math.max(meetingsA[i][0], meetingsB[j][0]);
-            int end = Math.min(meetingsA[i][1], meetingsB[j][1]);
-            if (start < end)
-                intersection.add(new int[]{start, end});
-            if (meetingsA[i][1] < meetingsB[j][1]) {
-                i++;
+    public int[][] intervalIntersection(int[][] firstList, int[][] secondList) {
+        List<int[]> list = new ArrayList<>();
+        int index_1 = 0;
+        int index_2 = 0;
+        while (index_1 < firstList.length && index_2 < secondList.length) {
+            if (merge(firstList[index_1], secondList[index_2], list)) {
+                index_2 ++;
             } else {
-                j++;
+                index_1 ++;
             }
         }
-        return intersection.toArray(new int[intersection.size()][]);
+        return list.toArray(new int[list.size()][]);
+    }
+    public boolean merge(int[] first, int[] second, List<int[]> list) {
+        int left = Math.max(first[0], second[0]);
+        int right = Math.min(first[1], second[1]);
+        if (left <= right) {
+            list.add(new int[]{left, right});
+        }
+        return first[1] >= second[1];
     }
 }

@@ -1,23 +1,24 @@
 package leetcode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
+import java.util.*;
 
 class ArrayMergeIntervals {
-    public int[][] mergeMeetings(int[][] meetingTimes){
-        Arrays.sort(meetingTimes, Comparator.comparingInt(a -> a[0]));
+    private static StringBuilder append;
 
-        ArrayList<int[]> merged = new ArrayList<>();
-        for (int[] meeting: meetingTimes){
-            int size = merged.size();
-            if(size == 0 || merged.get(size - 1)[1] < meeting[0]){
-                merged.add(meeting);
-            }
-            else{
-                merged.get(size - 1)[1] = Math.max(merged.get(size - 1)[1], meeting[1]);
-            }
+    public int[][] merge(int[][] intervals) {
+        List<int[]> list = new ArrayList<>();
+        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
+        int[] curr = intervals[0];
+        for (int i = 1; i <= intervals.length; i ++) {
+            curr = merge(curr, i == intervals.length ? null : intervals[i], list);
         }
-        return merged.toArray(new int[merged.size()][]);
+        return list.toArray(new int[list.size()][2]);
+    }
+    public int[] merge(int[] curr, int[] next, List<int[]> list) {
+        if (next == null || curr[1] < next[0]) {
+            list.add(curr);
+            return next;
+        }
+        return new int[]{Math.min(curr[0], next[0]), Math.max(curr[1], next[1])};
     }
 }

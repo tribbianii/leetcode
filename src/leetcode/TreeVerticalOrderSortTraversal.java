@@ -1,68 +1,52 @@
 package leetcode;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Queue;
-
+import java.util.*;
 
 
 public class TreeVerticalOrderSortTraversal {
     class Node {
         int col;
         int row;
-        TreeNode treenode;
-        Node (int i,int j, TreeNode k) {
-            this.col = i;
-            this.row = j;
-            this.treenode = k;
+        TreeNode treeNode;
+        Node(int colNum, int rowNum, TreeNode tNode) {
+            this.col = colNum;
+            this.row = rowNum;
+            this.treeNode = tNode;
         }
     }
     public List<List<Integer>> verticalTraversal(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
-        if (root == null) {
-            return res;
-        }
-        Map<Integer, List<Node>> map = new HashMap<>();
-        Queue<Node> queue = new LinkedList<>();
-        int minCol = 0;
-        int maxCol = 0;
-        queue.offer(new Node(0, 0, root));
-        while (!queue.isEmpty()) {
-            Node node = queue.poll();
-            minCol = node.col < minCol ? node.col : minCol;
-            maxCol = node.col > maxCol ? node.col : maxCol;
-            map.putIfAbsent(node.col, new ArrayList<Node>());
-            map.get(node.col).add(node);
-            if (node.treenode.left != null) {
-                queue.offer(new Node(node.col - 1, node.row + 1, node.treenode.left));
-            }
-            if (node.treenode.right != null) {
-                queue.offer(new Node(node.col + 1, node.row + 1, node.treenode.right));
-            }
-        }
-        while (minCol <= maxCol) {
-            map.get(minCol).sort(new Comparator<Node>(){
-                @Override
-                public int compare(Node a, Node b) {
-                    if (a.row < b.row) {
-                        return -1;
-                    } else if (a.row > b.row) {
-                        return 1;
-                    } else {
-                        return a.treenode.val - b.treenode.val;
-                    }
+        Map<Integer, List<Integer>> map = new HashMap<>();
+        PriorityQueue<Node> pq = new PriorityQueue<>(new Comparator<Node>(){
+            @Override
+            public int compare(Node a, Node b) {
+                if (Integer.compare(a.row, b.row) != 0) {
+                    return Integer.compare(a.row, b.row);
+                } else if (Integer.compare(a.col, b.col) != 0) {
+                    return Integer.compare(a.col, b.col);
+                } else {
+                    return Integer.compare(a.treeNode.val, b.treeNode.val);
                 }
-            });
-            List<Integer> col = new ArrayList<>();
-            for (Node node : map.get(minCol)) {
-                col.add(node.treenode.val);
-            } 
-            res.add(col);
-            minCol ++;
+            }
+        });
+        int minCol = 0;
+        pq.offer(new Node(0, 0, root));
+        while (!pq.isEmpty()) {
+            Node node = pq.poll();
+            if (!map.containsKey(node.col)) {
+                map.put(node.col, new ArrayList<>());
+            }
+            map.get(node.col).add(node.treeNode.val);
+            minCol = Math.min(minCol, node.col);
+            if (node.treeNode.left != null) {
+                pq.offer(new Node(node.col - 1, node.row + 1, node.treeNode.left));
+            }
+            if (node.treeNode.right != null) {
+                pq.offer(new Node(node.col + 1, node.row + 1, node.treeNode.right));
+            }
+        }
+        while (map.containsKey(minCol)) {
+            res.add(map.get(minCol ++));
         }
         return res;
     }

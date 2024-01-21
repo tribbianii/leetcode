@@ -3,34 +3,30 @@ package leetcode;
 import java.util.Arrays;
 
 public class BackTrackingNextPermutation {
-    public void NextPermutation(int[] nums){
-        for (int i=nums.length-1;i>=0;i--){
-            if (i==0){
-                Arrays.sort(nums);
-                break;
+    public void NextPermutation(int[] nums) {
+        int end = nums.length - 1;
+        int high_digit_to_swap = end - 1;
+        while (high_digit_to_swap >= 0 && nums[high_digit_to_swap] >= nums[high_digit_to_swap + 1]) {
+            high_digit_to_swap --;
+        }
+        if (high_digit_to_swap >= 0) {
+            int low_digit_to_swap = end;
+            while (low_digit_to_swap > high_digit_to_swap && nums[high_digit_to_swap] >= nums[low_digit_to_swap]) {
+                low_digit_to_swap --;
             }
-            //i=0 means curr number is the max, it should change to min
-            if (nums[i]<=nums[i-1]){
-                continue;
-            }
-            else{
-                for (int j=nums.length-1;j>0;j--){
-                    if (nums[i-1]>=nums[j]){
-                        continue;
-                    }
-                    else{
-                        int temp = nums[i-1];
-                        nums[i-1] = nums[j];
-                        nums[j] = temp;
-                        Arrays.sort(nums,i,nums.length);
-                        break;
-                    }
-                }
-                break;
-            }
+            swap(nums, high_digit_to_swap, low_digit_to_swap);
+        }
+        int reverse_from = high_digit_to_swap + 1;
+        while (reverse_from < end) {
+            swap(nums, reverse_from ++, end --);
         }
     }
-    //much faster solution
+    public void swap(int[] nums, int left, int right) {
+        int temp = nums[left];
+        nums[left] = nums[right];
+        nums[right] = temp;
+    }
+    //recursion
     public void nextPermutation(int[] input) {
         if (input==null || input.length<=1) {
             return;
@@ -39,7 +35,7 @@ public class BackTrackingNextPermutation {
             if (input[i] > input[i-1]) {
                 for (int j=input.length-1; j>=i; j--) {
                     if (input[j] > input[i-1]) {
-                        swap(input, i-1, j);
+                        Swap(input, i-1, j);
                         reverse(input,i);
                         return;
                     }
@@ -49,7 +45,7 @@ public class BackTrackingNextPermutation {
         reverse(input, 0);
         return;
     }
-    static void swap(int[] input, int one, int two) {
+    static void Swap(int[] input, int one, int two) {
         int temp = input[one];
         input[one] = input[two];
         input[two] = temp;
@@ -57,7 +53,7 @@ public class BackTrackingNextPermutation {
     static void reverse(int[] input, int start) {
         int end = input.length-1;
         while (start < end) {
-            swap(input, start, end);
+            Swap(input, start, end);
             start++;
             end--;
         }

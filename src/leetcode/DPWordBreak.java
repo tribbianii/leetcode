@@ -12,21 +12,20 @@ import java.util.Set;
 
 public class DPWordBreak {
     public boolean wordBreak(String s, List<String> wordDict) {
-        Set<String> set = new HashSet<>();
-        int maxLen = 0;
-        for(String word: wordDict) {
-            set.add(word);
-            maxLen = Math.max(maxLen, word.length());
+        Set<String> dict = new HashSet<>();
+        int minLen = Integer.MAX_VALUE;
+        int maxLen = Integer.MIN_VALUE;
+        for (String str : wordDict) {
+            minLen = Math.min(minLen, str.length());
+            maxLen = Math.max(maxLen, str.length());
+            dict.add(str);
         }
         boolean[] dp = new boolean[s.length() + 1];
         dp[0] = true;
-        for(int i = 1; i < dp.length; i ++) {
-            for(int j = i - maxLen; j < i; j ++) {
-                if(j < 0) {
-                    continue;
-                }
-                if(dp[j] && set.contains(s.substring(j, i))) {
-                    dp[i] = true;
+        for (int right = minLen; right < dp.length; right ++) {
+            for (int left = Math.max(0, right - maxLen); left <= right - minLen; left ++) {
+                if (dp[left] && dict.contains(s.substring(left, right))) {
+                    dp[right] = true;
                     break;
                 }
             }
